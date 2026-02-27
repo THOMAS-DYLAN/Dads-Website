@@ -21,7 +21,7 @@ const Index = () => {
               <img 
                 src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/84a8.webp" 
                 alt="Michael Thomas" 
-                className="rounded-lg shadow-lg w-48 h-48 object-cover mx-auto border-4 border-blue-500"
+                className="rounded-lg shadow-lg w-48 h-48 object-cover mx-auto border-4 border-blue-600"
                 crossOrigin="anonymous"
               />
             </div>
@@ -29,7 +29,7 @@ const Index = () => {
             <p className="text-lg text-gray-700 mb-4">
               RICP® | CLTC | MMC
             </p>
-            <p className="text-2xl font-semibold text-yellow-500 italic mb-6">
+            <p className="text-2xl font-semibold text-red-500 italic mb-6">
               Your Future. My Mission.
             </p>
           </div>
@@ -48,7 +48,7 @@ const Index = () => {
             <p className="text-lg text-gray-700 mb-6">
               At Key Retirement Solutions, we understand the veteran mindset. We don't just sell insurance—we build <span className="font-bold text-blue-600">defense strategies</span> for your retirement, your family's security, and your legacy.
             </p>
-            <div className="border-l-4 border-yellow-500 pl-6 py-2 bg-blue-50">
+            <div className="border-l-4 border-red-500 pl-6 py-2 bg-blue-50">
               <p className="text-xl font-bold text-blue-700">
                 Your future is our mission. We stand guard over what you've earned.
               </p>
@@ -62,36 +62,36 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-3">WHO WE SERVE</h2>
           <div className="flex justify-center mb-8">
-            <div className="h-1 w-24 bg-yellow-400"></div>
+            <div className="h-1 w-24 bg-red-500"></div>
           </div>
           <p className="text-center text-white text-lg mb-12 max-w-3xl mx-auto">
             Mission-focused financial protection for those who served and their families
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div className="text-center">
-              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-yellow-400 flex items-center justify-center">
-                <Shield className="w-12 h-12 text-yellow-400" />
+            <div className="text-center transition-all duration-300 hover:scale-105 hover:brightness-110 hover:drop-shadow-xl cursor-pointer">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-white flex items-center justify-center">
+                <Shield className="w-12 h-12 text-white" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">VETERANS</h3>
               <p className="text-white/90">Honoring those who served with specialized retirement strategies</p>
             </div>
-            <div className="text-center">
-              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-yellow-400 flex items-center justify-center">
-                <Clock className="w-12 h-12 text-yellow-400" />
+            <div className="text-center transition-all duration-300 hover:scale-105 hover:brightness-110 hover:drop-shadow-xl cursor-pointer">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-white flex items-center justify-center">
+                <Clock className="w-12 h-12 text-white" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">TURNING 65 SOON</h3>
               <p className="text-white/90">Navigate Medicare decisions with confidence and clarity</p>
             </div>
-            <div className="text-center">
-              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-yellow-400 flex items-center justify-center">
-                <Shield className="w-12 h-12 text-yellow-400" />
+            <div className="text-center transition-all duration-300 hover:scale-105 hover:brightness-110 hover:drop-shadow-xl cursor-pointer">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-white flex items-center justify-center">
+                <Shield className="w-12 h-12 text-white" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">RETIREES</h3>
               <p className="text-white/90">Protect your retirement income and preserve your legacy</p>
             </div>
-            <div className="text-center">
-              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-yellow-400 flex items-center justify-center">
-                <Users className="w-12 h-12 text-yellow-400" />
+            <div className="text-center transition-all duration-300 hover:scale-105 hover:brightness-110 hover:drop-shadow-xl cursor-pointer">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-white flex items-center justify-center">
+                <Users className="w-12 h-12 text-white" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">FAMILIES PLANNING</h3>
               <p className="text-white/90">Build a secure foundation for your family's financial future</p>
@@ -106,54 +106,54 @@ const Index = () => {
           <p className="text-red-500 font-bold uppercase tracking-wider text-center mb-3">OUR PROCESS</p>
           <h2 className="text-4xl md:text-5xl font-bold text-center text-blue-600 mb-3">THE RETIREMENT DEFENSE PLAN</h2>
           <div className="flex justify-center mb-8">
-            <div className="h-1 w-24 bg-yellow-400"></div>
+            <div className="h-1 w-24 bg-red-500"></div>
           </div>
           <p className="text-center text-blue-600 text-lg mb-12 max-w-3xl mx-auto">
             A strategic, mission-focused approach to securing your financial future
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div className="text-center">
+            <div className="text-center transition-all duration-300 hover:scale-105 hover:brightness-110 hover:drop-shadow-xl cursor-pointer">
               <div className="relative w-24 h-24 mx-auto mb-4">
-                <div className="w-24 h-24 rounded-full bg-red-100 flex items-center justify-center">
+                <div className="w-24 h-24 rounded-full bg-white border-4 border-blue-600 flex items-center justify-center">
                   <Target className="w-12 h-12 text-blue-600" />
                 </div>
-                <div className="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
+                <div className="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-red-500 flex items-center justify-center font-bold text-white">
                   1
                 </div>
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-3">ASSESS</h3>
               <p className="text-gray-700">Review your financial situation, retirement goals, and healthcare needs</p>
             </div>
-            <div className="text-center">
+            <div className="text-center transition-all duration-300 hover:scale-105 hover:brightness-110 hover:drop-shadow-xl cursor-pointer">
               <div className="relative w-24 h-24 mx-auto mb-4">
-                <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center">
+                <div className="w-24 h-24 rounded-full bg-white border-4 border-blue-600 flex items-center justify-center">
                   <Search className="w-12 h-12 text-blue-600" />
                 </div>
-                <div className="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
+                <div className="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-red-500 flex items-center justify-center font-bold text-white">
                   2
                 </div>
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-3">IDENTIFY GAPS</h3>
               <p className="text-gray-700">Pinpoint vulnerabilities in coverage and income streams</p>
             </div>
-            <div className="text-center">
+            <div className="text-center transition-all duration-300 hover:scale-105 hover:brightness-110 hover:drop-shadow-xl cursor-pointer">
               <div className="relative w-24 h-24 mx-auto mb-4">
-                <div className="w-24 h-24 rounded-full bg-yellow-100 flex items-center justify-center">
+                <div className="w-24 h-24 rounded-full bg-white border-4 border-blue-600 flex items-center justify-center">
                   <ShieldCheck className="w-12 h-12 text-blue-600" />
                 </div>
-                <div className="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
+                <div className="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-red-500 flex items-center justify-center font-bold text-white">
                   3
                 </div>
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-3">FORTIFY</h3>
               <p className="text-gray-700">Implement strategic solutions to protect your assets and income</p>
             </div>
-            <div className="text-center">
+            <div className="text-center transition-all duration-300 hover:scale-105 hover:brightness-110 hover:drop-shadow-xl cursor-pointer">
               <div className="relative w-24 h-24 mx-auto mb-4">
-                <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center">
+                <div className="w-24 h-24 rounded-full bg-white border-4 border-blue-600 flex items-center justify-center">
                   <TrendingUp className="w-12 h-12 text-blue-600" />
                 </div>
-                <div className="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
+                <div className="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-red-500 flex items-center justify-center font-bold text-white">
                   4
                 </div>
               </div>
@@ -170,35 +170,35 @@ const Index = () => {
           <p className="text-red-500 font-bold uppercase tracking-wider text-center mb-3">PROTECTION STRATEGIES</p>
           <h2 className="text-4xl md:text-5xl font-bold text-center text-blue-600 mb-3">SERVICES</h2>
           <div className="flex justify-center mb-8">
-            <div className="h-1 w-24 bg-yellow-400"></div>
+            <div className="h-1 w-24 bg-red-500"></div>
           </div>
           <p className="text-center text-blue-600 text-lg mb-12 max-w-3xl mx-auto">
             Comprehensive defense for every aspect of your retirement
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
+            <div className="text-center transition-all duration-300 hover:scale-105 hover:brightness-110 hover:drop-shadow-xl cursor-pointer">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-red-500 flex items-center justify-center">
                 <Shield className="w-10 h-10 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-3">MEDICARE PLANNING</h3>
               <p className="text-gray-700">Navigate Medicare enrollment with expert guidance. Choose the right coverage for your needs.</p>
             </div>
-            <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
+            <div className="text-center transition-all duration-300 hover:scale-105 hover:brightness-110 hover:drop-shadow-xl cursor-pointer">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-red-500 flex items-center justify-center">
                 <HeartIcon className="w-10 h-10 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-3">LIFE INSURANCE</h3>
               <p className="text-gray-700">Protect your loved ones with comprehensive life insurance tailored to your family's needs.</p>
             </div>
-            <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
+            <div className="text-center transition-all duration-300 hover:scale-105 hover:brightness-110 hover:drop-shadow-xl cursor-pointer">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-red-500 flex items-center justify-center">
                 <Umbrella className="w-10 h-10 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-3">LONG-TERM CARE</h3>
               <p className="text-gray-700">Strategic planning to preserve your assets and dignity for potential long-term care needs.</p>
             </div>
-            <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
+            <div className="text-center transition-all duration-300 hover:scale-105 hover:brightness-110 hover:drop-shadow-xl cursor-pointer">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-red-500 flex items-center justify-center">
                 <TrendingUpIcon className="w-10 h-10 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-3">RETIREMENT INCOME</h3>
@@ -214,35 +214,35 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">TRUSTED. CERTIFIED. MISSION-DRIVEN.</h2>
             <div className="flex justify-center mb-8">
-              <div className="h-1 w-24 bg-yellow-400"></div>
+              <div className="h-1 w-24 bg-red-500"></div>
             </div>
-            <h3 className="text-3xl font-bold text-yellow-400 mb-2">Michael Thomas</h3>
+            <h3 className="text-3xl font-bold text-white mb-2">Michael Thomas</h3>
             <p className="text-xl text-white mb-4">RICP® | CLTC | MMC</p>
-            <a href="tel:816-248-1100" className="text-4xl font-bold text-yellow-400 hover:text-yellow-300 transition inline-block mb-6">
+            <a href="tel:816-248-1100" className="text-4xl font-bold text-white hover:text-red-500 transition inline-block mb-6">
               816-248-1100
             </a>
             <p className="text-white text-lg mb-6 max-w-3xl mx-auto">
               With specialized certifications in retirement income planning (RICP®), long-term care (CLTC), and Medicare (MMC), Michael Thomas brings military-grade precision to financial planning.
             </p>
-            <p className="text-yellow-400 text-lg italic mb-6">
+            <p className="text-white text-lg italic mb-6">
               Serving veterans and families across Missouri with honor, integrity, and unwavering commitment.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-white mb-8">
               <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full border-2 border-yellow-400 flex items-center justify-center">
-                  <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                <div className="w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-white"></div>
                 </div>
                 <span>Licensed Professional</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full border-2 border-yellow-400 flex items-center justify-center">
-                  <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                <div className="w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-white"></div>
                 </div>
                 <span>Veteran-Focused</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full border-2 border-yellow-400 flex items-center justify-center">
-                  <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                <div className="w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-white"></div>
                 </div>
                 <span>Missouri Based</span>
               </div>
@@ -251,7 +251,7 @@ const Index = () => {
               <img 
                 src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/aa41.webp" 
                 alt="Insurance License" 
-                className="max-w-sm w-full mx-auto rounded-lg shadow-xl border-4 border-yellow-400 cursor-pointer hover:scale-105 transition"
+                className="max-w-sm w-full mx-auto rounded-lg shadow-xl border-4 border-white cursor-pointer hover:scale-105 transition"
                 crossOrigin="anonymous"
               />
             </div>
@@ -266,7 +266,7 @@ const Index = () => {
           <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
             Don't leave your retirement to chance. Take action now to protect what you've earned.
           </p>
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold text-xl px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105">
+          <button className="bg-white hover:bg-blue-500 hover:text-white text-blue-600 font-bold text-xl px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105">
             SCHEDULE YOUR APPOINTMENT
           </button>
         </div>
@@ -359,7 +359,7 @@ const Index = () => {
             <div>
               <h3 className="text-xl font-bold mb-4">Service to Security</h3>
               <p className="mb-2">Powered by Key Retirement Solutions</p>
-              <p className="text-yellow-400 font-semibold">#YourFuture MyMission!</p>
+              <p className="text-white font-semibold">#YourFuture MyMission!</p>
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4">PROTECTION STRATEGIES</h3>
@@ -374,7 +374,7 @@ const Index = () => {
               <h3 className="text-xl font-bold mb-4">CONTACT</h3>
               <p className="mb-2">Michael Thomas</p>
               <p className="mb-2">RICP® | CLTC | MMC</p>
-              <a href="tel:816-248-1100" className="text-2xl font-bold text-yellow-400 hover:text-yellow-300 transition">
+              <a href="tel:816-248-1100" className="text-2xl font-bold text-white hover:text-red-500 transition">
                 816-248-1100
               </a>
             </div>
