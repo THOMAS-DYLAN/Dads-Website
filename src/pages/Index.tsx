@@ -179,28 +179,28 @@ const Index = () => {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-red-500 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
                 <Shield className="w-10 h-10 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-red-100 mb-3">MEDICARE PLANNING</h3>
               <p className="text-red-50">Navigate Medicare enrollment with expert guidance. Choose the right coverage for your needs.</p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-red-500 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
                 <HeartIcon className="w-10 h-10 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-red-100 mb-3">LIFE INSURANCE</h3>
               <p className="text-red-50">Protect your loved ones with comprehensive life insurance tailored to your family's needs.</p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-red-500 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
                 <Umbrella className="w-10 h-10 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-red-100 mb-3">LONG-TERM CARE</h3>
               <p className="text-red-50">Strategic planning to preserve your assets and dignity for potential long-term care needs.</p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-red-500 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
                 <TrendingUpIcon className="w-10 h-10 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-red-100 mb-3">RETIREMENT INCOME</h3>
@@ -211,40 +211,40 @@ const Index = () => {
       </section>
 
       {/* Credentials Section */}
-      <section className="py-16 bg-blue-500">
+      <section className="py-16 bg-red-500">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">TRUSTED. CERTIFIED. MISSION-DRIVEN.</h2>
             <div className="flex justify-center mb-8">
-              <div className="h-1 w-24 bg-red-500"></div>
+              <div className="h-1 w-24 bg-blue-600"></div>
             </div>
-            <h3 className="text-3xl font-bold text-white mb-2">Michael Thomas</h3>
-            <p className="text-xl text-white mb-4">RICP® | CLTC | MMC</p>
-            <a href="tel:816-248-1100" className="text-4xl font-bold text-white hover:text-red-500 transition inline-block mb-6">
+            <h3 className="text-3xl font-bold text-blue-100 mb-2">Michael Thomas</h3>
+            <p className="text-xl text-blue-50 mb-4">RICP® | CLTC | MMC</p>
+            <a href="tel:816-248-1100" className="text-4xl font-bold text-white hover:text-blue-200 transition inline-block mb-6">
               816-248-1100
             </a>
-            <p className="text-white text-lg mb-6 max-w-3xl mx-auto">
+            <p className="text-blue-50 text-lg mb-6 max-w-3xl mx-auto">
               With specialized certifications in retirement income planning (RICP®), long-term care (CLTC), and Medicare (MMC), Michael Thomas brings military-grade precision to financial planning.
             </p>
-            <p className="text-white text-lg italic mb-6">
+            <p className="text-blue-50 text-lg italic mb-6">
               Serving veterans and families across Missouri with honor, integrity, and unwavering commitment.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-white mb-8">
+            <div className="flex flex-wrap justify-center gap-4 text-blue-50 mb-8">
               <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
-                  <div className="w-3 h-3 rounded-full bg-white"></div>
+                <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-blue-100"></div>
                 </div>
                 <span>Licensed Professional</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
-                  <div className="w-3 h-3 rounded-full bg-white"></div>
+                <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-blue-100"></div>
                 </div>
                 <span>Veteran-Focused</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
-                  <div className="w-3 h-3 rounded-full bg-white"></div>
+                <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-blue-100"></div>
                 </div>
                 <span>Missouri Based</span>
               </div>
@@ -252,7 +252,7 @@ const Index = () => {
             <div className="flex justify-center">
               <Dialog>
                 <DialogTrigger asChild>
-                  <button className="bg-white hover:bg-red-500 hover:text-white text-blue-600 font-bold text-lg px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105 flex items-center gap-2">
+                  <button className="bg-white hover:bg-blue-500 hover:text-white text-blue-600 font-bold text-lg px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105 flex items-center gap-2">
                     <FileText className="w-5 h-5" />
                     My Certificate
                   </button>
@@ -272,36 +272,36 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-red-500">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">SECURE YOUR FUTURE TODAY</h2>
-          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">SECURE YOUR FUTURE TODAY</h2>
+          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
             Don't leave your retirement to chance. Take action now to protect what you've earned.
           </p>
-          <button className="bg-white hover:bg-blue-500 hover:text-white text-blue-600 font-bold text-xl px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105">
+          <button className="bg-red-500 hover:bg-blue-500 text-white font-bold text-xl px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105">
             SCHEDULE YOUR APPOINTMENT
           </button>
         </div>
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-blue-500">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <p className="text-red-500 font-bold uppercase tracking-wider mb-3">GET STARTED</p>
-              <h2 className="text-4xl font-bold text-blue-600 mb-6">READY TO BUILD YOUR RETIREMENT DEFENSE PLAN?</h2>
-              <h3 className="text-2xl font-bold text-red-500 mb-2">Michael Thomas</h3>
-              <p className="text-gray-700 mb-2">RICP® | CLTC | MMC</p>
-              <p className="text-gray-700 mb-4">Key Retirement Solutions</p>
-              <a href="tel:816-248-1100" className="text-3xl font-bold text-red-500 hover:text-red-600 transition inline-block mb-6">
+              <p className="text-red-100 font-bold uppercase tracking-wider mb-3">GET STARTED</p>
+              <h2 className="text-4xl font-bold text-white mb-6">READY TO BUILD YOUR RETIREMENT DEFENSE PLAN?</h2>
+              <h3 className="text-2xl font-bold text-red-100 mb-2">Michael Thomas</h3>
+              <p className="text-blue-50 mb-2">RICP® | CLTC | MMC</p>
+              <p className="text-blue-50 mb-4">Key Retirement Solutions</p>
+              <a href="tel:816-248-1100" className="text-3xl font-bold text-white hover:text-red-100 transition inline-block mb-6">
                 816-248-1100
               </a>
-              <p className="text-gray-700">
+              <p className="text-blue-50">
                 Take the first step toward a secure retirement. Whether you're turning 65, planning ahead, or navigating Medicare decisions, we're here to help you build a comprehensive defense plan for your financial future.
               </p>
             </div>
-            <div className="bg-white border-2 border-blue-500 rounded-lg p-8 shadow-lg">
+            <div className="bg-white border-2 border-red-500 rounded-lg p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-blue-600 mb-6">Request Your Free Consultation</h3>
               <form className="space-y-4">
                 <div>
