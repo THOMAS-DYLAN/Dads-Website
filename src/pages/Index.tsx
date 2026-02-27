@@ -67,7 +67,7 @@ const Index = () => {
           <p className="text-center text-white text-lg mb-12 max-w-3xl mx-auto">
             Mission-focused financial protection for those who served and their families
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <div className="text-center">
               <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-yellow-400 flex items-center justify-center">
                 <Shield className="w-12 h-12 text-yellow-400" />
@@ -111,7 +111,7 @@ const Index = () => {
           <p className="text-center text-blue-600 text-lg mb-12 max-w-3xl mx-auto">
             A strategic, mission-focused approach to securing your financial future
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <div className="text-center">
               <div className="relative w-24 h-24 mx-auto mb-4">
                 <div className="w-24 h-24 rounded-full bg-red-100 flex items-center justify-center">
@@ -175,7 +175,7 @@ const Index = () => {
           <p className="text-center text-blue-600 text-lg mb-12 max-w-3xl mx-auto">
             Comprehensive defense for every aspect of your retirement
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <div className="text-center">
               <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
                 <Shield className="w-10 h-10 text-red-500" />
