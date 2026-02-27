@@ -1,4 +1,9 @@
-import { Shield, Users, Heart, Clock, Search, Target, ShieldCheck, TrendingUp, TrendingUpIcon, Heart as HeartIcon, Umbrella } from 'lucide-react';
+import { Shield, Users, Heart, Clock, Search, Target, ShieldCheck, TrendingUp, TrendingUpIcon, Heart as HeartIcon, Umbrella, FileText } from 'lucide-react';
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const Index = () => {
   return (
@@ -244,13 +249,23 @@ const Index = () => {
                 <span>Missouri Based</span>
               </div>
             </div>
-            <div className="inline-block">
-              <img 
-                src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/aa41.webp" 
-                alt="Insurance License" 
-                className="max-w-sm w-full mx-auto rounded-lg shadow-xl border-4 border-white cursor-pointer hover:scale-105 transition"
-                crossOrigin="anonymous"
-              />
+            <div className="flex justify-center">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <button className="bg-white hover:bg-red-500 hover:text-white text-blue-600 font-bold text-lg px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105 flex items-center gap-2">
+                    <FileText className="w-5 h-5" />
+                    My Certificate
+                  </button>
+                </DialogTrigger>
+                <DialogContent className="max-w-3xl">
+                  <img 
+                    src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/aa41.webp" 
+                    alt="Insurance License Certificate" 
+                    className="w-full h-auto rounded-lg"
+                    crossOrigin="anonymous"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
         </div>
