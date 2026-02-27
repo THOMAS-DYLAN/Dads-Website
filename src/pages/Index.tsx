@@ -1,20 +1,8 @@
-import { Shield, Users, Heart, Building2, Search, CheckCircle, ShieldCheck, RefreshCw, FileText, TrendingUp, Umbrella, Clock } from 'lucide-react';
+import { Shield, Users, Heart, Clock, Search, Target, ShieldCheck, TrendingUp, TrendingUpIcon, Heart as HeartIcon, Umbrella } from 'lucide-react';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="bg-[#1a2332] text-white py-4">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold">Key Retirement Solutions</div>
-            <a href="tel:816-248-1100" className="text-xl font-semibold hover:text-[#d4af37] transition">
-              816-248-1100
-            </a>
-          </div>
-        </div>
-      </header>
-
+    <div className="min-h-screen bg-white">
       {/* Hero Banner */}
       <section className="relative">
         <img 
@@ -28,84 +16,149 @@ const Index = () => {
       {/* About Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="md:w-1/3">
-                <img 
-                  src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/84a8.webp" 
-                  alt="Michael Thomas" 
-                  className="rounded-lg shadow-lg w-full"
-                  crossOrigin="anonymous"
-                />
-              </div>
-              <div className="md:w-2/3">
-                <h2 className="text-3xl font-bold text-[#1a2332] mb-4">About Michael Thomas</h2>
-                <p className="text-lg text-gray-700 mb-4">
-                  RICP® | CLTC | MMC
-                </p>
-                <p className="text-gray-600 leading-relaxed">
-                  With years of experience in retirement planning and financial security, Michael Thomas is dedicated to helping individuals and families achieve their retirement goals. Licensed and certified in Medicare, Life Insurance, LTC Planning, and Retirement strategies.
-                </p>
-              </div>
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="mb-6">
+              <img 
+                src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/84a8.webp" 
+                alt="Michael Thomas" 
+                className="rounded-lg shadow-lg w-48 h-48 object-cover mx-auto border-4 border-blue-500"
+                crossOrigin="anonymous"
+              />
+            </div>
+            <h2 className="text-4xl font-bold text-blue-600 mb-3">Michael Thomas</h2>
+            <p className="text-lg text-gray-700 mb-4">
+              RICP® | CLTC | MMC
+            </p>
+            <p className="text-2xl font-semibold text-yellow-500 italic mb-6">
+              Your Future. My Mission.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-red-500 font-bold uppercase tracking-wider mb-3">THE MISSION</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mb-6">FROM SERVICE TO SECURITY</h2>
+            <p className="text-lg text-gray-700 mb-4">
+              <span className="font-bold text-red-500">Your mission doesn't end with service.</span> <span className="text-blue-600">It transforms. The same discipline, strategy, and commitment that defined your military career now protect your financial future.</span>
+            </p>
+            <p className="text-lg text-gray-700 mb-6">
+              At Key Retirement Solutions, we understand the veteran mindset. We don't just sell insurance—we build <span className="font-bold text-blue-600">defense strategies</span> for your retirement, your family's security, and your legacy.
+            </p>
+            <div className="border-l-4 border-yellow-500 pl-6 py-2 bg-blue-50">
+              <p className="text-xl font-bold text-blue-700">
+                Your future is our mission. We stand guard over what you've earned.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* WHO WE SERVE Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-blue-500">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-[#1a2332] mb-12">WHO WE SERVE</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-3">WHO WE SERVE</h2>
+          <div className="flex justify-center mb-8">
+            <div className="h-1 w-24 bg-yellow-400"></div>
+          </div>
+          <p className="text-center text-white text-lg mb-12 max-w-3xl mx-auto">
+            Mission-focused financial protection for those who served and their families
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition text-center">
-              <Users className="w-12 h-12 text-[#d4af37] mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-[#1a2332] mb-3">Pre-Retirees</h3>
-              <p className="text-gray-600">Planning for your future with strategic retirement solutions.</p>
+            <div className="text-center">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-yellow-400 flex items-center justify-center">
+                <Shield className="w-12 h-12 text-yellow-400" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">VETERANS</h3>
+              <p className="text-white/90">Honoring those who served with specialized retirement strategies</p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition text-center">
-              <Heart className="w-12 h-12 text-[#d4af37] mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-[#1a2332] mb-3">Retirees</h3>
-              <p className="text-gray-600">Protecting and maximizing your retirement income.</p>
+            <div className="text-center">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-yellow-400 flex items-center justify-center">
+                <Clock className="w-12 h-12 text-yellow-400" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">TURNING 65 SOON</h3>
+              <p className="text-white/90">Navigate Medicare decisions with confidence and clarity</p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition text-center">
-              <Shield className="w-12 h-12 text-[#d4af37] mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-[#1a2332] mb-3">Veterans</h3>
-              <p className="text-gray-600">Specialized services for those who served our country.</p>
+            <div className="text-center">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-yellow-400 flex items-center justify-center">
+                <Shield className="w-12 h-12 text-yellow-400" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">RETIREES</h3>
+              <p className="text-white/90">Protect your retirement income and preserve your legacy</p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition text-center">
-              <Building2 className="w-12 h-12 text-[#d4af37] mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-[#1a2332] mb-3">Business Owners</h3>
-              <p className="text-gray-600">Retirement planning strategies for entrepreneurs.</p>
+            <div className="text-center">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-yellow-400 flex items-center justify-center">
+                <Users className="w-12 h-12 text-yellow-400" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">FAMILIES PLANNING</h3>
+              <p className="text-white/90">Build a secure foundation for your family's financial future</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* THE RETIREMENT DEFENSE PLAN Section */}
-      <section className="py-16 bg-[#1a2332] text-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">THE RETIREMENT DEFENSE PLAN</h2>
-          <p className="text-center text-xl mb-12 text-gray-300">A Four-Step Strategy for Financial Security</p>
+          <p className="text-red-500 font-bold uppercase tracking-wider text-center mb-3">OUR PROCESS</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-blue-600 mb-3">THE RETIREMENT DEFENSE PLAN</h2>
+          <div className="flex justify-center mb-8">
+            <div className="h-1 w-24 bg-yellow-400"></div>
+          </div>
+          <p className="text-center text-blue-600 text-lg mb-12 max-w-3xl mx-auto">
+            A strategic, mission-focused approach to securing your financial future
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white/10 backdrop-blur p-8 rounded-lg border border-[#d4af37] hover:bg-white/20 transition text-center">
-              <Search className="w-12 h-12 text-[#d4af37] mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-3">ASSESS</h3>
-              <p className="text-gray-200">Evaluate your current financial situation and retirement goals.</p>
+            <div className="text-center">
+              <div className="relative w-24 h-24 mx-auto mb-4">
+                <div className="w-24 h-24 rounded-full bg-red-100 flex items-center justify-center">
+                  <Target className="w-12 h-12 text-blue-600" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
+                  1
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-blue-600 mb-3">ASSESS</h3>
+              <p className="text-gray-700">Review your financial situation, retirement goals, and healthcare needs</p>
             </div>
-            <div className="bg-white/10 backdrop-blur p-8 rounded-lg border border-[#d4af37] hover:bg-white/20 transition text-center">
-              <CheckCircle className="w-12 h-12 text-[#d4af37] mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-3">IDENTIFY</h3>
-              <p className="text-gray-200">Identify gaps, risks, and opportunities in your retirement plan.</p>
+            <div className="text-center">
+              <div className="relative w-24 h-24 mx-auto mb-4">
+                <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center">
+                  <Search className="w-12 h-12 text-blue-600" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
+                  2
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-blue-600 mb-3">IDENTIFY GAPS</h3>
+              <p className="text-gray-700">Pinpoint vulnerabilities in coverage and income streams</p>
             </div>
-            <div className="bg-white/10 backdrop-blur p-8 rounded-lg border border-[#d4af37] hover:bg-white/20 transition text-center">
-              <ShieldCheck className="w-12 h-12 text-[#d4af37] mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-3">FORTIFY</h3>
-              <p className="text-gray-200">Strengthen your financial position with strategic solutions.</p>
+            <div className="text-center">
+              <div className="relative w-24 h-24 mx-auto mb-4">
+                <div className="w-24 h-24 rounded-full bg-yellow-100 flex items-center justify-center">
+                  <ShieldCheck className="w-12 h-12 text-blue-600" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
+                  3
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-blue-600 mb-3">FORTIFY</h3>
+              <p className="text-gray-700">Implement strategic solutions to protect your assets and income</p>
             </div>
-            <div className="bg-white/10 backdrop-blur p-8 rounded-lg border border-[#d4af37] hover:bg-white/20 transition text-center">
-              <RefreshCw className="w-12 h-12 text-[#d4af37] mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-3">MAINTAIN</h3>
-              <p className="text-gray-200">Ongoing monitoring and adjustments to keep you on track.</p>
+            <div className="text-center">
+              <div className="relative w-24 h-24 mx-auto mb-4">
+                <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center">
+                  <TrendingUp className="w-12 h-12 text-blue-600" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
+                  4
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-blue-600 mb-3">MAINTAIN & ADJUST</h3>
+              <p className="text-gray-700">Ongoing monitoring and strategy adjustments as needed</p>
             </div>
           </div>
         </div>
@@ -114,58 +167,221 @@ const Index = () => {
       {/* SERVICES Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-[#1a2332] mb-12">SERVICES</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div className="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition text-center border-t-4 border-[#d4af37]">
-              <FileText className="w-12 h-12 text-[#1a2332] mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-[#1a2332] mb-3">Medicare Planning</h3>
-              <p className="text-gray-600">Navigate Medicare options with expert guidance and support.</p>
+          <p className="text-red-500 font-bold uppercase tracking-wider text-center mb-3">PROTECTION STRATEGIES</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-blue-600 mb-3">SERVICES</h2>
+          <div className="flex justify-center mb-8">
+            <div className="h-1 w-24 bg-yellow-400"></div>
+          </div>
+          <p className="text-center text-blue-600 text-lg mb-12 max-w-3xl mx-auto">
+            Comprehensive defense for every aspect of your retirement
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto">
+            <div className="text-center md:text-left">
+              <div className="w-20 h-20 mx-auto md:mx-0 mb-4 rounded-full bg-red-100 flex items-center justify-center">
+                <Shield className="w-10 h-10 text-red-500" />
+              </div>
+              <h3 className="text-xl font-bold text-blue-600 mb-3">MEDICARE PLANNING</h3>
+              <p className="text-gray-700">Navigate Medicare enrollment with expert guidance. Choose the right coverage for your needs.</p>
             </div>
-            <div className="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition text-center border-t-4 border-[#d4af37]">
-              <Heart className="w-12 h-12 text-[#1a2332] mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-[#1a2332] mb-3">Life Insurance</h3>
-              <p className="text-gray-600">Protect your loved ones with comprehensive life insurance solutions.</p>
+            <div className="text-center md:text-left">
+              <div className="w-20 h-20 mx-auto md:mx-0 mb-4 rounded-full bg-red-100 flex items-center justify-center">
+                <HeartIcon className="w-10 h-10 text-red-500" />
+              </div>
+              <h3 className="text-xl font-bold text-blue-600 mb-3">LIFE INSURANCE</h3>
+              <p className="text-gray-700">Protect your loved ones with comprehensive life insurance tailored to your family's needs.</p>
             </div>
-            <div className="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition text-center border-t-4 border-[#d4af37]">
-              <Umbrella className="w-12 h-12 text-[#1a2332] mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-[#1a2332] mb-3">LTC Planning</h3>
-              <p className="text-gray-600">Long-term care strategies to protect your assets and dignity.</p>
+            <div className="text-center md:text-left">
+              <div className="w-20 h-20 mx-auto md:mx-0 mb-4 rounded-full bg-red-100 flex items-center justify-center">
+                <Umbrella className="w-10 h-10 text-red-500" />
+              </div>
+              <h3 className="text-xl font-bold text-blue-600 mb-3">LONG-TERM CARE</h3>
+              <p className="text-gray-700">Strategic planning to preserve your assets and dignity for potential long-term care needs.</p>
             </div>
-            <div className="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition text-center border-t-4 border-[#d4af37]">
-              <TrendingUp className="w-12 h-12 text-[#1a2332] mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-[#1a2332] mb-3">Retirement Planning</h3>
-              <p className="text-gray-600">Build a secure retirement with personalized financial strategies.</p>
+            <div className="text-center md:text-left">
+              <div className="w-20 h-20 mx-auto md:mx-0 mb-4 rounded-full bg-red-100 flex items-center justify-center">
+                <TrendingUpIcon className="w-10 h-10 text-red-500" />
+              </div>
+              <h3 className="text-xl font-bold text-blue-600 mb-3">RETIREMENT INCOME</h3>
+              <p className="text-gray-700">Build reliable income streams to sustain your lifestyle throughout retirement.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* License Section */}
-      <section className="py-12 bg-gray-50">
+      {/* Credentials Section */}
+      <section className="py-16 bg-blue-500">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-[#1a2332] mb-6">Licensed & Certified</h3>
-            <img 
-              src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/aa41.webp" 
-              alt="Arizona Insurance License" 
-              className="mx-auto shadow-lg rounded-lg max-w-full h-auto"
-              crossOrigin="anonymous"
-            />
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">TRUSTED. CERTIFIED. MISSION-DRIVEN.</h2>
+            <div className="flex justify-center mb-8">
+              <div className="h-1 w-24 bg-yellow-400"></div>
+            </div>
+            <h3 className="text-3xl font-bold text-yellow-400 mb-2">Michael Thomas</h3>
+            <p className="text-xl text-white mb-4">RICP® | CLTC | MMC</p>
+            <a href="tel:816-248-1100" className="text-4xl font-bold text-yellow-400 hover:text-yellow-300 transition inline-block mb-6">
+              816-248-1100
+            </a>
+            <p className="text-white text-lg mb-6 max-w-3xl mx-auto">
+              With specialized certifications in retirement income planning (RICP®), long-term care (CLTC), and Medicare (MMC), Michael Thomas brings military-grade precision to financial planning.
+            </p>
+            <p className="text-yellow-400 text-lg italic mb-6">
+              Serving veterans and families across Missouri with honor, integrity, and unwavering commitment.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 text-white mb-8">
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded-full border-2 border-yellow-400 flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                </div>
+                <span>Licensed Professional</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded-full border-2 border-yellow-400 flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                </div>
+                <span>Veteran-Focused</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded-full border-2 border-yellow-400 flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                </div>
+                <span>Missouri Based</span>
+              </div>
+            </div>
+            <div className="inline-block">
+              <img 
+                src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/aa41.webp" 
+                alt="Insurance License" 
+                className="max-w-sm w-full mx-auto rounded-lg shadow-xl border-4 border-yellow-400 cursor-pointer hover:scale-105 transition"
+                crossOrigin="anonymous"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-red-500">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">SECURE YOUR FUTURE TODAY</h2>
+          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
+            Don't leave your retirement to chance. Take action now to protect what you've earned.
+          </p>
+          <button className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold text-xl px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105">
+            SCHEDULE YOUR APPOINTMENT
+          </button>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+              <p className="text-red-500 font-bold uppercase tracking-wider mb-3">GET STARTED</p>
+              <h2 className="text-4xl font-bold text-blue-600 mb-6">READY TO BUILD YOUR RETIREMENT DEFENSE PLAN?</h2>
+              <h3 className="text-2xl font-bold text-red-500 mb-2">Michael Thomas</h3>
+              <p className="text-gray-700 mb-2">RICP® | CLTC | MMC</p>
+              <p className="text-gray-700 mb-4">Key Retirement Solutions</p>
+              <a href="tel:816-248-1100" className="text-3xl font-bold text-red-500 hover:text-red-600 transition inline-block mb-6">
+                816-248-1100
+              </a>
+              <p className="text-gray-700">
+                Take the first step toward a secure retirement. Whether you're turning 65, planning ahead, or navigating Medicare decisions, we're here to help you build a comprehensive defense plan for your financial future.
+              </p>
+            </div>
+            <div className="bg-white border-2 border-blue-500 rounded-lg p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-blue-600 mb-6">Request Your Free Consultation</h3>
+              <form className="space-y-4">
+                <div>
+                  <label className="block text-sm font-semibold text-blue-600 mb-2">
+                    Full Name <span className="text-red-500">*</span>
+                  </label>
+                  <input 
+                    type="text" 
+                    className="w-full px-4 py-3 border-2 border-blue-300 rounded-lg focus:border-blue-500 focus:outline-none"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-blue-600 mb-2">
+                    Phone Number <span className="text-red-500">*</span>
+                  </label>
+                  <input 
+                    type="tel" 
+                    className="w-full px-4 py-3 border-2 border-blue-300 rounded-lg focus:border-blue-500 focus:outline-none"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-blue-600 mb-2">
+                    Email Address <span className="text-red-500">*</span>
+                  </label>
+                  <input 
+                    type="email" 
+                    className="w-full px-4 py-3 border-2 border-blue-300 rounded-lg focus:border-blue-500 focus:outline-none"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-blue-600 mb-2">
+                    Turning 65 Soon?
+                  </label>
+                  <select className="w-full px-4 py-3 border-2 border-blue-300 rounded-lg focus:border-blue-500 focus:outline-none">
+                    <option>No</option>
+                    <option>Yes</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-blue-600 mb-2">
+                    Are You a Veteran?
+                  </label>
+                  <select className="w-full px-4 py-3 border-2 border-blue-300 rounded-lg focus:border-blue-500 focus:outline-none">
+                    <option>No</option>
+                    <option>Yes</option>
+                  </select>
+                </div>
+                <button 
+                  type="submit"
+                  className="w-full bg-red-500 hover:bg-red-600 text-white font-bold text-lg py-4 rounded-lg transition"
+                >
+                  SUBMIT REQUEST
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#1a2332] text-white py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-xl font-semibold mb-2">Key Retirement Solutions</p>
-          <p className="text-lg mb-4">Service to Security - Powered by Key Retirement Solutions</p>
-          <p className="text-xl font-bold mb-2">
-            <a href="tel:816-248-1100" className="hover:text-[#d4af37] transition">816-248-1100</a>
-          </p>
-          <p className="text-sm text-gray-400 mt-4">
-            Medicare • Life Insurance • LTC Planning • Retirement
-          </p>
+      <footer className="bg-blue-500 text-white py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div>
+              <h3 className="text-xl font-bold mb-4">Service to Security</h3>
+              <p className="mb-2">Powered by Key Retirement Solutions</p>
+              <p className="text-yellow-400 font-semibold">#YourFuture MyMission!</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-4">PROTECTION STRATEGIES</h3>
+              <ul className="space-y-2">
+                <li>Medicare Planning</li>
+                <li>Life Insurance</li>
+                <li>Long-Term Care Planning</li>
+                <li>Retirement Income Strategy</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-4">CONTACT</h3>
+              <p className="mb-2">Michael Thomas</p>
+              <p className="mb-2">RICP® | CLTC | MMC</p>
+              <a href="tel:816-248-1100" className="text-2xl font-bold text-yellow-400 hover:text-yellow-300 transition">
+                816-248-1100
+              </a>
+            </div>
+          </div>
+          <div className="text-center mt-8 pt-8 border-t border-white/20">
+            <p className="text-sm">© 2026 Key Retirement Solutions. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>
