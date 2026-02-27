@@ -117,7 +117,7 @@ const Index = () => {
                 <div className="w-24 h-24 rounded-full bg-red-100 flex items-center justify-center">
                   <Target className="w-12 h-12 text-blue-600" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
+                <div className="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
                   1
                 </div>
               </div>
@@ -129,7 +129,7 @@ const Index = () => {
                 <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center">
                   <Search className="w-12 h-12 text-blue-600" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
+                <div className="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
                   2
                 </div>
               </div>
@@ -141,7 +141,7 @@ const Index = () => {
                 <div className="w-24 h-24 rounded-full bg-yellow-100 flex items-center justify-center">
                   <ShieldCheck className="w-12 h-12 text-blue-600" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
+                <div className="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
                   3
                 </div>
               </div>
@@ -153,7 +153,7 @@ const Index = () => {
                 <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center">
                   <TrendingUp className="w-12 h-12 text-blue-600" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
+                <div className="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-white">
                   4
                 </div>
               </div>
