@@ -175,30 +175,30 @@ const Index = () => {
           <p className="text-center text-blue-600 text-lg mb-12 max-w-3xl mx-auto">
             Comprehensive defense for every aspect of your retirement
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto">
-            <div className="text-center md:text-left">
-              <div className="w-20 h-20 mx-auto md:mx-0 mb-4 rounded-full bg-red-100 flex items-center justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="text-center">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
                 <Shield className="w-10 h-10 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-3">MEDICARE PLANNING</h3>
               <p className="text-gray-700">Navigate Medicare enrollment with expert guidance. Choose the right coverage for your needs.</p>
             </div>
-            <div className="text-center md:text-left">
-              <div className="w-20 h-20 mx-auto md:mx-0 mb-4 rounded-full bg-red-100 flex items-center justify-center">
+            <div className="text-center">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
                 <HeartIcon className="w-10 h-10 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-3">LIFE INSURANCE</h3>
               <p className="text-gray-700">Protect your loved ones with comprehensive life insurance tailored to your family's needs.</p>
             </div>
-            <div className="text-center md:text-left">
-              <div className="w-20 h-20 mx-auto md:mx-0 mb-4 rounded-full bg-red-100 flex items-center justify-center">
+            <div className="text-center">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
                 <Umbrella className="w-10 h-10 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-3">LONG-TERM CARE</h3>
               <p className="text-gray-700">Strategic planning to preserve your assets and dignity for potential long-term care needs.</p>
             </div>
-            <div className="text-center md:text-left">
-              <div className="w-20 h-20 mx-auto md:mx-0 mb-4 rounded-full bg-red-100 flex items-center justify-center">
+            <div className="text-center">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
                 <TrendingUpIcon className="w-10 h-10 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-3">RETIREMENT INCOME</h3>
