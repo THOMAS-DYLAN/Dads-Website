@@ -60,11 +60,11 @@ const Index = () => {
       </section>
 
       {/* WHO WE SERVE Section */}
-      <section className="py-16 bg-blue-500">
+      <section className="py-16 bg-red-500">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-3">WHO WE SERVE</h2>
           <div className="flex justify-center mb-8">
-            <div className="h-1 w-24 bg-red-500"></div>
+            <div className="h-1 w-24 bg-blue-600"></div>
           </div>
           <p className="text-center text-white text-lg mb-12 max-w-3xl mx-auto">
             Mission-focused financial protection for those who served and their families
@@ -74,29 +74,29 @@ const Index = () => {
               <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-white/40 hover:shadow-lg cursor-pointer">
                 <Shield className="w-12 h-12 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">VETERANS</h3>
-              <p className="text-white/90">Honoring those who served with specialized retirement strategies</p>
+              <h3 className="text-xl font-bold text-blue-100 mb-3">VETERANS</h3>
+              <p className="text-blue-50">Honoring those who served with specialized retirement strategies</p>
             </div>
             <div className="text-center">
               <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-white/40 hover:shadow-lg cursor-pointer">
                 <Clock className="w-12 h-12 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">TURNING 65 SOON</h3>
-              <p className="text-white/90">Navigate Medicare decisions with confidence and clarity</p>
+              <h3 className="text-xl font-bold text-blue-100 mb-3">TURNING 65 SOON</h3>
+              <p className="text-blue-50">Navigate Medicare decisions with confidence and clarity</p>
             </div>
             <div className="text-center">
               <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-white/40 hover:shadow-lg cursor-pointer">
                 <Shield className="w-12 h-12 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">RETIREES</h3>
-              <p className="text-white/90">Protect your retirement income and preserve your legacy</p>
+              <h3 className="text-xl font-bold text-blue-100 mb-3">RETIREES</h3>
+              <p className="text-blue-50">Protect your retirement income and preserve your legacy</p>
             </div>
             <div className="text-center">
               <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-white/40 hover:shadow-lg cursor-pointer">
                 <Users className="w-12 h-12 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">FAMILIES PLANNING</h3>
-              <p className="text-white/90">Build a secure foundation for your family's financial future</p>
+              <h3 className="text-xl font-bold text-blue-100 mb-3">FAMILIES PLANNING</h3>
+              <p className="text-blue-50">Build a secure foundation for your family's financial future</p>
             </div>
           </div>
         </div>
@@ -167,44 +167,44 @@ const Index = () => {
       </section>
 
       {/* SERVICES Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-blue-500">
         <div className="container mx-auto px-4">
-          <p className="text-red-500 font-bold uppercase tracking-wider text-center mb-3">PROTECTION STRATEGIES</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-blue-600 mb-3">SERVICES</h2>
+          <p className="text-white font-bold uppercase tracking-wider text-center mb-3">PROTECTION STRATEGIES</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-3">SERVICES</h2>
           <div className="flex justify-center mb-8">
             <div className="h-1 w-24 bg-red-500"></div>
           </div>
-          <p className="text-center text-blue-600 text-lg mb-12 max-w-3xl mx-auto">
+          <p className="text-center text-white text-lg mb-12 max-w-3xl mx-auto">
             Comprehensive defense for every aspect of your retirement
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-red-500 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
                 <Shield className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold text-blue-600 mb-3">MEDICARE PLANNING</h3>
-              <p className="text-gray-700">Navigate Medicare enrollment with expert guidance. Choose the right coverage for your needs.</p>
+              <h3 className="text-xl font-bold text-red-100 mb-3">MEDICARE PLANNING</h3>
+              <p className="text-red-50">Navigate Medicare enrollment with expert guidance. Choose the right coverage for your needs.</p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-red-500 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
                 <HeartIcon className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold text-blue-600 mb-3">LIFE INSURANCE</h3>
-              <p className="text-gray-700">Protect your loved ones with comprehensive life insurance tailored to your family's needs.</p>
+              <h3 className="text-xl font-bold text-red-100 mb-3">LIFE INSURANCE</h3>
+              <p className="text-red-50">Protect your loved ones with comprehensive life insurance tailored to your family's needs.</p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-red-500 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
                 <Umbrella className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold text-blue-600 mb-3">LONG-TERM CARE</h3>
-              <p className="text-gray-700">Strategic planning to preserve your assets and dignity for potential long-term care needs.</p>
+              <h3 className="text-xl font-bold text-red-100 mb-3">LONG-TERM CARE</h3>
+              <p className="text-red-50">Strategic planning to preserve your assets and dignity for potential long-term care needs.</p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-red-500 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
                 <TrendingUpIcon className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold text-blue-600 mb-3">RETIREMENT INCOME</h3>
-              <p className="text-gray-700">Build reliable income streams to sustain your lifestyle throughout retirement.</p>
+              <h3 className="text-xl font-bold text-red-100 mb-3">RETIREMENT INCOME</h3>
+              <p className="text-red-50">Build reliable income streams to sustain your lifestyle throughout retirement.</p>
             </div>
           </div>
         </div>
