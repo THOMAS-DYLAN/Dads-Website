@@ -26,9 +26,6 @@ const Index = () => {
               />
             </div>
             <h2 className="text-4xl font-bold text-blue-600 mb-3">Michael Thomas</h2>
-            <p className="text-lg text-gray-700 mb-4">
-              RICP® | CLTC | MMC
-            </p>
             <p className="text-2xl font-semibold text-red-500 italic mb-6">
               Your Future. My Mission.
             </p>
