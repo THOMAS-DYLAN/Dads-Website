@@ -1,4 +1,5 @@
-import { Shield, Users, Heart, Clock, Search, Target, ShieldCheck, TrendingUp, TrendingUpIcon, Heart as HeartIcon, Umbrella, FileText } from 'lucide-react';
+import { Shield, Users, Heart, Clock, Search, Target, ShieldCheck, TrendingUp, TrendingUpIcon, Heart as HeartIcon, Umbrella, FileText, Phone, Menu, X } from 'lucide-react';
+import { useState } from 'react';
 import {
   Dialog,
   DialogContent,
@@ -6,8 +7,80 @@ import {
 } from "@/components/ui/dialog";
 
 const Index = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setMobileMenuOpen(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      {/* Navigation Bar */}
+      <nav className="sticky top-0 z-50 bg-blue-600 shadow-lg">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-20">
+            {/* Logo/Brand */}
+            <div className="flex items-center">
+              <h1 className="text-2xl font-bold text-white">Key Retirement Solutions</h1>
+            </div>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-8">
+              <button onClick={() => scrollToSection('who-we-serve')} className="text-white hover:text-red-200 font-semibold transition">
+                Who We Serve
+              </button>
+              <button onClick={() => scrollToSection('defense-plan')} className="text-white hover:text-red-200 font-semibold transition">
+                Defense Plan
+              </button>
+              <button onClick={() => scrollToSection('services')} className="text-white hover:text-red-200 font-semibold transition">
+                Services
+              </button>
+              <button onClick={() => scrollToSection('contact')} className="text-white hover:text-red-200 font-semibold transition">
+                Contact
+              </button>
+              <a href="tel:816-248-1100" className="flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-3 rounded-lg transition transform hover:scale-105">
+                <Phone className="w-4 h-4" />
+                816-248-1100
+              </a>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button 
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden text-white p-2"
+            >
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
+
+          {/* Mobile Navigation */}
+          {mobileMenuOpen && (
+            <div className="md:hidden pb-4 space-y-2">
+              <button onClick={() => scrollToSection('who-we-serve')} className="block w-full text-left text-white hover:text-red-200 font-semibold py-2 transition">
+                Who We Serve
+              </button>
+              <button onClick={() => scrollToSection('defense-plan')} className="block w-full text-left text-white hover:text-red-200 font-semibold py-2 transition">
+                Defense Plan
+              </button>
+              <button onClick={() => scrollToSection('services')} className="block w-full text-left text-white hover:text-red-200 font-semibold py-2 transition">
+                Services
+              </button>
+              <button onClick={() => scrollToSection('contact')} className="block w-full text-left text-white hover:text-red-200 font-semibold py-2 transition">
+                Contact
+              </button>
+              <a href="tel:816-248-1100" className="flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-3 rounded-lg transition mt-4">
+                <Phone className="w-4 h-4" />
+                816-248-1100
+              </a>
+            </div>
+          )}
+        </div>
+      </nav>
+
       {/* Hero Banner */}
       <section className="relative">
         <img 
@@ -60,7 +133,7 @@ const Index = () => {
       </section>
 
       {/* WHO WE SERVE Section */}
-      <section className="py-16 bg-red-500">
+      <section id="who-we-serve" className="py-16 bg-red-500">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-3">WHO WE SERVE</h2>
           <div className="flex justify-center mb-8">
@@ -103,7 +176,7 @@ const Index = () => {
       </section>
 
       {/* THE RETIREMENT DEFENSE PLAN Section */}
-      <section className="py-16 bg-white">
+      <section id="defense-plan" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <p className="text-red-500 font-bold uppercase tracking-wider text-center mb-3">OUR PROCESS</p>
           <h2 className="text-4xl md:text-5xl font-bold text-center text-blue-600 mb-3">THE RETIREMENT DEFENSE PLAN</h2>
@@ -167,7 +240,7 @@ const Index = () => {
       </section>
 
       {/* SERVICES Section */}
-      <section className="py-16 bg-blue-500">
+      <section id="services" className="py-16 bg-blue-500">
         <div className="container mx-auto px-4">
           <p className="text-white font-bold uppercase tracking-wider text-center mb-3">PROTECTION STRATEGIES</p>
           <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-3">SERVICES</h2>
@@ -285,7 +358,7 @@ const Index = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-blue-500">
+      <section id="contact" className="py-16 bg-blue-500">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
