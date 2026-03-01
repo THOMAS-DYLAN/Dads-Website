@@ -26,7 +26,7 @@ const Index = () => {
             {/* Logo/Brand */}
             <div className="flex items-center">
               <img 
-                src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/c07a.png"
+                src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/d848.png"
                 alt="Key Retirement Solutions"
                 className="h-16 w-auto"
                 crossOrigin="anonymous"
@@ -85,6 +85,26 @@ const Index = () => {
           )}
         </div>
       </nav>
+
+      {/* About Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="mb-6">
+              <img 
+                src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/84a8.webp" 
+                alt="Michael Thomas" 
+                className="rounded-lg shadow-lg w-48 h-48 object-cover mx-auto border-4 border-blue-600"
+                crossOrigin="anonymous"
+              />
+            </div>
+            <h2 className="text-4xl font-bold text-blue-600 mb-3">Michael Thomas</h2>
+            <p className="text-xl font-semibold text-red-500 italic">
+              Your Future. My Mission.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Mission Section */}
       <section className="py-12 bg-white">
