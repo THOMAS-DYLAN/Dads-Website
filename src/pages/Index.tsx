@@ -20,7 +20,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation Bar */}
-      <nav className="sticky top-0 z-50 bg-blue-600 shadow-lg">
+      <nav className="top-0 z-50 bg-blue-600 shadow-lg">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo/Brand */}
