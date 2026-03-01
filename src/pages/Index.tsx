@@ -355,20 +355,9 @@ const Index = () => {
       {/* Contact Form Section */}
       <section id="contact" className="py-16 bg-blue-500">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <p className="text-red-100 font-bold uppercase tracking-wider mb-3">GET STARTED</p>
-              <h2 className="text-4xl font-bold text-white mb-6">READY TO BUILD YOUR RETIREMENT DEFENSE PLAN?</h2>
-              <h3 className="text-2xl font-bold text-red-100 mb-2">Michael Thomas</h3>
-              <p className="text-blue-50 mb-2">RICP® | CLTC | MMC</p>
-              <p className="text-blue-50 mb-4">Key Retirement Solutions</p>
-              <a href="tel:816-248-1100" className="text-3xl font-bold text-white hover:text-red-100 transition inline-block mb-6">
-                816-248-1100
-              </a>
-              <p className="text-blue-50">
-                Take the first step toward a secure retirement. Whether you're turning 65, planning ahead, or navigating Medicare decisions, we're here to help you build a comprehensive defense plan for your financial future.
-              </p>
-            </div>
+          <div className="max-w-2xl mx-auto">
+            <p className="text-red-100 font-bold uppercase tracking-wider text-center mb-3">GET STARTED</p>
+            <h2 className="text-4xl font-bold text-white text-center mb-12">READY TO BUILD YOUR RETIREMENT DEFENSE PLAN?</h2>
             <div className="bg-white border-2 border-red-500 rounded-lg p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-blue-600 mb-6">Request Your Free Consultation</h3>
               <form className="space-y-4">
