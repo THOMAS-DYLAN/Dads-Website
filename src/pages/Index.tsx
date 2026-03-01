@@ -25,7 +25,12 @@ const Index = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo/Brand */}
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-white">Key Retirement Solutions</h1>
+              <img 
+                src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/c07a.png"
+                alt="Key Retirement Solutions"
+                className="h-16 w-auto"
+                crossOrigin="anonymous"
+              />
             </div>
 
             {/* Desktop Navigation */}
@@ -80,36 +85,6 @@ const Index = () => {
           )}
         </div>
       </nav>
-
-      {/* Hero Banner */}
-      <section className="relative">
-        <img 
-          src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/c07a.png" 
-          alt="Service to Security Banner" 
-          className="w-full h-auto"
-          crossOrigin="anonymous"
-        />
-      </section>
-
-      {/* About Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="mb-6">
-              <img 
-                src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/84a8.webp" 
-                alt="Michael Thomas" 
-                className="rounded-lg shadow-lg w-48 h-48 object-cover mx-auto border-4 border-blue-600"
-                crossOrigin="anonymous"
-              />
-            </div>
-            <h2 className="text-4xl font-bold text-blue-600 mb-3">Michael Thomas</h2>
-            <p className="text-2xl font-semibold text-red-500 italic mb-6">
-              Your Future. My Mission.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Mission Section */}
       <section className="py-12 bg-white">
