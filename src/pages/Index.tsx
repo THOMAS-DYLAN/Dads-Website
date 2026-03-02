@@ -389,76 +389,7 @@ const Index = () => {
         </div>
       </section>
 
-      
 
-      {/* Reviews Section */}
-      <section className="py-16 bg-blue-500">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-white mb-12">WHAT OUR CLIENTS SAY</h2>
-          <div className="relative max-w-7xl mx-auto">
-            {/* Desktop: 5 reviews visible, Tablet: 3 reviews, Mobile: 1 review */}
-            <div className="hidden lg:grid lg:grid-cols-5 gap-6">
-              {reviews.map((review, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-lg">
-                  <div className="flex mb-3">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <p className="text-gray-700 text-sm mb-4 line-clamp-6">{review.text}</p>
-                  <p className="font-bold text-blue-600">— {review.name}</p>
-                </div>
-              ))}
-            </div>
-
-            {/* Tablet: 3 reviews with carousel */}
-            <div className="hidden md:grid lg:hidden md:grid-cols-3 gap-6">
-              {reviews.slice(currentReviewIndex, currentReviewIndex + 3).map((review, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-lg">
-                  <div className="flex mb-3">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <p className="text-gray-700 text-sm mb-4">{review.text}</p>
-                  <p className="font-bold text-blue-600">— {review.name}</p>
-                </div>
-              ))}
-            </div>
-
-            {/* Mobile: 1 review with carousel */}
-            <div className="md:hidden">
-              <div className="bg-white rounded-lg p-6 shadow-lg">
-                <div className="flex mb-3">
-                  {[...Array(reviews[currentReviewIndex].rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-4">{reviews[currentReviewIndex].text}</p>
-                <p className="font-bold text-blue-600">— {reviews[currentReviewIndex].name}</p>
-              </div>
-            </div>
-
-            {/* Navigation arrows for tablet and mobile */}
-            <div className="flex justify-center gap-4 mt-8 lg:hidden">
-              <button
-                onClick={prevReview}
-                className="bg-white hover:bg-red-500 hover:text-white text-blue-600 p-3 rounded-full shadow-lg transition"
-                aria-label="Previous review"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-              <button
-                onClick={nextReview}
-                className="bg-white hover:bg-red-500 hover:text-white text-blue-600 p-3 rounded-full shadow-lg transition"
-                aria-label="Next review"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-blue-500 text-white py-12">
