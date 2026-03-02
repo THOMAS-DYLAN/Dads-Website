@@ -318,49 +318,62 @@ const Index = () => {
       </section>
 
       {/* Credentials Section */}
-      <section className="py-16 bg-red-500">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">TRUSTED. CERTIFIED. MISSION-DRIVEN.</h2>
-            <div className="flex justify-center mb-8">
-              <div className="h-1 w-24 bg-blue-600"></div>
-            </div>
-            <h3 className="text-3xl font-bold text-blue-100 mb-2">Michael Thomas</h3>
-            <p className="text-xl text-blue-50 mb-4">RICP® | CLTC | MMC</p>
-            <a href="tel:816-752-4944" className="text-4xl font-bold text-white hover:text-blue-200 transition inline-block mb-6">
-              816-752-4944
-            </a>
-            <p className="text-blue-50 text-lg mb-6 max-w-3xl mx-auto">
-              With specialized certifications in retirement income planning (RICP®), long-term care (CLTC), and Medicare (MMC), Michael Thomas brings military-grade precision to financial planning.
-            </p>
-            <p className="text-blue-50 text-lg italic mb-6">
-              Serving veterans and families across Missouri with honor, integrity, and unwavering commitment.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-blue-50 mb-8">
-              <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
-                  <div className="w-3 h-3 rounded-full bg-blue-100"></div>
-                </div>
-                <span>Licensed Professional</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
-                  <div className="w-3 h-3 rounded-full bg-blue-100"></div>
-                </div>
-                <span>Veteran-Focused</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
-                  <div className="w-3 h-3 rounded-full bg-blue-100"></div>
-                </div>
-                <span>Mission Driven</span>
-              </div>
-              
-              </div>
-            </div>
+      {/* Credentials Section */}
+<section className="py-16 bg-red-500">
+  <div className="container mx-auto px-4">
+    <div className="max-w-4xl mx-auto text-center">
+      <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">
+        TRUSTED. CERTIFIED. MISSION-DRIVEN.
+      </h2>
+
+      <div className="flex justify-center mb-8">
+        <div className="h-1 w-24 bg-blue-600"></div>
+      </div>
+
+      <h3 className="text-3xl font-bold text-blue-100 mb-2">Michael Thomas</h3>
+      <p className="text-xl text-blue-50 mb-4">RICP® | CLTC | MMC</p>
+
+      <a
+        href="tel:816-752-4944"
+        className="text-4xl font-bold text-white hover:text-blue-200 transition inline-block mb-6"
+      >
+        816-752-4944
+      </a>
+
+      <p className="text-blue-50 text-lg mb-6 max-w-3xl mx-auto">
+        With specialized certifications in retirement income planning (RICP®), long-term care (CLTC), and Medicare (MMC),
+        Michael Thomas brings military-grade precision to financial planning.
+      </p>
+
+      <p className="text-blue-50 text-lg italic mb-6">
+        Serving veterans and families across Missouri with honor, integrity, and unwavering commitment.
+      </p>
+
+      <div className="flex flex-wrap justify-center gap-4 text-blue-50 mb-8">
+        <div className="flex items-center gap-2">
+          <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
+            <div className="w-3 h-3 rounded-full bg-blue-100"></div>
           </div>
+          <span>Licensed Professional</span>
         </div>
-      </section>
+
+        <div className="flex items-center gap-2">
+          <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
+            <div className="w-3 h-3 rounded-full bg-blue-100"></div>
+          </div>
+          <span>Veteran-Focused</span>
+        </div>
+
+        <div className="flex items-center gap-2">
+          <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
+            <div className="w-3 h-3 rounded-full bg-blue-100"></div>
+          </div>
+          <span>Mission Driven</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* CTA Section */}
       <section className="py-16 bg-white">
