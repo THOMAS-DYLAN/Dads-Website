@@ -389,7 +389,7 @@ const Index = () => {
         </div>
       </section>
 
-
+      {/*Removed Sections Here */}
 
       {/* Footer */}
       <footer className="bg-blue-500 text-white py-12">
