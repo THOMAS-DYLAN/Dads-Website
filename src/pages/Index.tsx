@@ -371,6 +371,21 @@ const Index = () => {
               </div>
             </div>
           </div>
+          <Dialog>
+  <DialogTrigger asChild>
+    <button className="bg-blue-600 hover:bg-red-500 text-white font-bold px-6 py-3 rounded-lg transition transform hover:scale-105">
+      License Here
+    </button>
+  </DialogTrigger>
+
+  <DialogContent className="max-w-2xl bg-white p-0 overflow-hidden rounded-lg">
+    <img
+      src="/Michael-L1.webp"
+      alt="Michael Thomas License"
+      className="w-full h-auto object-contain"
+    />
+  </DialogContent>
+</Dialog>
         </div>
       </section>
 
