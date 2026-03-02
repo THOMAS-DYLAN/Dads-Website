@@ -8,6 +8,30 @@ import {
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
+
+  const reviews = [
+    {
+      name: "Jane, S.",
+      rating: 5,
+      text: "Hey, I just wanted to take a moment and say a huge thank you to the KRS Insurance team. You know, picking the right Medicare package was feeling like a mountain to me. But you all just…you made it so simple. I spoke to Anne, and she was like a friend, patiently walking me through everything, answering my endless questions without a hint of frustration. And now, I've got a package that I understand and, more importantly, that I'm confident in. It's such a relief knowing I'm in safe hands. So, from the bottom of my heart, thank you, KRS. You folks are lifesavers!"
+    },
+    {
+      name: "Gary, S.",
+      rating: 5,
+      text: "Just a quick note to say a massive thank you! After that storm damaged my car, I was so stressed. But Mike and the team made the claim process incredibly easy and stress-free. You covered the costs quickly, no hassle, no endless paperwork. I'm so grateful for your genuine care and support. You've definitely got a customer for life!"
+    },
+    {
+      name: "John, I.",
+      rating: 5,
+      text: "A quick note to say thank you for the unexpected discount on my house insurance! It's great to feel valued as a long-term customer. Your kind gesture has truly made my day and reaffirmed why I've chosen KRS all these years."
+    },
+    {
+      name: "Susan, K.",
+      rating: 5,
+      text: "Thank you so much for helping me pick my Medicare plan! You made everything easy to understand and I'm happy with my choice. Really appreciate your help!"
+    }
+  ];
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -15,6 +39,20 @@ const Index = () => {
       element.scrollIntoView({ behavior: 'smooth' });
       setMobileMenuOpen(false);
     }
+  };
+
+  const nextReview = () => {
+    setCurrentReviewIndex((prev) => (prev + 1) % reviews.length);
+  };
+
+  const prevReview = () => {
+    setCurrentReviewIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
+  };
+
+  const getVisibleReviews = () => {
+    // Desktop: 3 reviews, Tablet: 2 reviews, Mobile: 1 review
+    // We'll handle this with CSS grid instead
+    return reviews;
   };
 
   return (
@@ -47,9 +85,9 @@ const Index = () => {
               <button onClick={() => scrollToSection('contact')} className="text-white hover:text-red-200 font-semibold transition">
                 Contact
               </button>
-              <a href="tel:816-248-1100" className="flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-3 rounded-lg transition transform hover:scale-105">
+              <a href="tel:816-752-4944" className="flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-3 rounded-lg transition transform hover:scale-105">
                 <Phone className="w-4 h-4" />
-                816-248-1100
+                816-752-4944
               </a>
             </div>
 
@@ -77,9 +115,9 @@ const Index = () => {
               <button onClick={() => scrollToSection('contact')} className="block w-full text-left text-white hover:text-red-200 font-semibold py-2 transition">
                 Contact
               </button>
-              <a href="tel:816-248-1100" className="flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-3 rounded-lg transition mt-4">
+              <a href="tel:816-752-4944" className="flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-3 rounded-lg transition mt-4">
                 <Phone className="w-4 h-4" />
-                816-248-1100
+                816-752-4944
               </a>
             </div>
           )}
@@ -305,8 +343,8 @@ const Index = () => {
             </div>
             <h3 className="text-3xl font-bold text-blue-100 mb-2">Michael Thomas</h3>
             <p className="text-xl text-blue-50 mb-4">RICP® | CLTC | MMC</p>
-            <a href="tel:816-248-1100" className="text-4xl font-bold text-white hover:text-blue-200 transition inline-block mb-6">
-              816-248-1100
+            <a href="tel:816-752-4944" className="text-4xl font-bold text-white hover:text-blue-200 transition inline-block mb-6">
+              816-752-4944
             </a>
             <p className="text-blue-50 text-lg mb-6 max-w-3xl mx-auto">
               With specialized certifications in retirement income planning (RICP®), long-term care (CLTC), and Medicare (MMC), Michael Thomas brings military-grade precision to financial planning.
@@ -351,70 +389,102 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Form Section */}
-      <section id="contact" className="py-16 bg-blue-500">
+      {/* Contact Me Section */}
+      <section id="contact" className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
-            <p className="text-red-100 font-bold uppercase tracking-wider text-center mb-3">GET STARTED</p>
-            <h2 className="text-4xl font-bold text-white text-center mb-12">READY TO BUILD YOUR RETIREMENT DEFENSE PLAN?</h2>
-            <div className="bg-white border-2 border-red-500 rounded-lg p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-blue-600 mb-6">Request Your Free Consultation</h3>
-              <form className="space-y-4">
-                <div>
-                  <label className="block text-sm font-semibold text-blue-600 mb-2">
-                    Full Name <span className="text-red-500">*</span>
-                  </label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-3 border-2 border-blue-300 rounded-lg focus:border-blue-500 focus:outline-none"
-                    required
-                  />
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mb-12">CONTACT ME</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+              <a
+                href="tel:816-752-4944"
+                className="bg-blue-600 hover:bg-red-500 text-white font-bold py-6 px-8 rounded-lg shadow-lg transition transform hover:scale-105 flex items-center justify-center gap-3"
+              >
+                <Phone className="w-6 h-6" />
+                Call Me
+              </a>
+              <a
+                href="sms:816-752-4944"
+                className="bg-blue-600 hover:bg-red-500 text-white font-bold py-6 px-8 rounded-lg shadow-lg transition transform hover:scale-105 flex items-center justify-center gap-3"
+              >
+                <MessageSquare className="w-6 h-6" />
+                Text Me
+              </a>
+              <a
+                href="mailto:dylant5323@gmail.com"
+                className="bg-blue-600 hover:bg-red-500 text-white font-bold py-6 px-8 rounded-lg shadow-lg transition transform hover:scale-105 flex items-center justify-center gap-3"
+              >
+                <Mail className="w-6 h-6" />
+                Email Me
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Reviews Section */}
+      <section className="py-16 bg-blue-500">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center text-white mb-12">WHAT OUR CLIENTS SAY</h2>
+          <div className="relative max-w-7xl mx-auto">
+            {/* Desktop: 5 reviews visible, Tablet: 3 reviews, Mobile: 1 review */}
+            <div className="hidden lg:grid lg:grid-cols-5 gap-6">
+              {reviews.map((review, index) => (
+                <div key={index} className="bg-white rounded-lg p-6 shadow-lg">
+                  <div className="flex mb-3">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  <p className="text-gray-700 text-sm mb-4 line-clamp-6">{review.text}</p>
+                  <p className="font-bold text-blue-600">— {review.name}</p>
                 </div>
-                <div>
-                  <label className="block text-sm font-semibold text-blue-600 mb-2">
-                    Phone Number <span className="text-red-500">*</span>
-                  </label>
-                  <input 
-                    type="tel" 
-                    className="w-full px-4 py-3 border-2 border-blue-300 rounded-lg focus:border-blue-500 focus:outline-none"
-                    required
-                  />
+              ))}
+            </div>
+
+            {/* Tablet: 3 reviews with carousel */}
+            <div className="hidden md:grid lg:hidden md:grid-cols-3 gap-6">
+              {reviews.slice(currentReviewIndex, currentReviewIndex + 3).map((review, index) => (
+                <div key={index} className="bg-white rounded-lg p-6 shadow-lg">
+                  <div className="flex mb-3">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  <p className="text-gray-700 text-sm mb-4">{review.text}</p>
+                  <p className="font-bold text-blue-600">— {review.name}</p>
                 </div>
-                <div>
-                  <label className="block text-sm font-semibold text-blue-600 mb-2">
-                    Email Address <span className="text-red-500">*</span>
-                  </label>
-                  <input 
-                    type="email" 
-                    className="w-full px-4 py-3 border-2 border-blue-300 rounded-lg focus:border-blue-500 focus:outline-none"
-                    required
-                  />
+              ))}
+            </div>
+
+            {/* Mobile: 1 review with carousel */}
+            <div className="md:hidden">
+              <div className="bg-white rounded-lg p-6 shadow-lg">
+                <div className="flex mb-3">
+                  {[...Array(reviews[currentReviewIndex].rating)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
                 </div>
-                <div>
-                  <label className="block text-sm font-semibold text-blue-600 mb-2">
-                    Turning 65 Soon?
-                  </label>
-                  <select className="w-full px-4 py-3 border-2 border-blue-300 rounded-lg focus:border-blue-500 focus:outline-none">
-                    <option>No</option>
-                    <option>Yes</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-blue-600 mb-2">
-                    Are You a Veteran?
-                  </label>
-                  <select className="w-full px-4 py-3 border-2 border-blue-300 rounded-lg focus:border-blue-500 focus:outline-none">
-                    <option>No</option>
-                    <option>Yes</option>
-                  </select>
-                </div>
-                <button 
-                  type="submit"
-                  className="w-full bg-red-500 hover:bg-red-600 text-white font-bold text-lg py-4 rounded-lg transition"
-                >
-                  SUBMIT REQUEST
-                </button>
-              </form>
+                <p className="text-gray-700 mb-4">{reviews[currentReviewIndex].text}</p>
+                <p className="font-bold text-blue-600">— {reviews[currentReviewIndex].name}</p>
+              </div>
+            </div>
+
+            {/* Navigation arrows for tablet and mobile */}
+            <div className="flex justify-center gap-4 mt-8 lg:hidden">
+              <button
+                onClick={prevReview}
+                className="bg-white hover:bg-red-500 hover:text-white text-blue-600 p-3 rounded-full shadow-lg transition"
+                aria-label="Previous review"
+              >
+                <ChevronLeft className="w-6 h-6" />
+              </button>
+              <button
+                onClick={nextReview}
+                className="bg-white hover:bg-red-500 hover:text-white text-blue-600 p-3 rounded-full shadow-lg transition"
+                aria-label="Next review"
+              >
+                <ChevronRight className="w-6 h-6" />
+              </button>
             </div>
           </div>
         </div>
@@ -442,8 +512,8 @@ const Index = () => {
               <h3 className="text-xl font-bold mb-4">CONTACT</h3>
               <p className="mb-2">Michael Thomas</p>
               <p className="mb-2">RICP® | CLTC | MMC</p>
-              <a href="tel:816-248-1100" className="text-2xl font-bold text-white hover:text-red-500 transition">
-                816-248-1100
+              <a href="tel:816-752-4944" className="text-2xl font-bold text-white hover:text-red-500 transition">
+                816-752-4944
               </a>
             </div>
           </div>
