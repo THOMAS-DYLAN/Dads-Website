@@ -140,23 +140,7 @@ const Index = () => {
             <p className="text-xl font-semibold text-red-500 italic mb-6">
               Your Future. My Mission.
             </p>
-            <div className="flex justify-center">
-              <Dialog>
-                <DialogTrigger asChild>
-                  <button className="bg-blue-600 hover:bg-red-500 text-white font-bold text-sm px-6 py-3 rounded-lg shadow-lg transition transform hover:scale-105">
-                    RICP® | CLTC | MMC
-                  </button>
-                </DialogTrigger>
-                <DialogContent className="max-w-3xl">
-                  <img 
-                    src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/aa41.webp" 
-                    alt="Insurance License Certificate" 
-                    className="w-full h-auto rounded-lg"
-                    crossOrigin="anonymous"
-                  />
-                </DialogContent>
-              </Dialog>
-            </div>
+           
           </div>
         </div>
       </section>
