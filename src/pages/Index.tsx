@@ -422,7 +422,7 @@ const Index = () => {
                 <p>816-752-4944</p>
               </a>
               <a href="mailto:mthomas@krs.insure" className="text-2xl font-bold text-white hover:text-red-500 transition">
-                <p>mthomas@krs.insure</p>
+                mthomas@krs.insure
               </a>
             </div>
           </div>
