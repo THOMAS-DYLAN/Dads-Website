@@ -406,7 +406,7 @@ const Index = () => {
                 href="sms:816-752-4944"
                 className="bg-blue-600 hover:bg-red-500 text-white font-bold py-6 px-8 rounded-lg shadow-lg transition transform hover:scale-105 flex items-center justify-center gap-3"
               >
-                <MessageSquare className="w-6 h-6" />
+               
                 Text Me
               </a>
               <a
