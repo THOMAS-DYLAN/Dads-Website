@@ -331,13 +331,6 @@ const Index = () => {
       <h3 className="text-3xl font-bold text-blue-100 mb-2">Michael Thomas</h3>
       <p className="text-xl text-blue-50 mb-4">RICP® | CLTC | MMC</p>
 
-      <a
-        href="tel:816-752-4944"
-        className="text-4xl font-bold text-white hover:text-blue-200 transition inline-block mb-6"
-      >
-        816-752-4944
-      </a>
-
       <p className="text-blue-50 text-lg mb-6 max-w-3xl mx-auto">
         With specialized certifications in retirement income planning (RICP®), long-term care (CLTC), and Medicare (MMC),
         Michael Thomas brings military-grade precision to financial planning.
