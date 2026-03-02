@@ -353,9 +353,9 @@ const Index = () => {
                 <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
                   <div className="w-3 h-3 rounded-full bg-blue-100"></div>
                 </div>
-                <span>Missouri Based</span>
+                <span>Mission Driven</span>
               </div>
-                <div className="flex justify-center">
+            <div className="flex justify-center">
               <Dialog>
                 <DialogTrigger asChild>
                   <button className="bg-blue-600 hover:bg-red-500 text-white font-bold text-sm px-6 py-3 rounded-lg shadow-lg transition transform hover:scale-105">
