@@ -1,4 +1,4 @@
-import { Shield, Users, Heart, Clock, Search, Target, ShieldCheck, TrendingUp, TrendingUpIcon, Heart as HeartIcon, Umbrella, FileText, Phone, Menu, X } from 'lucide-react';
+import { Shield, Users, Heart, Clock, Search, Target, ShieldCheck, TrendingUp, TrendingUpIcon, Heart as HeartIcon, Umbrella, Phone, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import {
   Dialog,
@@ -99,9 +99,26 @@ const Index = () => {
               />
             </div>
             <h2 className="text-4xl font-bold text-blue-600 mb-3">Michael Thomas</h2>
-            <p className="text-xl font-semibold text-red-500 italic">
+            <p className="text-xl font-semibold text-red-500 italic mb-6">
               Your Future. My Mission.
             </p>
+            <div className="flex justify-center">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <button className="bg-blue-600 hover:bg-red-500 text-white font-bold text-sm px-6 py-3 rounded-lg shadow-lg transition transform hover:scale-105">
+                    RICP® | CLTC | MMC
+                  </button>
+                </DialogTrigger>
+                <DialogContent className="max-w-3xl">
+                  <img 
+                    src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/aa41.webp" 
+                    alt="Insurance License Certificate" 
+                    className="w-full h-auto rounded-lg"
+                    crossOrigin="anonymous"
+                  />
+                </DialogContent>
+              </Dialog>
+            </div>
           </div>
         </div>
       </section>
@@ -316,24 +333,6 @@ const Index = () => {
                 </div>
                 <span>Missouri Based</span>
               </div>
-            </div>
-            <div className="flex justify-center">
-              <Dialog>
-                <DialogTrigger asChild>
-                  <button className="bg-white hover:bg-blue-500 hover:text-white text-blue-600 font-bold text-lg px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105 flex items-center gap-2">
-                    <FileText className="w-5 h-5" />
-                    My Certificate
-                  </button>
-                </DialogTrigger>
-                <DialogContent className="max-w-3xl">
-                  <img 
-                    src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/aa41.webp" 
-                    alt="Insurance License Certificate" 
-                    className="w-full h-auto rounded-lg"
-                    crossOrigin="anonymous"
-                  />
-                </DialogContent>
-              </Dialog>
             </div>
           </div>
         </div>
