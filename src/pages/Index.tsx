@@ -318,17 +318,16 @@ const Index = () => {
       </section>
 
       {/* Credentials Section */}
-      {/* Credentials Section */}
-<section className="py-16 bg-red-500">
-  <div className="container mx-auto px-4">
-    <div className="max-w-4xl mx-auto text-center">
-      <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">
-        TRUSTED. CERTIFIED. MISSION-DRIVEN.
-      </h2>
+      <section className="py-16 bg-red-500">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">
+            TRUSTED. CERTIFIED. MISSION-DRIVEN.
+            </h2>
 
-      <div className="flex justify-center mb-8">
-        <div className="h-1 w-24 bg-blue-600"></div>
-      </div>
+        <div className="flex justify-center mb-8">
+          <div className="h-1 w-24 bg-blue-600"></div>
+        </div>
 
       <h3 className="text-3xl font-bold text-blue-100 mb-2">Michael Thomas</h3>
       <p className="text-xl text-blue-50 mb-4">RICP® | CLTC | MMC</p>
@@ -349,31 +348,31 @@ const Index = () => {
         Serving veterans and families across Missouri with honor, integrity, and unwavering commitment.
       </p>
 
-      <div className="flex flex-wrap justify-center gap-4 text-blue-50 mb-8">
-        <div className="flex items-center gap-2">
-          <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
-            <div className="w-3 h-3 rounded-full bg-blue-100"></div>
-          </div>
-          <span>Licensed Professional</span>
-        </div>
+            <div className="flex flex-wrap justify-center gap-4 text-blue-50 mb-8">
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-blue-100"></div>
+                </div>
+                <span>Licensed Professional</span>
+              </div>
 
-        <div className="flex items-center gap-2">
-          <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
-            <div className="w-3 h-3 rounded-full bg-blue-100"></div>
-          </div>
-          <span>Veteran-Focused</span>
-        </div>
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-blue-100"></div>
+                </div>
+                <span>Veteran-Focused</span>
+              </div>
 
-        <div className="flex items-center gap-2">
-          <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
-            <div className="w-3 h-3 rounded-full bg-blue-100"></div>
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded-full border-2 border-blue-100 flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-blue-100"></div>
+                </div>
+                <span>Mission Driven</span>
+              </div>
+            </div>
           </div>
-          <span>Mission Driven</span>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* CTA Section */}
       <section className="py-16 bg-white">
