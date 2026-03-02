@@ -418,9 +418,9 @@ const Index = () => {
               <h3 className="text-xl font-bold mb-4">CONTACT</h3>
               <p className="mb-2">Michael Thomas</p>
               <p className="mb-2">RICP® | CLTC | MMC</p>
-              <a href="tel:816-752-4944" className="text-2xl font-bold text-white hover:text-red-500 transition">
-                <p>816-752-4944</p>
-              </a>
+              <p><a href="tel:816-752-4944" className="text-2xl font-bold text-white hover:text-red-500 transition">
+                816-752-4944
+              </a><p>
               <a href="mailto:mthomas@krs.insure" className="text-2xl font-bold text-white hover:text-red-500 transition">
                 mthomas@krs.insure
               </a>
