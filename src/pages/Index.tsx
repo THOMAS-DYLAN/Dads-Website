@@ -125,7 +125,7 @@ const Index = () => {
       </nav>
 
       {/* About Section */}
-      <section className="py-16 bg-white">
+      <section className="py-14 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="mb-6">
@@ -140,7 +140,6 @@ const Index = () => {
             <p className="text-xl font-semibold text-red-500 italic mb-6">
               Your Future. My Mission.
             </p>
-           
           </div>
         </div>
       </section>
