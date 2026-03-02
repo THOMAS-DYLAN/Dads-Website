@@ -117,7 +117,7 @@ const Index = () => {
               </button>
               <a href="tel:816-752-4944" className="flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-3 rounded-lg transition mt-4">
                 <Phone className="w-4 h-4" />
-                816-752-4944
+                Call Me
               </a>
             </div>
           )}
