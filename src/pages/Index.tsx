@@ -421,6 +421,9 @@ const Index = () => {
               <a href="tel:816-752-4944" className="text-2xl font-bold text-white hover:text-red-500 transition">
                 816-752-4944
               </a>
+              <a href="mail:mthomas@krs.insure" className="text-2xl font-bold text-white hover:text-red-500 transition">
+                mthomas@krs.insure
+              </a>
             </div>
           </div>
           <div className="text-center mt-8 pt-8 border-t border-white/20">
