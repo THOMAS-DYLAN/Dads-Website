@@ -389,37 +389,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Me Section */}
-      <section id="contact" className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mb-12">CONTACT ME</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-              <a
-                href="tel:816-752-4944"
-                className="bg-blue-600 hover:bg-red-500 text-white font-bold py-6 px-8 rounded-lg shadow-lg transition transform hover:scale-105 flex items-center justify-center gap-3"
-              >
-                <Phone className="w-6 h-6" />
-                Call Me
-              </a>
-              <a
-                href="sms:816-752-4944"
-                className="bg-blue-600 hover:bg-red-500 text-white font-bold py-6 px-8 rounded-lg shadow-lg transition transform hover:scale-105 flex items-center justify-center gap-3"
-              >
-               
-                Text Me
-              </a>
-              <a
-                href="mailto:dylant5323@gmail.com"
-                className="bg-blue-600 hover:bg-red-500 text-white font-bold py-6 px-8 rounded-lg shadow-lg transition transform hover:scale-105 flex items-center justify-center gap-3"
-              >
-                <Mail className="w-6 h-6" />
-                Email Me
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Reviews Section */}
       <section className="py-16 bg-blue-500">
