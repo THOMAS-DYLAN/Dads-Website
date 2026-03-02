@@ -354,7 +354,9 @@ const Index = () => {
                   <div className="w-3 h-3 rounded-full bg-blue-100"></div>
                 </div>
                 <span>Mission Driven</span>
-              </div><br>
+              </div>
+              <br>
+              </br>
             <div className="flex justify-center">
               <Dialog>
                 <DialogTrigger asChild>
