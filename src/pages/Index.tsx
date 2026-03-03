@@ -609,7 +609,6 @@ const Index = () => {
                 License Here
                 </button>
               </DialogTrigger>
-
               <DialogContent className="max-w-2xl bg-white p-4 rounded-lg">
                 <div className="flex justify-center">
                   <img src="/Michael-L1.webp" alt="Michael Thomas License" className="max-h-[80vh] w-auto object-contain rounded-md" />
