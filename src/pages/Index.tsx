@@ -605,7 +605,7 @@ const Index = () => {
           <div className="flex justify-center mt-4">
             <Dialog>
               <DialogTrigger asChild>
-                <button className="bg-blue-600 hover:bg-lightblue-500 text-white font-bold px-6 py-3 rounded-lg transition transform hover:scale-105">
+                <button className="bg-blue-600 hover:bg-white-500-text-black text-white font-bold px-6 py-3 rounded-lg transition transform hover:scale-105">
                 License Here
                 </button>
               </DialogTrigger>
