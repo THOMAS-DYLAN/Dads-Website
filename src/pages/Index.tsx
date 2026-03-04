@@ -656,10 +656,10 @@ const Index = () => {
               <h3 className="text-xl font-bold mb-4">CONTACT</h3>
               <p className="mb-2">Michael Thomas</p>
               <p className="mb-2">RICP® | CLTC | MMC</p>
-              <p><a href="tel:816-752-4944" className="text-2xl mb-2 text-white hover:text-red-500 transition">
+              <p><a href="tel:816-752-4944" className="mb-2 text-white hover:text-red-500 transition">
                 816-752-4944
               </a></p>
-               <p><a href="mailto:mthomas@krs.insure" onClick={(e)=>{e.preventDefault(); window.location.href = "mailto:mthomas@krs.insure";}} className="mb-2 text-2xl text-white hover:text-red-500 transition">
+               <p><a href="mailto:mthomas@krs.insure" onClick={(e)=>{e.preventDefault(); window.location.href = "mailto:mthomas@krs.insure";}} className="mb-2 text-white hover:text-red-500 transition">
                 mthomas@krs.insure
               </a></p>
             </div>
