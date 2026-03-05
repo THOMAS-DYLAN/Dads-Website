@@ -110,15 +110,14 @@ const Index = () => {
             </div>
 
   {/* Desktop Navigation */}
-          <div className="flex items-center gap-6 ml-auto">
-        
+          <div className="flex items-center gap-6 ml-auto whitespace-nowrap">
             {/* About Dropdown */}
             <div className="relative group">
               <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
                 About
                 <ChevronDown className="w-4 h-4" />
               </button>
-        
+              
               <div className="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div className="py-2">
                   {navigationMenu.about.map((item) => (
@@ -133,14 +132,14 @@ const Index = () => {
                 </div>
               </div>
             </div>
-        
+
             {/* Medicare Dropdown */}
             <div className="relative group">
               <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
                 Medicare
                 <ChevronDown className="w-4 h-4" />
               </button>
-        
+              
               <div className="absolute left-0 top-full mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div className="py-2">
                   {navigationMenu.medicare.map((item) => (
@@ -155,14 +154,14 @@ const Index = () => {
                 </div>
               </div>
             </div>
-        
+
             {/* Retirement Planning Dropdown */}
             <div className="relative group">
               <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
                 Retirement Planning
                 <ChevronDown className="w-4 h-4" />
               </button>
-        
+              
               <div className="absolute left-0 top-full mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div className="py-2">
                   {navigationMenu.retirement.map((item) => (
@@ -177,14 +176,14 @@ const Index = () => {
                 </div>
               </div>
             </div>
-        
+
             {/* Resources Dropdown */}
             <div className="relative group">
               <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
                 Resources
                 <ChevronDown className="w-4 h-4" />
               </button>
-        
+              
               <div className="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div className="py-2">
                   {navigationMenu.resources.map((item) => (
@@ -199,14 +198,14 @@ const Index = () => {
                 </div>
               </div>
             </div>
-        
+
             {/* Contact Dropdown */}
             <div className="relative group">
               <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
                 Contact
                 <ChevronDown className="w-4 h-4" />
               </button>
-        
+              
               <div className="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div className="py-2">
                   {navigationMenu.contact.map((item) => (
@@ -221,7 +220,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-        
+
             {/* Phone Button */}
             <a
               href="tel:816-752-4944"
@@ -231,7 +230,6 @@ const Index = () => {
               816-752-4944
             </a>
           </div>
-       </div>
 
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
