@@ -345,7 +345,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <Navbar/>
 
       {/* Mission Section */}
       <section className="py-12 bg-white">
