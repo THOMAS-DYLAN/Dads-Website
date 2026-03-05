@@ -84,17 +84,7 @@ const Index = () => {
                 </button>
 
                 <div className="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="py-2">
-                    {navigationMenu.about.map((item) => (
-                      <a
-                        key={item.path}
-                        href={item.path}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
+                  
                 </div>
               </div>
 
