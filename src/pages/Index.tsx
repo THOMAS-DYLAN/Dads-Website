@@ -110,7 +110,7 @@ const Index = () => {
             </div>
 
   {/* Desktop Navigation */}
-          <div className="flex items-center gap-6 ml-auto whitespace-nowrap">
+          <div className="flex items-center gap-6 ml-auto">
         
             {/* About Dropdown */}
             <div className="relative group">
