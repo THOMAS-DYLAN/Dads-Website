@@ -110,125 +110,136 @@ const Index = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden xl:flex items-center space-x-6">
-              {/* About Dropdown */}
-              <div className="relative group">
-                <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
-                  About
-                  <ChevronDown className="w-4 h-4" />
-                </button>
-                <div className="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="py-2">
-                    {navigationMenu.about.map((item) => (
-                      <a
-                        key={item.path}
-                        href={item.path}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              {/* Medicare Dropdown */}
-              <div className="relative group">
-                <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
-                  Medicare
-                  <ChevronDown className="w-4 h-4" />
-                </button>
-                <div className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="py-2">
-                    {navigationMenu.medicare.map((item) => (
-                      <a
-                        key={item.path}
-                        href={item.path}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
+           <div className="flex items-center gap-6 ml-auto whitespace-nowrap">
+  {/* About Dropdown */}
+  <div className="relative group">
+    <button
+      type="button"
+      className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2"
+    >
+      About
+      <ChevronDown className="w-4 h-4" />
+    </button>
+    <div className="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+      <div className="py-2">
+        {navigationMenu.about.map((item) => (
+          <a
+            key={item.path}
+            href={item.path}
+            className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
 
-              {/* Retirement Planning Dropdown */}
-              <div className="relative group">
-                <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
-                  Retirement Planning
-                  <ChevronDown className="w-4 h-4" />
-                </button>
-                <div className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="py-2">
-                    {navigationMenu.retirement.map((item) => (
-                      <a
-                        key={item.path}
-                        href={item.path}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
+  {/* Medicare Dropdown */}
+  <div className="relative group">
+    <button
+      type="button"
+      className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2"
+    >
+      Medicare
+      <ChevronDown className="w-4 h-4" />
+    </button>
+    <div className="absolute left-0 top-full mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+      <div className="py-2">
+        {navigationMenu.medicare.map((item) => (
+          <a
+            key={item.path}
+            href={item.path}
+            className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
 
-              {/* Resources Dropdown */}
-              <div className="relative group">
-                <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
-                  Resources
-                  <ChevronDown className="w-4 h-4" />
-                </button>
-                <div className="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="py-2">
-                    {navigationMenu.resources.map((item) => (
-                      <a
-                        key={item.path}
-                        href={item.path}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
+  {/* Retirement Planning Dropdown */}
+  <div className="relative group">
+    <button
+      type="button"
+      className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2"
+    >
+      Retirement Planning
+      <ChevronDown className="w-4 h-4" />
+    </button>
+    <div className="absolute left-0 top-full mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+      <div className="py-2">
+        {navigationMenu.retirement.map((item) => (
+          <a
+            key={item.path}
+            href={item.path}
+            className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
 
-              {/* Contact Dropdown */}
-              <div className="relative group">
-                <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
-                  Contact
-                  <ChevronDown className="w-4 h-4" />
-                </button>
-                <div className="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="py-2">
-                    {navigationMenu.contact.map((item) => (
-                      <a
-                        key={item.path}
-                        href={item.path}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
+  {/* Resources Dropdown */}
+  <div className="relative group">
+    <button
+      type="button"
+      className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2"
+    >
+      Resources
+      <ChevronDown className="w-4 h-4" />
+    </button>
+    <div className="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+      <div className="py-2">
+        {navigationMenu.resources.map((item) => (
+          <a
+            key={item.path}
+            href={item.path}
+            className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
 
-              <a href="tel:816-752-4944" className="flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-3 rounded-lg transition transform hover:scale-105">
-                <Phone className="w-4 h-4" />
-                816-752-4944
-              </a>
-            </div>
+  {/* Contact Dropdown */}
+  <div className="relative group">
+    <button
+      type="button"
+      className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2"
+    >
+      Contact
+      <ChevronDown className="w-4 h-4" />
+    </button>
+    <div className="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+      <div className="py-2">
+        {navigationMenu.contact.map((item) => (
+          <a
+            key={item.path}
+            href={item.path}
+            className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
 
-            {/* Mobile Menu Button */}
-            <button 
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="xl:hidden text-white p-2"
-            >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
+  {/* Phone CTA */}
+  <a
+    href="tel:816-752-4944"
+    className="flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-3 rounded-lg transition transform hover:scale-105"
+  >
+    <Phone className="w-4 h-4" />
+    816-752-4944
+  </a>
+</div>
 
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
