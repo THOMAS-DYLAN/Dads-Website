@@ -50,88 +50,274 @@ const Navbar = () => {
   const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
 
   return (
-    <nav className="sticky top-0 z-50 bg-blue-600 shadow-lg">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          <div className="flex items-center">
-            <Link to="/">
-              <img
-                src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/d848.png"
-                alt="Key Retirement Solutions"
-                className="h-16 w-auto"
-                crossOrigin="anonymous"
-              />
-            </Link>
-          </div>
+     <nav className="sticky top-0 z-50 bg-blue-600 shadow-lg">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-20">
+            {/* Logo/Brand */}
+            <div className="flex items-center">
+              <a href="/">
+                <img 
+                  src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/d848.png"
+                  alt="Key Retirement Solutions"
+                  className="h-16 w-auto"
+                  crossOrigin="anonymous"
+                />
+              </a>
+            </div>
 
-          <div className="hidden xl:flex items-center space-x-6">
-            {menuCategories.map((cat) => (
-              <div key={cat.key} className="relative group">
-                <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
-                  {cat.label}
-                  <ChevronDown className="w-4 h-4" />
-                </button>
-                <div className={`absolute left-0 mt-2 ${cat.width} bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50`}>
-                  <div className="py-2">
-                    {navigationMenu[cat.key].map((item) => (
-                      <Link
-                        key={item.path}
-                        to={item.path}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-                  </div>
+  {/* Desktop Navigation */}
+          <div className="flex items-center gap-6 ml-auto whitespace-nowrap">
+            {/* About Dropdown */}
+            <div className="relative group">
+              <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
+                About
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              
+              <div className="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-2">
+                  {navigationMenu.about.map((item) => (
+                    <a
+                      key={item.path}
+                      href={item.path}
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
                 </div>
               </div>
-            ))}
-            <a href="tel:816-752-4944" className="flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-3 rounded-lg transition transform hover:scale-105">
+            </div>
+
+            {/* Medicare Dropdown */}
+            <div className="relative group">
+              <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
+                Medicare
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              
+              <div className="absolute left-0 top-full mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-2">
+                  {navigationMenu.medicare.map((item) => (
+                    <a
+                      key={item.path}
+                      href={item.path}
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Retirement Planning Dropdown */}
+            <div className="relative group">
+              <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
+                Retirement Planning
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              
+              <div className="absolute left-0 top-full mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-2">
+                  {navigationMenu.retirement.map((item) => (
+                    <a
+                      key={item.path}
+                      href={item.path}
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Resources Dropdown */}
+            <div className="relative group">
+              <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
+                Resources
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              
+              <div className="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-2">
+                  {navigationMenu.resources.map((item) => (
+                    <a
+                      key={item.path}
+                      href={item.path}
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Dropdown */}
+            <div className="relative group">
+              <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
+                Contact
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              
+              <div className="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-2">
+                  {navigationMenu.contact.map((item) => (
+                    <a
+                      key={item.path}
+                      href={item.path}
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Phone Button */}
+            <a
+              href="tel:816-752-4944"
+              className="flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-3 rounded-lg transition transform hover:scale-105"
+            >
               <Phone className="w-4 h-4" />
               816-752-4944
             </a>
           </div>
 
-          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="xl:hidden text-white p-2">
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
-
-        {mobileMenuOpen && (
-          <div className="xl:hidden pb-4 space-y-2 max-h-96 overflow-y-auto">
-            {menuCategories.map((cat) => (
-              <div key={cat.key} className="border-b border-blue-500 pb-2">
+          {/* Mobile Navigation */}
+          {mobileMenuOpen && (
+            <div className="xl:hidden pb-4 space-y-2 max-h-96 overflow-y-auto">
+              {/* About Mobile Dropdown */}
+              <div className="border-b border-blue-500 pb-2">
                 <button
-                  onClick={() => setOpenMobileDropdown(openMobileDropdown === cat.key ? null : cat.key)}
+                  onClick={() => setOpenMobileDropdown(openMobileDropdown === 'about' ? null : 'about')}
                   className="flex items-center justify-between w-full text-left text-white hover:text-red-200 font-semibold py-2 transition"
                 >
-                  {cat.label}
-                  <ChevronDown className={`w-4 h-4 transition-transform ${openMobileDropdown === cat.key ? 'rotate-180' : ''}`} />
+                  About
+                  <ChevronDown className={`w-4 h-4 transition-transform ${openMobileDropdown === 'about' ? 'rotate-180' : ''}`} />
                 </button>
-                {openMobileDropdown === cat.key && (
+                {openMobileDropdown === 'about' && (
                   <div className="pl-4 space-y-1 mt-2">
-                    {navigationMenu[cat.key].map((item) => (
-                      <Link
+                    {navigationMenu.about.map((item) => (
+                      <a
                         key={item.path}
-                        to={item.path}
+                        href={item.path}
                         className="block text-blue-100 hover:text-white py-1 text-sm"
-                        onClick={() => setMobileMenuOpen(false)}
                       >
                         {item.name}
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 )}
               </div>
-            ))}
-            <a href="tel:816-752-4944" className="flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-3 rounded-lg transition mt-4">
-              <Phone className="w-4 h-4" />
-              816-752-4944
-            </a>
-          </div>
-        )}
-      </div>
-    </nav>
+
+              {/* Medicare Mobile Dropdown */}
+              <div className="border-b border-blue-500 pb-2">
+                <button
+                  onClick={() => setOpenMobileDropdown(openMobileDropdown === 'medicare' ? null : 'medicare')}
+                  className="flex items-center justify-between w-full text-left text-white hover:text-red-200 font-semibold py-2 transition"
+                >
+                  Medicare
+                  <ChevronDown className={`w-4 h-4 transition-transform ${openMobileDropdown === 'medicare' ? 'rotate-180' : ''}`} />
+                </button>
+                {openMobileDropdown === 'medicare' && (
+                  <div className="pl-4 space-y-1 mt-2">
+                    {navigationMenu.medicare.map((item) => (
+                      <a
+                        key={item.path}
+                        href={item.path}
+                        className="block text-blue-100 hover:text-white py-1 text-sm"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Retirement Planning Mobile Dropdown */}
+              <div className="border-b border-blue-500 pb-2">
+                <button
+                  onClick={() => setOpenMobileDropdown(openMobileDropdown === 'retirement' ? null : 'retirement')}
+                  className="flex items-center justify-between w-full text-left text-white hover:text-red-200 font-semibold py-2 transition"
+                >
+                  Retirement Planning
+                  <ChevronDown className={`w-4 h-4 transition-transform ${openMobileDropdown === 'retirement' ? 'rotate-180' : ''}`} />
+                </button>
+                {openMobileDropdown === 'retirement' && (
+                  <div className="pl-4 space-y-1 mt-2">
+                    {navigationMenu.retirement.map((item) => (
+                      <a
+                        key={item.path}
+                        href={item.path}
+                        className="block text-blue-100 hover:text-white py-1 text-sm"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Resources Mobile Dropdown */}
+              <div className="border-b border-blue-500 pb-2">
+                <button
+                  onClick={() => setOpenMobileDropdown(openMobileDropdown === 'resources' ? null : 'resources')}
+                  className="flex items-center justify-between w-full text-left text-white hover:text-red-200 font-semibold py-2 transition"
+                >
+                  Resources
+                  <ChevronDown className={`w-4 h-4 transition-transform ${openMobileDropdown === 'resources' ? 'rotate-180' : ''}`} />
+                </button>
+                {openMobileDropdown === 'resources' && (
+                  <div className="pl-4 space-y-1 mt-2">
+                    {navigationMenu.resources.map((item) => (
+                      <a
+                        key={item.path}
+                        href={item.path}
+                        className="block text-blue-100 hover:text-white py-1 text-sm"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Contact Mobile Dropdown */}
+              <div className="border-b border-blue-500 pb-2">
+                <button
+                  onClick={() => setOpenMobileDropdown(openMobileDropdown === 'contact' ? null : 'contact')}
+                  className="flex items-center justify-between w-full text-left text-white hover:text-red-200 font-semibold py-2 transition"
+                >
+                  Contact
+                  <ChevronDown className={`w-4 h-4 transition-transform ${openMobileDropdown === 'contact' ? 'rotate-180' : ''}`} />
+                </button>
+                {openMobileDropdown === 'contact' && (
+                  <div className="pl-4 space-y-1 mt-2">
+                    {navigationMenu.contact.map((item) => (
+                      <a
+                        key={item.path}
+                        href={item.path}
+                        className="block text-blue-100 hover:text-white py-1 text-sm"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <a href="tel:816-752-4944" className="flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-3 rounded-lg transition mt-4">
+                <Phone className="w-4 h-4" />
+                816-752-4944
+              </a>
+            </div>
+          )}
+        </div>
+      </nav>
   );
 };
 
