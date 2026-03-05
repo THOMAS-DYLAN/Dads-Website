@@ -230,10 +230,7 @@ const Index = () => {
               <Phone className="w-4 h-4" />
               816-752-4944
             </a>
-        
-          </div>
-        
-        </div>
+          </div>        
 
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
