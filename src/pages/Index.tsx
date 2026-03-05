@@ -110,7 +110,7 @@ const Index = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-6">
+            <div className="hidden xl:flex items-center space-x-6">
               {/* About Dropdown */}
               <div className="relative group">
                 <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
@@ -224,7 +224,7 @@ const Index = () => {
             {/* Mobile Menu Button */}
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden text-white p-2"
+              className="xl:hidden text-white p-2"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -232,7 +232,7 @@ const Index = () => {
 
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
-            <div className="lg:hidden pb-4 space-y-2 max-h-96 overflow-y-auto">
+            <div className="xl:hidden pb-4 space-y-2 max-h-96 overflow-y-auto">
               {/* About Mobile Dropdown */}
               <div className="border-b border-blue-500 pb-2">
                 <button

@@ -64,7 +64,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="hidden lg:flex items-center space-x-6">
+          <div className="hidden xl:flex items-center space-x-6">
             {menuCategories.map((cat) => (
               <div key={cat.key} className="relative group">
                 <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
@@ -92,13 +92,13 @@ const Navbar = () => {
             </a>
           </div>
 
-          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="lg:hidden text-white p-2">
+          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="xl:hidden text-white p-2">
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
         {mobileMenuOpen && (
-          <div className="lg:hidden pb-4 space-y-2 max-h-96 overflow-y-auto">
+          <div className="xl:hidden pb-4 space-y-2 max-h-96 overflow-y-auto">
             {menuCategories.map((cat) => (
               <div key={cat.key} className="border-b border-blue-500 pb-2">
                 <button
