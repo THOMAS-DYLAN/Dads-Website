@@ -1,7 +1,6 @@
 import { Shield, Users, Clock, Search, Target, ShieldCheck, TrendingUp, TrendingUpIcon, Heart as HeartIcon, Umbrella, Phone, Menu, X, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-Import { Navbar } from "Navbar.tsx"
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
