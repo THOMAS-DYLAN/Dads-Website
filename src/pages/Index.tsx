@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
+  const [openDesktopDropdown, setOpenDesktopDropdown] = useState<string | null>(null);
 
   const navigationMenu = {
     about: [
@@ -46,6 +47,14 @@ const Index = () => {
     setOpenMobileDropdown(null);
   };
 
+  const handleMouseEnter = (menu: string) => {
+    setOpenDesktopDropdown(menu);
+  };
+
+  const handleMouseLeave = () => {
+    setOpenDesktopDropdown(null);
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation Bar */}
@@ -75,7 +84,7 @@ const Index = () => {
             </button>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-1">
+            <div className="hidden xl:flex items-center space-x-1">
               {/* About */}
               <div
                 className="relative"
@@ -86,11 +95,11 @@ const Index = () => {
                   About
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${
-                      openDropdown === "about" ? "rotate-180" : ""
+                      openDesktopDropdown === "about" ? "rotate-180" : ""
                     }`}
                   />
                 </button>
-                {openDropdown === "about" && (
+                {openDesktopDropdown === "about" && (
                   <div className="absolute top-full left-0 mt-1 w-56 rounded-xl bg-white shadow-xl border border-gray-200 py-2 z-50">
                     {navigationMenu.about.map((item) => (
                       <a
@@ -115,11 +124,11 @@ const Index = () => {
                   Medicare
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${
-                      openDropdown === "medicare" ? "rotate-180" : ""
+                      openDesktopDropdown === "medicare" ? "rotate-180" : ""
                     }`}
                   />
                 </button>
-                {openDropdown === "medicare" && (
+                {openDesktopDropdown === "medicare" && (
                   <div className="absolute top-full left-0 mt-1 w-56 rounded-xl bg-white shadow-xl border border-gray-200 py-2 z-50">
                     {navigationMenu.medicare.map((item) => (
                       <a
@@ -144,11 +153,11 @@ const Index = () => {
                   Retirement Planning
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${
-                      openDropdown === "retirement" ? "rotate-180" : ""
+                      openDesktopDropdown === "retirement" ? "rotate-180" : ""
                     }`}
                   />
                 </button>
-                {openDropdown === "retirement" && (
+                {openDesktopDropdown === "retirement" && (
                   <div className="absolute top-full left-0 mt-1 w-56 rounded-xl bg-white shadow-xl border border-gray-200 py-2 z-50">
                     {navigationMenu.retirement.map((item) => (
                       <a
@@ -173,11 +182,11 @@ const Index = () => {
                   Resources
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${
-                      openDropdown === "resources" ? "rotate-180" : ""
+                      openDesktopDropdown === "resources" ? "rotate-180" : ""
                     }`}
                   />
                 </button>
-                {openDropdown === "resources" && (
+                {openDesktopDropdown === "resources" && (
                   <div className="absolute top-full left-0 mt-1 w-56 rounded-xl bg-white shadow-xl border border-gray-200 py-2 z-50">
                     {navigationMenu.resources.map((item) => (
                       <a
@@ -202,11 +211,11 @@ const Index = () => {
                   Contact
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${
-                      openDropdown === "contact" ? "rotate-180" : ""
+                      openDesktopDropdown === "contact" ? "rotate-180" : ""
                     }`}
                   />
                 </button>
-                {openDropdown === "contact" && (
+                {openDesktopDropdown === "contact" && (
                   <div className="absolute top-full left-0 mt-1 w-56 rounded-xl bg-white shadow-xl border border-gray-200 py-2 z-50">
                     {navigationMenu.contact.map((item) => (
                       <a
