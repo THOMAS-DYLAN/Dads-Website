@@ -62,7 +62,11 @@ const Index = () => {
             {/* Logo */}
             <div className="flex-shrink-0">
               <a href="/" className="text-2xl font-bold text-white">
-                Your Company
+                <img
+                    src="/IMG_0061.png"
+                    alt="Michael Thomas License"
+                    className="max-h-[80vh] w-auto object-contain rounded-md"
+                  />
               </a>
             </div>
 
