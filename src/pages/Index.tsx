@@ -67,7 +67,7 @@ const Index = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="hidden md:flex items-center space-x-1">
               {/* About */}
               <div
                 className="relative"
