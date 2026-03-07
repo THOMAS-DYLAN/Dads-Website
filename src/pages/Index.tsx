@@ -10,12 +10,9 @@ const Index = () => {
   const handleMouseEnter = (menu: string) => {
     setOpenDropdown(menu);
   };
-  function delay(ms: number) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
 
   const handleMouseLeave = () => {
-    setTimeout(await, 500);
+    await delay(500); 
     setOpenDropdown(null);
   };
 
