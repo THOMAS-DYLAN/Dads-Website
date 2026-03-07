@@ -212,18 +212,19 @@ const Index = () => {
                   </div>
                 )}
               </div>
-            </div>
-
-            {/* Desktop Phone Button */}
-            <a
+              <a
               href="tel:816-752-4944"
               className="hidden lg:flex items-center gap-2 rounded-lg bg-red-500 px-6 py-3 font-bold text-white transition hover:bg-red-600 shadow-2g"
-            >
+              >
               <button>
                 <Phone className="h-3 w-3" />
                 816-248-1100
               </button>
             </a>
+            </div>
+
+            {/* Desktop Phone Button */}
+
           </div>
 
           {/* Mobile Menu */}
