@@ -222,19 +222,6 @@ const Index = () => {
               <Phone className="h-4 w-4" />
               816-752-4944
             </a>
-
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg text-white hover:bg-blue-800/50 transition"
-              aria-label="Toggle menu"
-            >
-              {mobileMenuOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
-            </button>
           </div>
 
           {/* Mobile Menu */}
