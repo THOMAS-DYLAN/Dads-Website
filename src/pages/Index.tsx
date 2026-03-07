@@ -67,7 +67,7 @@ const Index = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-1">
+            <div className="items-center space-x-1">
               {/* About */}
               <div
                 className="relative"
