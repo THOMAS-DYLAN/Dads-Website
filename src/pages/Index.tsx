@@ -75,116 +75,161 @@ const Index = () => {
             </button>
 
             {/* Desktop Navigation */}
-            <div className="hidden xl:flex items-center gap-6 ml-auto whitespace-nowrap">
-              {/* About Dropdown */}
-              <div className="relative group">
-                <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
+            <div className="hidden lg:flex items-center space-x-1">
+              {/* About */}
+              <div
+                className="relative"
+                onMouseEnter={() => handleMouseEnter("about")}
+                onMouseLeave={handleMouseLeave}
+              >
+                <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold transition hover:text-red-200 rounded-lg hover:bg-blue-800/50">
                   About
-                  <ChevronDown className="w-4 h-4" />
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform ${
+                      openDropdown === "about" ? "rotate-180" : ""
+                    }`}
+                  />
                 </button>
-
-                <div className="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  
-                </div>
+                {openDropdown === "about" && (
+                  <div className="absolute top-full left-0 mt-1 w-56 rounded-xl bg-white shadow-xl border border-gray-200 py-2 z-50">
+                    {navigationMenu.about.map((item) => (
+                      <a
+                        key={item.path}
+                        href={item.path}
+                        className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
 
-              {/* Medicare Dropdown */}
-              <div className="relative group">
-                <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
+              {/* Medicare */}
+              <div
+                className="relative"
+                onMouseEnter={() => handleMouseEnter("medicare")}
+                onMouseLeave={handleMouseLeave}
+              >
+                <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold transition hover:text-red-200 rounded-lg hover:bg-blue-800/50">
                   Medicare
-                  <ChevronDown className="w-4 h-4" />
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform ${
+                      openDropdown === "medicare" ? "rotate-180" : ""
+                    }`}
+                  />
                 </button>
-
-                <div className="absolute left-0 top-full mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="py-2">
+                {openDropdown === "medicare" && (
+                  <div className="absolute top-full left-0 mt-1 w-56 rounded-xl bg-white shadow-xl border border-gray-200 py-2 z-50">
                     {navigationMenu.medicare.map((item) => (
                       <a
                         key={item.path}
                         href={item.path}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+                        className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
                       >
                         {item.name}
                       </a>
                     ))}
                   </div>
-                </div>
+                )}
               </div>
 
-              {/* Retirement Planning Dropdown */}
-              <div className="relative group">
-                <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
+              {/* Retirement Planning */}
+              <div
+                className="relative"
+                onMouseEnter={() => handleMouseEnter("retirement")}
+                onMouseLeave={handleMouseLeave}
+              >
+                <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold transition hover:text-red-200 rounded-lg hover:bg-blue-800/50">
                   Retirement Planning
-                  <ChevronDown className="w-4 h-4" />
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform ${
+                      openDropdown === "retirement" ? "rotate-180" : ""
+                    }`}
+                  />
                 </button>
-
-                <div className="absolute left-0 top-full mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="py-2">
+                {openDropdown === "retirement" && (
+                  <div className="absolute top-full left-0 mt-1 w-56 rounded-xl bg-white shadow-xl border border-gray-200 py-2 z-50">
                     {navigationMenu.retirement.map((item) => (
                       <a
                         key={item.path}
                         href={item.path}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+                        className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
                       >
                         {item.name}
                       </a>
                     ))}
                   </div>
-                </div>
+                )}
               </div>
 
-              {/* Resources Dropdown */}
-              <div className="relative group">
-                <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
+              {/* Resources */}
+              <div
+                className="relative"
+                onMouseEnter={() => handleMouseEnter("resources")}
+                onMouseLeave={handleMouseLeave}
+              >
+                <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold transition hover:text-red-200 rounded-lg hover:bg-blue-800/50">
                   Resources
-                  <ChevronDown className="w-4 h-4" />
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform ${
+                      openDropdown === "resources" ? "rotate-180" : ""
+                    }`}
+                  />
                 </button>
-
-                <div className="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="py-2">
+                {openDropdown === "resources" && (
+                  <div className="absolute top-full left-0 mt-1 w-56 rounded-xl bg-white shadow-xl border border-gray-200 py-2 z-50">
                     {navigationMenu.resources.map((item) => (
                       <a
                         key={item.path}
                         href={item.path}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+                        className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
                       >
                         {item.name}
                       </a>
                     ))}
                   </div>
-                </div>
+                )}
               </div>
 
-              {/* Contact Dropdown */}
-              <div className="relative group">
-                <button className="text-white hover:text-red-200 font-semibold transition flex items-center gap-1 py-2">
+              {/* Contact */}
+              <div
+                className="relative"
+                onMouseEnter={() => handleMouseEnter("contact")}
+                onMouseLeave={handleMouseLeave}
+              >
+                <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold transition hover:text-red-200 rounded-lg hover:bg-blue-800/50">
                   Contact
-                  <ChevronDown className="w-4 h-4" />
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform ${
+                      openDropdown === "contact" ? "rotate-180" : ""
+                    }`}
+                  />
                 </button>
-
-                <div className="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="py-2">
+                {openDropdown === "contact" && (
+                  <div className="absolute top-full left-0 mt-1 w-56 rounded-xl bg-white shadow-xl border border-gray-200 py-2 z-50">
                     {navigationMenu.contact.map((item) => (
                       <a
                         key={item.path}
                         href={item.path}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+                        className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
                       >
                         {item.name}
                       </a>
                     ))}
                   </div>
-                </div>
+                )}
               </div>
-
-              {/* Phone Button */}
-              <a
-                href="tel:816-752-4944"
-                className="flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-3 rounded-lg transition transform hover:scale-105"
-              >
-                <Phone className="w-4 h-4" />
-                816-752-4944
-              </a>
             </div>
+
+            {/* Phone Button */}
+            <a
+              href="tel:816-752-4944"
+              className="hidden lg:flex items-center gap-2 rounded-lg bg-red-500 px-6 py-3 font-bold text-white transition hover:bg-red-600 shadow-lg"
+            >
+              <Phone className="h-4 w-4" />
+              816-752-4944
+            </a>
           </div>
 
           {/* Mobile Navigation */}
