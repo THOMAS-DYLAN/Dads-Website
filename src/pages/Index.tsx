@@ -5,7 +5,20 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
-  const [openDesktopDropdown, setOpenDesktopDropdown] = useState<string | null>(null);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  const handleMouseEnter = (menu: string) => {
+    setOpenDropdown(menu);
+  };
+
+  const handleMouseLeave = () => {
+    setOpenDropdown(null);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+    setOpenMobileDropdown(null);
+  };
 
  const navigationMenu = {
   about: [
@@ -38,23 +51,7 @@ const Index = () => {
   ],
 };
 
-const Index = () => {
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
 
-  const handleMouseEnter = (menu: string) => {
-    setOpenDropdown(menu);
-  };
-
-  const handleMouseLeave = () => {
-    setOpenDropdown(null);
-  };
-
-  const closeMobileMenu = () => {
-    setMobileMenuOpen(false);
-    setOpenMobileDropdown(null);
-  };
 
   return (
     <div className="w-full h-full bg-gradient-to-b from-[#4E54C8] to-[#A8C0FF] flex flex-col">
