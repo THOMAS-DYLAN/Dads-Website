@@ -22,7 +22,7 @@ const Index = () => {
   const navigationMenu = {
     about: [
       { name: "Our Story", path: "/about/our-story" },
-      { name: "Our Team", path: "/about/our-team" },
+      { name: "Our Team", path: "/about/team" },
       { name: "Why Choose Us", path: "/about/why-choose-us" },
     ],
     medicare: [
