@@ -59,7 +59,7 @@ const Index = () => {
   return (
     <div className="w-full h-full bg-gradient-to-b from-[#4E54C8] to-[#A8C0FF] flex flex-col">
       {/* Navbar */}
-      <nav className="w-full bg-gradient-to-r from-black-700 via-black-600 to-black-700 shadow-lg">
+      <nav className="w-full bg-black shadow-lg">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
