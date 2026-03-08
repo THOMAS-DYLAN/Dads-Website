@@ -678,9 +678,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section
-
-      */}
 
       {/* Footer */}
       <footer className="bg-blue-500 text-white py-12">
