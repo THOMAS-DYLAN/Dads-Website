@@ -679,17 +679,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">SECURE YOUR FUTURE TODAY</h2>
-          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Don't leave your retirement to chance. Take action now to protect what you've earned.
-          </p>
-          <button className="bg-red-500 hover:bg-blue-500 text-white font-bold text-xl px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105">
-            SCHEDULE YOUR APPOINTMENT
-          </button>
-        </div>
-      </section>
+
       */}
 
       {/* Footer */}
