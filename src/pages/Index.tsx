@@ -725,7 +725,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="text-center mt-8 pt-8 border-t border-white/20 padding-bottom: -50">
+          <div className="text-center mt-8 pt-8 border-t border-white/20 padding-bottom-50">
             <p className="text-sm">© 2026 Key Retirement Solutions. All rights reserved.</p>
           </div>
         </div>
