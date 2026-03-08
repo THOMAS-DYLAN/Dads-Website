@@ -678,7 +678,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">SECURE YOUR FUTURE TODAY</h2>
@@ -690,6 +690,7 @@ const Index = () => {
           </button>
         </div>
       </section>
+      */}
 
       {/* Footer */}
       <footer className="bg-blue-500 text-white py-12">
