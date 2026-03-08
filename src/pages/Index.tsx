@@ -220,6 +220,17 @@ const Index = () => {
                 className="hidden lg:flex items-center gap-2 rounded-lg bg-blue-500 px-6 py-3 font-bold transition-all hover:bg-red-400" 
                 data-source-location="src/pages/Index.tsx:218:13" data-source-stack="{&quot;fileName&quot;:&quot;src/pages/Index.tsx&quot;,&quot;lineNumber&quot;:218,&quot;columnNumber&quot;:13,&quot;endLine&quot;:224,&quot;endColumn&quot;:17,&quot;elementType&quot;:&quot;a&quot;,&quot;tagName&quot;:&quot;a&quot;,&quot;attributes&quot;:[{&quot;name&quot;:&quot;href&quot;,&quot;hasValue&quot;:true,&quot;line&quot;:219,&quot;column&quot;:14},{&quot;name&quot;:&quot;className&quot;,&quot;hasValue&quot;:true,&quot;line&quot;:220,&quot;column&quot;:14}],&quot;hasChildren&quot;:true,&quot;parentElement&quot;:&quot;div&quot;}" data-element-type="a" data-line-number="218" data-real-file="src/pages/Index.tsx" data-real-line="218" data-real-column="13" data-injected-source="babel"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4" aria-hidden="true" data-source-location="src/pages/Index.tsx:222:15" data-source-stack="{&quot;fileName&quot;:&quot;src/pages/Index.tsx&quot;,&quot;lineNumber&quot;:222,&quot;columnNumber&quot;:15,&quot;endLine&quot;:222,&quot;endColumn&quot;:44,&quot;elementType&quot;:&quot;Phone&quot;,&quot;tagName&quot;:&quot;phone&quot;,&quot;attributes&quot;:[{&quot;name&quot;:&quot;className&quot;,&quot;hasValue&quot;:true,&quot;line&quot;:222,&quot;column&quot;:21}],&quot;hasChildren&quot;:false,&quot;parentElement&quot;:&quot;a&quot;}" data-element-type="Phone" data-line-number="222" data-real-file="src/pages/Index.tsx" data-real-line="222" data-real-column="15" data-injected-source="babel"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>816-752-4944</a>
             </div>
+            <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="block lg:hidden rounded-lg p-2 text-white transition hover:bg-blue-800/50"
+                aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? (
+              <X className="h-6 w-6" />
+                ) : (
+              <Menu className="h-6 w-6" />
+              )}
+            </button>
           </div>
 
           {/* Mobile Menu */}
