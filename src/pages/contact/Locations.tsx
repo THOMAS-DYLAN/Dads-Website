@@ -69,12 +69,17 @@ const Locations = () => (
 
           <div>
             <h2 className="text-2xl font-bold text-blue-600 mb-6">FIND US</h2>
-            <div className="aspect-[4/3] bg-gray-200 rounded-lg flex items-center justify-center border-2 border-gray-300">
-              <div className="text-center p-6">
-                <MapPin className="w-12 h-12 text-blue-600 mx-auto mb-3" />
-                <p className="text-gray-600 font-semibold">Kansas City, Missouri</p>
-                <p className="text-gray-500 text-sm mt-2">Serving the Greater Kansas City Metropolitan Area</p>
-              </div>
+            <div className="aspect-[4/3] rounded-lg overflow-hidden border-2 border-gray-300 shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198952.39276265993!2d-94.81484405!3d39.099727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0f75eafe99997%3A0x558525e66aaa51a2!2sKansas%20City%2C%20MO!5e0!3m2!1sen!2sus!4v1234567890123"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Kansas City Office Location"
+              ></iframe>
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-4">
