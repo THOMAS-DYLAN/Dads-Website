@@ -8,6 +8,7 @@ const Index = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const handleMouseEnter = (menu: string) => {
+    await delay(50);
     setOpenDropdown(menu);
   };
 
