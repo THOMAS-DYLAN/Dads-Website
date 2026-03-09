@@ -666,7 +666,7 @@ const Index = () => {
               <DialogContent className="max-w-2xl bg-white p-4 rounded-lg">
                 <div className="flex justify-center">
                   <img
-                    src="/368c.webp"
+                    src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/368c.welp"
                     alt="Michael Thomas License"
                     className="max-h-[80vh] w-auto object-contain rounded-md"
                   />
