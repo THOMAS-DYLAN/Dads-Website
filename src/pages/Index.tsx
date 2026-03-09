@@ -8,14 +8,14 @@ const Index = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const handleMouseEnter = (menu: string) => {
-    await delay(125);
+    await delay(200);
     setOpenDropdown(menu);
   };
 
   const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
   const handleMouseLeave = async () => {
-    await delay(120);
+    await delay(190);
     setOpenDropdown(null);
   };
 
