@@ -16,7 +16,7 @@ const Index = () => {
 
 
   const handleMouseLeave = async () => {
-    await delay(190);
+    await delay(160);
     setOpenDropdown(null);
   };
 
