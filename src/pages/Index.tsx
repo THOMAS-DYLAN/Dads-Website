@@ -14,7 +14,7 @@ const Index = () => {
   const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
   const handleMouseLeave = async () => {
-    await delay(190);
+    await delay(180);
     setOpenDropdown(null);
   };
 
@@ -77,7 +77,7 @@ const Index = () => {
                 onMouseEnter={() => handleMouseEnter("about")}
                 onMouseLeave={handleMouseLeave}
               >
-                <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold transition hover:text-red-200 rounded-lg hover:bg-blue-800/50">
+                <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold">
                   About
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${
@@ -106,7 +106,7 @@ const Index = () => {
                 onMouseEnter={() => handleMouseEnter("medicare")}
                 onMouseLeave={handleMouseLeave}
               >
-                <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold transition hover:text-red-200 rounded-lg hover:bg-blue-800/50">
+                <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold">
                   Medicare
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${
@@ -135,7 +135,7 @@ const Index = () => {
                 onMouseEnter={() => handleMouseEnter("retirement")}
                 onMouseLeave={handleMouseLeave}
               >
-                <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold transition hover:text-red-200 rounded-lg hover:bg-blue-800/50">
+                <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold">
                   Retirement Planning
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${
@@ -164,7 +164,7 @@ const Index = () => {
                 onMouseEnter={() => handleMouseEnter("resources")}
                 onMouseLeave={handleMouseLeave}
               >
-                <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold transition hover:text-red-200 rounded-lg hover:bg-blue-800/50">
+                <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold transition">
                   Resources
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${
@@ -193,7 +193,7 @@ const Index = () => {
                 onMouseEnter={() => handleMouseEnter("contact")}
                 onMouseLeave={handleMouseLeave}
               >
-                <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold transition hover:text-red-200 rounded-lg hover:bg-blue-800/50">
+                <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold">
                   Contact
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${
