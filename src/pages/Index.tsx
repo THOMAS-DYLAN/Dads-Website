@@ -6,13 +6,14 @@ const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
   const handleMouseEnter = async (menu: string) => {
     await delay(200);
     setOpenDropdown(menu);
   };
 
-  const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
 
   const handleMouseLeave = async () => {
     await delay(190);
