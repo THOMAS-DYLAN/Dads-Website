@@ -9,7 +9,7 @@ const Index = () => {
   const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
   const handleMouseEnter = async (menu: string) => {
-    await delay(195);
+    await delay(175);
     setOpenDropdown(menu);
   };
 
