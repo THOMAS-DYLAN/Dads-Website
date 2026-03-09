@@ -7,7 +7,7 @@ const Index = () => {
   const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  const handleMouseEnter = (menu: string) => {
+  const handleMouseEnter = async (menu: string) => {
     await delay(250);
     setOpenDropdown(menu);
   };
