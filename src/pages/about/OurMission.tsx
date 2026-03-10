@@ -1,9 +1,11 @@
 import PageLayout from '@/components/PageLayout';
 import HeroSection from '@/components/HeroSection';
+import Navbar from '@/components/Navbar'
 import { Target, Shield, Heart, Eye } from 'lucide-react';
 
 const OurMission = () => (
   <PageLayout>
+    <Navbar></Navbar>
     <HeroSection
       title="OUR MISSION"
       subtitle="Empowering veterans, retirees, and families with the knowledge and strategies to protect their financial future."
