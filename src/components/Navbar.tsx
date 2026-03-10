@@ -56,7 +56,6 @@ const Navbar = () => {
 
 
   return (
- <div>
     <nav className="w-full bg-red-500 shadow-lg">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-center justify-between h-20">
@@ -400,7 +399,6 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-    </div>  
   );
 };
 
