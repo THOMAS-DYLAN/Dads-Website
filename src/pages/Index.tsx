@@ -57,6 +57,7 @@ const Navbar = () => {
 
 
   return (
+    <div className="w-full h-full bg-gradient-to-b from-[#4E54C8] to-[#A8C0FF] flex flex-col">
       {/* Navbar */}
       <nav className="w-full bg-red-500 shadow-lg">
         <div className="mx-auto max-w-7xl px-4">
@@ -726,6 +727,7 @@ const Navbar = () => {
           </div>
         </div>
       </footer>
+    </div>
   );
 };
 

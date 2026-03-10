@@ -56,7 +56,8 @@ const Navbar = () => {
 
 
   return (
-<nav className="w-full bg-red-500 shadow-lg">
+  <div>
+    <nav className="w-full bg-red-500 shadow-lg">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
@@ -399,7 +400,7 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-
+    </div>  
   );
 };
 
