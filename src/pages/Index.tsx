@@ -2,7 +2,7 @@ import { Shield, Users, Clock, Search, Target, ShieldCheck, TrendingUp, Trending
 import { useState } from 'react';
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
-const Index = () => {
+const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -12,8 +12,6 @@ const Index = () => {
     await delay(175);
     setOpenDropdown(menu);
   };
-
-
 
   const handleMouseLeave = async () => {
     await delay(160);
