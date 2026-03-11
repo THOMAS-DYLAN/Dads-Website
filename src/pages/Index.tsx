@@ -1,12 +1,27 @@
-import { Shield, Users, Clock, Search, Target, ShieldCheck, TrendingUp, TrendingUpIcon, Heart as HeartIcon, Umbrella, Phone, Menu, X, ChevronDown } from 'lucide-react';
-import { useState } from 'react';
+import {
+  Shield,
+  Users,
+  Clock,
+  Search,
+  Target,
+  ShieldCheck,
+  TrendingUp,
+  Heart as HeartIcon,
+  Umbrella,
+  Phone,
+  Menu,
+  X,
+  ChevronDown,
+} from "lucide-react";
+import { useState } from "react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
-const Navbar = () => {
+const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
+  const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
   const handleMouseEnter = async (menu: string) => {
     await delay(175);
@@ -23,55 +38,55 @@ const Navbar = () => {
     setOpenMobileDropdown(null);
   };
 
- const navigationMenu = {
-  about: [
-    { name: "Our Story", path: "/about/our-story" },
-    { name: "Our Team", path: "/about/team" },
-    { name: "Why Choose Us", path: "/about/why-choose-us" },
-  ],
-  medicare: [
-    { name: "Medicare Advantage", path: "/medicare/advantage" },
-    { name: "Medicare Supplement", path: "/medicare/supplement" },
-    { name: "Part D Prescription", path: "/medicare/part-d" },
-    { name: "Medicare Basics", path: "/medicare/basics" },
-  ],
-  retirement: [
-    { name: "Retirement Income", path: "/retirement/income" },
-    { name: "Annuities", path: "/retirement/annuities" },
-    { name: "Life Insurance", path: "/retirement/life-insurance" },
-    { name: "Long-Term Care", path: "/retirement/long-term-care" },
-  ],
-  resources: [
-    { name: "Blog", path: "/resources/blog" },
-    { name: "FAQ", path: "/resources/faq" },
-    { name: "Medicare Guide", path: "/resources/medicare-guide" },
-    { name: "Calculators", path: "/resources/calculators" },
-  ],
-  contact: [
-    { name: "Contact Us", path: "/contact/us" },
-    { name: "Request Consultation", path: "/contact/consultation" },
-    { name: "Locations", path: "/contact/locations" },
-  ],
-};
-
-
+  const navigationMenu = {
+    about: [
+      { name: "Our Story", path: "/about/our-story" },
+      { name: "Our Team", path: "/about/team" },
+      { name: "Why Choose Us", path: "/about/why-choose-us" },
+    ],
+    medicare: [
+      { name: "Medicare Advantage", path: "/medicare/advantage" },
+      { name: "Medicare Supplement", path: "/medicare/supplement" },
+      { name: "Part D Prescription", path: "/medicare/part-d" },
+      { name: "Medicare Basics", path: "/medicare/basics" },
+    ],
+    retirement: [
+      { name: "Retirement Income", path: "/retirement/income" },
+      { name: "Annuities", path: "/retirement/annuities" },
+      { name: "Life Insurance", path: "/retirement/life-insurance" },
+      { name: "Long-Term Care", path: "/retirement/long-term-care" },
+    ],
+    resources: [
+      { name: "Blog", path: "/resources/blog" },
+      { name: "FAQ", path: "/resources/faq" },
+      { name: "Medicare Guide", path: "/resources/medicare-guide" },
+      { name: "Calculators", path: "/resources/calculators" },
+    ],
+    contact: [
+      { name: "Contact Us", path: "/contact/us" },
+      { name: "Request Consultation", path: "/contact/consultation" },
+      { name: "Locations", path: "/contact/locations" },
+    ],
+  };
 
   return (
     <div className="w-full h-full bg-gradient-to-b from-[#4E54C8] to-[#A8C0FF] flex flex-col">
-      {/* Navbar */}
       <nav className="w-full bg-red-500 shadow-lg">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-center justify-between h-20">
-            {/* Logo */}
             <div className="flex-shrink-0">
               <a href="/" className="text-2xl font-bold text-white">
-                <img alt="Key Retirement Solutions" class="h-12 w-auto" crossorigin="anonymous" data-source-location="src/pages/Index.tsx:58:17" data-source-stack="{&quot;fileName&quot;:&quot;src/pages/Index.tsx&quot;,&quot;lineNumber&quot;:58,&quot;columnNumber&quot;:17,&quot;endLine&quot;:63,&quot;endColumn&quot;:19,&quot;elementType&quot;:&quot;img&quot;,&quot;tagName&quot;:&quot;img&quot;,&quot;attributes&quot;:[{&quot;name&quot;:&quot;src&quot;,&quot;hasValue&quot;:true,&quot;line&quot;:59,&quot;column&quot;:18},{&quot;name&quot;:&quot;alt&quot;,&quot;hasValue&quot;:true,&quot;line&quot;:60,&quot;column&quot;:18},{&quot;name&quot;:&quot;className&quot;,&quot;hasValue&quot;:true,&quot;line&quot;:61,&quot;column&quot;:18},{&quot;name&quot;:&quot;crossOrigin&quot;,&quot;hasValue&quot;:true,&quot;line&quot;:62,&quot;column&quot;:18}],&quot;hasChildren&quot;:false,&quot;parentElement&quot;:&quot;a&quot;}" data-element-type="img" data-line-number="58" data-real-file="src/pages/Index.tsx" data-real-line="58" data-real-column="17" data-injected-source="babel" src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/806a.png"/>
+                <img
+                  alt="Key Retirement Solutions"
+                  className="h-12 w-auto"
+                  crossOrigin="anonymous"
+                  src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/806a.png"
+                />
               </a>
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-1">
-              {/* About */}
+            <div className="hidden lg:flex items-center space-x-1">
               <div
                 className="relative"
                 onMouseEnter={() => handleMouseEnter("about")}
@@ -100,7 +115,6 @@ const Navbar = () => {
                 )}
               </div>
 
-              {/* Medicare */}
               <div
                 className="relative"
                 onMouseEnter={() => handleMouseEnter("medicare")}
@@ -129,7 +143,6 @@ const Navbar = () => {
                 )}
               </div>
 
-              {/* Retirement Planning */}
               <div
                 className="relative"
                 onMouseEnter={() => handleMouseEnter("retirement")}
@@ -158,7 +171,6 @@ const Navbar = () => {
                 )}
               </div>
 
-              {/* Resources */}
               <div
                 className="relative"
                 onMouseEnter={() => handleMouseEnter("resources")}
@@ -187,7 +199,6 @@ const Navbar = () => {
                 )}
               </div>
 
-              {/* Contact */}
               <div
                 className="relative"
                 onMouseEnter={() => handleMouseEnter("contact")}
@@ -215,25 +226,30 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
-              {/* Desktop Phone Button */}
-              <a href="tel:816-752-4944" 
-                className="lg:flex items-center gap-2 rounded-lg bg-blue-500 px-6 py-3 font-bold transition-all hover:bg-red-400" 
-                data-source-location="src/pages/Index.tsx:218:13" data-source-stack="{&quot;fileName&quot;:&quot;src/pages/Index.tsx&quot;,&quot;lineNumber&quot;:218,&quot;columnNumber&quot;:13,&quot;endLine&quot;:224,&quot;endColumn&quot;:17,&quot;elementType&quot;:&quot;a&quot;,&quot;tagName&quot;:&quot;a&quot;,&quot;attributes&quot;:[{&quot;name&quot;:&quot;href&quot;,&quot;hasValue&quot;:true,&quot;line&quot;:219,&quot;column&quot;:14},{&quot;name&quot;:&quot;className&quot;,&quot;hasValue&quot;:true,&quot;line&quot;:220,&quot;column&quot;:14}],&quot;hasChildren&quot;:true,&quot;parentElement&quot;:&quot;div&quot;}" data-element-type="a" data-line-number="218" data-real-file="src/pages/Index.tsx" data-real-line="218" data-real-column="13" data-injected-source="babel"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4" aria-hidden="true" data-source-location="src/pages/Index.tsx:222:15" data-source-stack="{&quot;fileName&quot;:&quot;src/pages/Index.tsx&quot;,&quot;lineNumber&quot;:222,&quot;columnNumber&quot;:15,&quot;endLine&quot;:222,&quot;endColumn&quot;:44,&quot;elementType&quot;:&quot;Phone&quot;,&quot;tagName&quot;:&quot;phone&quot;,&quot;attributes&quot;:[{&quot;name&quot;:&quot;className&quot;,&quot;hasValue&quot;:true,&quot;line&quot;:222,&quot;column&quot;:21}],&quot;hasChildren&quot;:false,&quot;parentElement&quot;:&quot;a&quot;}" data-element-type="Phone" data-line-number="222" data-real-file="src/pages/Index.tsx" data-real-line="222" data-real-column="15" data-injected-source="babel"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>816-752-4944</a>
+
+              <a
+                href="tel:816-752-4944"
+                className="flex items-center gap-2 rounded-lg bg-blue-500 px-6 py-3 font-bold text-white transition-all hover:bg-red-400"
+              >
+                <Phone className="h-4 w-4" />
+                816-752-4944
+              </a>
             </div>
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="rounded-lg p-2 text-white transition hover:bg-blue-800/50 lg:hidden"
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+
+            {/* Mobile menu button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="rounded-lg p-2 text-white transition hover:bg-blue-800/50 lg:hidden"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </div>
 
           {/* Mobile Menu */}
           {mobileMenuOpen && (
             <div className="lg:hidden pb-4">
               <div className="mt-2 rounded-xl bg-red-500/60 p-3 shadow-inner">
-                {/* About */}
                 <div className="border-b border-blue-400/50 pb-2">
                   <button
                     onClick={() =>
@@ -264,7 +280,6 @@ const Navbar = () => {
                   )}
                 </div>
 
-                {/* Medicare */}
                 <div className="border-b border-blue-400/50 pb-2 pt-2">
                   <button
                     onClick={() =>
@@ -295,7 +310,6 @@ const Navbar = () => {
                   )}
                 </div>
 
-                {/* Retirement Planning */}
                 <div className="border-b border-blue-400/50 pb-2 pt-2">
                   <button
                     onClick={() =>
@@ -326,7 +340,6 @@ const Navbar = () => {
                   )}
                 </div>
 
-                {/* Resources */}
                 <div className="border-b border-blue-400/50 pb-2 pt-2">
                   <button
                     onClick={() =>
@@ -357,7 +370,6 @@ const Navbar = () => {
                   )}
                 </div>
 
-                {/* Contact */}
                 <div className="pb-2 pt-2">
                   <button
                     onClick={() =>
@@ -388,7 +400,6 @@ const Navbar = () => {
                   )}
                 </div>
 
-                {/* Mobile Phone Button */}
                 <a
                   href="tel:816-752-4944"
                   className="mt-4 flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-6 py-3 font-bold text-white transition hover:bg-blue-400"
@@ -403,7 +414,6 @@ const Navbar = () => {
         </div>
       </nav>
 
-      
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
@@ -416,38 +426,49 @@ const Navbar = () => {
               />
             </div>
             <h2 className="text-4xl font-bold text-blue-600 mb-3">Michael Thomas</h2>
-            <p className="text-xl font-semibold text-red-500 italic mb-6">Your Future. My Mission.</p>
+            <p className="text-xl font-semibold text-red-500 italic mb-6">
+              Your Future. My Mission.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Mission Section */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-red-500 font-bold uppercase tracking-wider mb-3">THE MISSION</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mb-6">FROM SERVICE TO SECURITY</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mb-6">
+              FROM SERVICE TO SECURITY
+            </h2>
             <p className="text-lg text-gray-700 mb-4">
-              <span className="font-bold text-red-500">Your mission doesn't end with service.</span>{' '}
+              <span className="font-bold text-red-500">
+                Your mission doesn't end with service.
+              </span>{" "}
               <span className="text-blue-600">
-                It transforms. The same discipline, strategy, and commitment that defined your military career now protect your financial future.
+                It transforms. The same discipline, strategy, and commitment that defined
+                your military career now protect your financial future.
               </span>
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              At Key Retirement Solutions, we understand the veteran mindset. We don't just sell insurance—we build{' '}
-              <span className="font-bold text-blue-600">defense strategies</span> for your retirement, your family's security, and your legacy.
+              At Key Retirement Solutions, we understand the veteran mindset. We don't just
+              sell insurance—we build{" "}
+              <span className="font-bold text-blue-600">defense strategies</span> for your
+              retirement, your family's security, and your legacy.
             </p>
             <div className="border-l-4 border-red-500 pl-6 py-2 bg-blue-50">
-              <p className="text-xl font-bold text-blue-700">Your future is our mission. We stand guard over what you've earned.</p>
+              <p className="text-xl font-bold text-blue-700">
+                Your future is our mission. We stand guard over what you've earned.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* WHO WE SERVE Section */}
       <section id="who-we-serve" className="py-16 bg-red-500">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-3">WHO WE SERVE</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-3">
+            WHO WE SERVE
+          </h2>
           <div className="flex justify-center mb-8">
             <div className="h-1 w-24 bg-blue-600" />
           </div>
@@ -460,7 +481,9 @@ const Navbar = () => {
                 <Shield className="w-12 h-12 text-white" />
               </div>
               <h3 className="text-xl font-bold text-blue-100 mb-3">VETERANS</h3>
-              <p className="text-blue-50">Honoring those who served with specialized retirement strategies</p>
+              <p className="text-blue-50">
+                Honoring those who served with specialized retirement strategies
+              </p>
             </div>
 
             <div className="text-center">
@@ -468,7 +491,9 @@ const Navbar = () => {
                 <Clock className="w-12 h-12 text-white" />
               </div>
               <h3 className="text-xl font-bold text-blue-100 mb-3">TURNING 65 SOON</h3>
-              <p className="text-blue-50">Navigate Medicare decisions with confidence and clarity</p>
+              <p className="text-blue-50">
+                Navigate Medicare decisions with confidence and clarity
+              </p>
             </div>
 
             <div className="text-center">
@@ -476,7 +501,9 @@ const Navbar = () => {
                 <Shield className="w-12 h-12 text-white" />
               </div>
               <h3 className="text-xl font-bold text-blue-100 mb-3">RETIREES</h3>
-              <p className="text-blue-50">Protect your retirement income and preserve your legacy</p>
+              <p className="text-blue-50">
+                Protect your retirement income and preserve your legacy
+              </p>
             </div>
 
             <div className="text-center">
@@ -484,17 +511,22 @@ const Navbar = () => {
                 <Users className="w-12 h-12 text-white" />
               </div>
               <h3 className="text-xl font-bold text-blue-100 mb-3">FAMILIES PLANNING</h3>
-              <p className="text-blue-50">Build a secure foundation for your family's financial future</p>
+              <p className="text-blue-50">
+                Build a secure foundation for your family's financial future
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* THE RETIREMENT DEFENSE PLAN Section */}
       <section id="defense-plan" className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <p className="text-red-500 font-bold uppercase tracking-wider text-center mb-3">OUR PROCESS</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-blue-600 mb-3">THE RETIREMENT DEFENSE PLAN</h2>
+          <p className="text-red-500 font-bold uppercase tracking-wider text-center mb-3">
+            OUR PROCESS
+          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-blue-600 mb-3">
+            THE RETIREMENT DEFENSE PLAN
+          </h2>
           <div className="flex justify-center mb-8">
             <div className="h-1 w-24 bg-red-500" />
           </div>
@@ -513,7 +545,9 @@ const Navbar = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-3">ASSESS</h3>
-              <p className="text-gray-700">Review your financial situation, retirement goals, and healthcare needs</p>
+              <p className="text-gray-700">
+                Review your financial situation, retirement goals, and healthcare needs
+              </p>
             </div>
 
             <div className="text-center">
@@ -526,7 +560,9 @@ const Navbar = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-3">IDENTIFY GAPS</h3>
-              <p className="text-gray-700">Pinpoint vulnerabilities in coverage and income streams</p>
+              <p className="text-gray-700">
+                Pinpoint vulnerabilities in coverage and income streams
+              </p>
             </div>
 
             <div className="text-center">
@@ -539,7 +575,9 @@ const Navbar = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-3">FORTIFY</h3>
-              <p className="text-gray-700">Implement strategic solutions to protect your assets and income</p>
+              <p className="text-gray-700">
+                Implement strategic solutions to protect your assets and income
+              </p>
             </div>
 
             <div className="text-center">
@@ -552,17 +590,22 @@ const Navbar = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-3">MAINTAIN &amp; ADJUST</h3>
-              <p className="text-gray-700">Ongoing monitoring and strategy adjustments as needed</p>
+              <p className="text-gray-700">
+                Ongoing monitoring and strategy adjustments as needed
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SERVICES Section */}
       <section id="services" className="py-16 bg-blue-500">
         <div className="container mx-auto px-4">
-          <p className="text-white font-bold uppercase tracking-wider text-center mb-3">PROTECTION STRATEGIES</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-3">SERVICES</h2>
+          <p className="text-white font-bold uppercase tracking-wider text-center mb-3">
+            PROTECTION STRATEGIES
+          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-3">
+            SERVICES
+          </h2>
           <div className="flex justify-center mb-8">
             <div className="h-1 w-24 bg-red-500" />
           </div>
@@ -577,7 +620,8 @@ const Navbar = () => {
               </div>
               <h3 className="text-xl font-bold text-red-100 mb-3">MEDICARE PLANNING</h3>
               <p className="text-red-50">
-                Navigate Medicare enrollment with expert guidance. Choose the right coverage for your needs.
+                Navigate Medicare enrollment with expert guidance. Choose the right coverage
+                for your needs.
               </p>
             </div>
 
@@ -586,7 +630,10 @@ const Navbar = () => {
                 <HeartIcon className="w-10 h-10 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-red-100 mb-3">LIFE INSURANCE</h3>
-              <p className="text-red-50">Protect your loved ones with comprehensive life insurance tailored to your family's needs.</p>
+              <p className="text-red-50">
+                Protect your loved ones with comprehensive life insurance tailored to your
+                family's needs.
+              </p>
             </div>
 
             <div className="text-center">
@@ -594,25 +641,32 @@ const Navbar = () => {
                 <Umbrella className="w-10 h-10 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-red-100 mb-3">LONG-TERM CARE</h3>
-              <p className="text-red-50">Strategic planning to preserve your assets and dignity for potential long-term care needs.</p>
+              <p className="text-red-50">
+                Strategic planning to preserve your assets and dignity for potential
+                long-term care needs.
+              </p>
             </div>
 
             <div className="text-center">
               <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white border-4 border-red-500 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-50 hover:shadow-lg cursor-pointer">
-                <TrendingUpIcon className="w-10 h-10 text-red-500" />
+                <TrendingUp className="w-10 h-10 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-red-100 mb-3">RETIREMENT INCOME</h3>
-              <p className="text-red-50">Build reliable income streams to sustain your lifestyle throughout retirement.</p>
+              <p className="text-red-50">
+                Build reliable income streams to sustain your lifestyle throughout
+                retirement.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Credentials Section */}
       <section className="py-16 bg-red-500">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">TRUSTED. CERTIFIED. MISSION-DRIVEN.</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">
+              TRUSTED. CERTIFIED. MISSION-DRIVEN.
+            </h2>
 
             <div className="flex justify-center mb-8">
               <div className="h-1 w-24 bg-blue-600" />
@@ -622,12 +676,14 @@ const Navbar = () => {
             <p className="text-xl text-blue-50 mb-4">RICP® | CLTC | MMC</p>
 
             <p className="text-blue-50 text-lg mb-6 max-w-3xl mx-auto">
-              With specialized certifications in retirement income planning (RICP®), long-term care (CLTC), and Medicare (MMC),
-              Michael Thomas brings military-grade precision to financial planning.
+              With specialized certifications in retirement income planning (RICP®),
+              long-term care (CLTC), and Medicare (MMC), Michael Thomas brings
+              military-grade precision to financial planning.
             </p>
 
             <p className="text-blue-50 text-lg italic mb-6">
-              Serving veterans and families across Missouri with honor, integrity, and unwavering commitment.
+              Serving veterans and families across Missouri with honor, integrity, and
+              unwavering commitment.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 text-blue-50 mb-8">
@@ -664,7 +720,7 @@ const Navbar = () => {
               <DialogContent className="max-w-2xl bg-white p-4 rounded-lg">
                 <div className="flex justify-center">
                   <img
-                    src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/368c.welp"
+                    src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/368c.webp"
                     alt="Michael Thomas License"
                     className="max-h-[80vh] w-auto object-contain rounded-md"
                   />
@@ -675,8 +731,6 @@ const Navbar = () => {
         </div>
       </section>
 
-
-      {/* Footer */}
       <footer className="bg-gray-800 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
