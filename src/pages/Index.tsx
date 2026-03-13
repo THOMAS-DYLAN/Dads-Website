@@ -452,7 +452,7 @@ const Index = () => {
             <p className="text-lg text-gray-700 mb-6">
               At Key Retirement Solutions, we understand the veteran mindset. We don't just
               sell insurance—we build{" "}
-              <span className="font-bold text-blue-600">defense strategies</span> for your
+              <span className="font-bold text-blue-600">lifetime</span> for your
               retirement, your family's security, and your legacy.
             </p>
             <div className="border-l-4 border-red-500 pl-6 py-2 bg-blue-50">
