@@ -290,11 +290,11 @@ const Consultation = () => (
               <h3 className="text-xl font-bold mb-2">PREFER TO CALL?</h3>
               <p className="text-blue-100 mb-4">Talk to us directly to schedule your consultation</p>
               <a
-                href="tel:816-752-4944"
+                href="tel:816-248-1100"
                 className="inline-flex items-center gap-2 bg-white text-blue-600 font-bold px-6 py-3 rounded-lg hover:bg-blue-50 transition"
               >
                 <Phone className="w-5 h-5" />
-                816-752-4944
+                816-248-1100
               </a>
             </div>
           </div>

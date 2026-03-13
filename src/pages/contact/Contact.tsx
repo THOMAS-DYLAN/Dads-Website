@@ -25,13 +25,13 @@ const Contact = () => {
               <h2 className="text-2xl font-bold text-blue-600 mb-6">GET IN TOUCH</h2>
 
               <div className="space-y-6">
-                <a href="tel:816-752-4944" className="flex items-start gap-4 group">
+                <a href="tel:816-248-1100" className="flex items-start gap-4 group">
                   <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center shrink-0 group-hover:bg-blue-600 transition">
                     <Phone className="w-6 h-6 text-blue-600 group-hover:text-white transition" />
                   </div>
                   <div>
                     <h3 className="font-bold text-blue-600">Phone</h3>
-                    <p className="text-gray-700">816-752-4944</p>
+                    <p className="text-gray-700">816-248-1100</p>
                   </div>
                 </a>
 
@@ -45,13 +45,13 @@ const Contact = () => {
                   </div>
                 </a>
 
-                <a href="sms:816-752-4944" className="flex items-start gap-4 group">
+                <a href="sms:816-248-1100" className="flex items-start gap-4 group">
                   <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center shrink-0 group-hover:bg-blue-600 transition">
                     <MessageSquare className="w-6 h-6 text-blue-600 group-hover:text-white transition" />
                   </div>
                   <div>
                     <h3 className="font-bold text-blue-600">Text</h3>
-                    <p className="text-gray-700">816-752-4944</p>
+                    <p className="text-gray-700">816-248-1100</p>
                   </div>
                 </a>
 

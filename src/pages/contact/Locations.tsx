@@ -32,7 +32,7 @@ const Locations = () => (
                 </div>
                 <div>
                   <h3 className="font-bold text-blue-600">Phone</h3>
-                  <a href="tel:816-752-4944" className="text-gray-700 hover:text-blue-600 transition">816-752-4944</a>
+                  <a href="tel:816-248-1100" className="text-gray-700 hover:text-blue-600 transition">816-248-1100</a>
                 </div>
               </div>
 
@@ -109,7 +109,7 @@ const Locations = () => (
             Schedule Appointment
           </a>
           <a
-            href="tel:816-752-4944"
+            href="tel:816-248-1100"
             className="inline-flex items-center gap-2 bg-white text-blue-600 font-bold px-8 py-4 rounded-lg transition hover:bg-blue-50"
           >
             <Phone className="w-5 h-5" />

@@ -219,11 +219,11 @@ const Index = () => {
               </div>
 
               <a
-                href="tel:816-752-4944"
+                href="tel:816-248-1100"
                 className="flex items-center gap-2 rounded-lg bg-blue-500 px-6 py-3 font-bold text-white transition-all hover:bg-red-400"
               >
                 <Phone className="h-4 w-4" />
-                816-752-4944
+                816-248-1100
               </a>
             </div>
 
@@ -392,12 +392,12 @@ const Index = () => {
                 </div>
 
                 <a
-                  href="tel:816-752-4944"
+                  href="tel: 816-248-1100"
                   className="mt-4 flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-6 py-3 font-bold text-white transition hover:bg-blue-400"
                   onClick={closeMobileMenu}
                 >
                   <Phone className="h-4 w-4" />
-                  816-752-4944
+                  816-248-1100
                 </a>
               </div>
             </div>
@@ -670,8 +670,8 @@ const Index = () => {
             <p className="text-xl text-blue-50 mb-4">RICP® | CLTC | MMC</p>
 
             <p className="text-blue-50 text-lg mb-6 max-w-3xl mx-auto">
-              With specialized certifications in retirement income planning (RICP®),
-              long-term care (CLTC), and Medicare (MMC), Michael Thomas brings
+              With specialized certifications in Retirement Income Certified Professional (RICP®),
+              Certified Long-Term Care (CLTC), and Medicare Masters Certified (MMC), Michael Thomas brings
               military-grade precision to financial planning.
             </p>
 
@@ -708,7 +708,7 @@ const Index = () => {
             <Dialog>
               <DialogTrigger asChild>
                 <button className="bg-blue-600 hover:bg-cyan-500 text-white font-bold px-6 py-3 rounded-lg transition transform hover:scale-105">
-                  License Here
+                  View License
                 </button>
               </DialogTrigger>
               <DialogContent className="max-w-2xl bg-white p-4 rounded-lg">
@@ -750,8 +750,8 @@ const Index = () => {
               <p className="mb-2">RICP® | CLTC | MMC</p>
 
               <p>
-                <a href="tel:816-752-4944" className="mb-2 text-white">
-                  816-752-4944
+                <a href="tel:816-248-1100" className="mb-2 text-white">
+                 816-248-1100
                 </a>
               </p>
 

@@ -53,8 +53,8 @@ const MedicareFaqs = () => {
           <p className="text-blue-50 text-lg mb-6">
             Medicare can be complex, and every situation is unique. We're here to answer your specific questions and help you navigate your options with clarity and confidence.
           </p>
-          <a href="tel:816-752-4944" className="inline-block bg-white hover:bg-blue-50 text-blue-600 font-bold px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105">
-            Call Us: 816-752-4944
+          <a href="tel:816-248-1100" className="inline-block bg-white hover:bg-blue-50 text-blue-600 font-bold px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105">
+            Call Us: 816-248-1100
           </a>
         </div>
       </section>

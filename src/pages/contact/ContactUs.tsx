@@ -24,8 +24,8 @@ const ContactUs = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-blue-600 text-lg mb-1">Phone</h3>
-                    <a href="tel:816-752-4944" className="text-gray-700 hover:text-blue-600 transition text-lg">
-                      816-752-4944
+                    <a href="tel:816-248-1100" className="text-gray-700 hover:text-blue-600 transition text-lg">
+                      816-248-1100
                     </a>
                     <p className="text-sm text-gray-500 mt-1">Monday - Friday, 9:00 AM - 5:00 PM</p>
                   </div>
@@ -37,8 +37,8 @@ const ContactUs = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-blue-600 text-lg mb-1">Text Message</h3>
-                    <a href="sms:816-752-4944" className="text-gray-700 hover:text-blue-600 transition text-lg">
-                      816-752-4944
+                    <a href="sms:816-248-1100" className="text-gray-700 hover:text-blue-600 transition text-lg">
+                      816-248-1100
                     </a>
                     <p className="text-sm text-gray-500 mt-1">Text us anytime for quick questions</p>
                   </div>
@@ -210,7 +210,7 @@ const ContactUs = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="tel:816-752-4944"
+              href="tel:816-248-1100"
               className="inline-flex items-center gap-2 bg-white text-blue-600 font-bold px-8 py-4 rounded-lg transition hover:bg-blue-50"
             >
               <Phone className="w-5 h-5" />
