@@ -432,7 +432,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-5 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-red-500 font-bold uppercase tracking-wider mb-3">THE MISSION</p>
