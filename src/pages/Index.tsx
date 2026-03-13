@@ -73,17 +73,6 @@ const Index = () => {
       <nav className="w-full bg-red-500 shadow-lg">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-center justify-between h-20">
-
-              <a href="/" className="text-2xl font-bold text-white">
-                <img
-                  alt="Service to Security"
-                  className="h-12 w-auto"
-                  crossOrigin="anonymous"
-                  src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/806a.png"
-                />
-              </a>
-
-
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-1">
               <div
@@ -431,7 +420,14 @@ const Index = () => {
           </div>
         </div>
       </section>
-
+      <a href="/" className="text-2xl font-bold text-white">
+        <img
+          alt="Service to Security"
+          className="h-12 w-auto"
+          crossOrigin="anonymous"
+          src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/806a.png"
+        />
+      </a>
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -731,7 +727,7 @@ const Index = () => {
             <div>
               <h3 className="text-xl font-bold mb-4">Service to Security</h3>
               <p className="mb-2">Powered by Service to Security</p>
-              <p className="text-white font-semibold">#YourFuture MyMission!</p>
+              <p className="text-white font-semibold">#YourFutureMyMission!</p>
             </div>
 
             <div>
