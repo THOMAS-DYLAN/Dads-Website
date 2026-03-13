@@ -442,7 +442,7 @@ const Index = () => {
             </h2>
             <p className="text-lg text-gray-700 mb-4">
               <span className="font-bold text-red-500">
-                Your mission doesn't end with service.
+                You spent decades working, planning, and building a life. Retirement is the time to protect it.
               </span>{" "}
               <span className="text-blue-600">
                 It transforms. The same discipline, strategy, and commitment that defined
