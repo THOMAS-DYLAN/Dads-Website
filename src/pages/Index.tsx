@@ -419,7 +419,6 @@ const Index = () => {
             </p>
           </div>
         </div>
-      </section>
       <a href="/" className="text-2xl font-bold text-white align-center">
         <img
           alt="Service to Security"
@@ -428,6 +427,8 @@ const Index = () => {
           src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/806a.png"
         />
       </a>
+      </section>
+
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
