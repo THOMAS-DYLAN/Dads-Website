@@ -78,6 +78,7 @@ const Index = () => {
                 alt=" "
                 className="h-12 w-auto"
                 crossOrigin="anonymous"
+                src=" "
               />
             </a>
             {/* Desktop Navigation */}
