@@ -194,7 +194,7 @@ const ContactUs = () => {
                 </button>
 
                 <p className="text-xs text-gray-500 text-center">
-                  By submitting this form, you consent to be contacted by Key Retirement Solutions. We respect your privacy and will never share your information.
+                  By submitting this form, you consent to be contacted by Service to Security. We respect your privacy and will never share your information.
                 </p>
               </form>
             </div>

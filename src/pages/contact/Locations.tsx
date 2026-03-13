@@ -21,7 +21,7 @@ const Locations = () => (
                 </div>
                 <div>
                   <h3 className="font-bold text-blue-600">Address</h3>
-                  <p className="text-gray-700">Key Retirement Solutions</p>
+                  <p className="text-gray-700">Service to Security</p>
                   <p className="text-gray-700">Kansas City, MO</p>
                 </div>
               </div>

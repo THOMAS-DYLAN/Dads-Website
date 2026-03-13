@@ -46,7 +46,7 @@ const OurMission = () => (
           Without proper guidance, retirees risk outliving their savings, facing unexpected healthcare costs, and leaving their families unprotected. The decisions you make today about Medicare, income planning, and asset protection will shape your entire retirement.
         </p>
         <p className="text-white text-lg font-semibold">
-          At Key Retirement Solutions, we stand guard over what you've earned.
+          At Service to Security, we stand guard over what you've earned.
         </p>
       </div>
     </section>

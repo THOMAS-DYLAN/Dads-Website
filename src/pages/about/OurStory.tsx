@@ -6,7 +6,7 @@ const OurStory = () => (
   <PageLayout>
     <HeroSection
       title="OUR STORY"
-      subtitle="From military service to financial security -- how Key Retirement Solutions was built on a foundation of duty and trust."
+      subtitle="From military service to financial security -- how Service to Security was built on a foundation of duty and trust."
     />
 
     <section className="py-16 bg-white">
@@ -15,7 +15,7 @@ const OurStory = () => (
           <div>
             <h2 className="text-3xl font-bold text-blue-600 mb-4">A Mission Born From Service</h2>
             <p className="text-gray-700 mb-4">
-              Key Retirement Solutions was founded with a simple but powerful purpose: to bring the same discipline, integrity, and commitment that defines military service into the world of financial planning.
+              Service to Security was founded with a simple but powerful purpose: to bring the same discipline, integrity, and commitment that defines military service into the world of financial planning.
             </p>
             <p className="text-gray-700 mb-4">
               Our founder, Michael Thomas, witnessed firsthand how many veterans and retirees struggled to navigate the complex landscape of Medicare, retirement income, and long-term care planning. He knew there had to be a better way -- one built on trust, education, and personalized guidance.
@@ -27,7 +27,7 @@ const OurStory = () => (
               What started as a commitment to serve fellow veterans has grown into a comprehensive retirement planning practice serving families across Missouri. Every client relationship is built on the same core values that guided Michael's military career.
             </p>
             <p className="text-gray-700">
-              Today, Key Retirement Solutions continues to grow -- not through aggressive sales tactics, but through genuine relationships, measurable results, and unwavering dedication to each client's financial well-being.
+              Today, Service to Security continues to grow -- not through aggressive sales tactics, but through genuine relationships, measurable results, and unwavering dedication to each client's financial well-being.
             </p>
           </div>
         </div>

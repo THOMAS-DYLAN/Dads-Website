@@ -32,7 +32,6 @@ const Index = () => {
     await delay(160);
     setOpenDropdown(null);
   };
-
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
     setOpenMobileDropdown(null);
