@@ -74,12 +74,7 @@ const Index = () => {
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-center justify-between h-20">
             <a href="/" className="text-2xl font-bold text-white ">
-              <img
-                alt=" "
-                className="h-12 w-auto"
-                crossOrigin="anonymous"
-                src=" "
-              />
+
             </a>
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-1">
