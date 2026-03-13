@@ -15,7 +15,7 @@ const OurStory = () => (
           <div>
             <h2 className="text-3xl font-bold text-blue-600 mb-4">A Mission Born From Service</h2>
             <p className="text-gray-700 mb-4">
-              Service to Security was founded with a simple but powerful purpose: to bring the same discipline, integrity, and commitment that defines military service into the world of financial planning.
+             Service to Security was built with one mission in mind: to bring the same discipline, integrity, and commitment that defined my military service into the way I help people plan for their future.  Over the years, I’ve seen countless retirees — and many fellow Veterans — struggle to make sense of Medicare, retirement income strategies, and long‑term care planning. The system is complicated, the stakes are high, and too many people are left to figure it out alone.
             </p>
             <p className="text-gray-700 mb-4">
               Our founder, Michael Thomas, witnessed firsthand how many veterans and retirees struggled to navigate the complex landscape of Medicare, retirement income, and long-term care planning. He knew there had to be a better way -- one built on trust, education, and personalized guidance.
@@ -24,10 +24,10 @@ const OurStory = () => (
           <div>
             <h2 className="text-3xl font-bold text-blue-600 mb-4">Building a Legacy of Trust</h2>
             <p className="text-gray-700 mb-4">
-              What started as a commitment to serve fellow veterans has grown into a comprehensive retirement planning practice serving families across Missouri. Every client relationship is built on the same core values that guided Michael's military career.
+             I knew there had to be a better way. A way built on trust, education, and truly personalized guidance.
             </p>
             <p className="text-gray-700">
-              Today, Service to Security continues to grow -- not through aggressive sales tactics, but through genuine relationships, measurable results, and unwavering dedication to each client's financial well-being.
+              A way that puts people first — their goals, their families, and their peace of mind. That’s why Service to Security exists: to protect what you’ve worked a lifetime to build and to guide you with the same commitment I lived by in uniform.
             </p>
           </div>
         </div>
