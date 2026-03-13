@@ -405,7 +405,7 @@ const Index = () => {
         </div>
       </nav>
 
-      <section className="py-16 h-30 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="mb-6">
