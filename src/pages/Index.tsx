@@ -420,7 +420,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <a href="/" className="text-2xl font-bold text-white">
+      <a href="/" className="text-2xl font-bold text-white flex: center">
         <img
           alt="Service to Security"
           className="h-12 w-auto"
