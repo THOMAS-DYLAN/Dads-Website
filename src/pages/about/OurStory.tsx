@@ -22,7 +22,7 @@ const OurStory = () => (
             </p>
           </div>
           <div>
-            <h2 className="text-3xl font-bold text-blue-600 mb-4">Building a Legacy of Trust</h2>
+            <h2 className="text-3xl font-bold text-blue-600 mb-8">Building a Legacy of Trust</h2>
             <p className="text-gray-700 mb-4">
               What began as a commitment to help fellow Veterans has grown into a comprehensive retirement-planning practice serving families across Missouri. Every relationship I build is grounded in the same core values that guided me throughout my military career: discipline, integrity, and an unwavering commitment to doing what’s right.
             </p>
