@@ -31,7 +31,7 @@ const OurStory = () => (
             </p>
             <p className="text-gray-700 mb-4">
               That’s the heart of Service to Security: serving people the right way, one family at a time.
-            </p>>
+            </p>
           </div>
         </div>
       </div>
