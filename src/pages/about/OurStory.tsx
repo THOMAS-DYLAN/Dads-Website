@@ -24,11 +24,12 @@ const OurStory = () => (
           <div>
             <h2 className="text-3xl font-bold text-blue-600 mb-4">Building a Legacy of Trust</h2>
             <p className="text-gray-700 mb-4">
-             I knew there had to be a better way. A way built on trust, education, and truly personalized guidance.
+              What began as a commitment to help fellow Veterans has grown into a comprehensive retirement planning practice serving families all across Missouri. Every relationship I build is grounded in the same core values that guided me throughout my military career: discipline, integrity, and an unwavering commitment to doing what’s right.
             </p>
             <p className="text-gray-700">
-              A way that puts people first — their goals, their families, and their peace of mind. That’s why Service to Security exists: to protect what you’ve worked a lifetime to build and to guide you with the same commitment I lived by in uniform.
+              Today, Service to Security continues to grow — not because of high‑pressure sales tactics, but because of genuine relationships, real results, and a dedication to protecting each client’s financial well‑being. Retirees trust us because we take the time to educate, to listen, and to create plans that truly fit their lives. Veterans trust us because we understand their world and the unique challenges they face.
             </p>
+            <p className="text-grey-700">That’s the heart of Service to Security: serving people the right way, one family at a time.</p>
           </div>
         </div>
       </div>
