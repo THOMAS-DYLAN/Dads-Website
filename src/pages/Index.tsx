@@ -477,12 +477,11 @@ const Index = () => {
               <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-white/40 hover:shadow-lg cursor-pointer">
                 <Shield className="w-12 h-12 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-blue-100 mb-3">VETERANS</h3>
+              <h3 className="text-xl font-bold text-blue-100 mb-3">RETIREES</h3>
               <p className="text-blue-50">
-                Honoring those who served with specialized retirement strategies
+                Protect your retirement income and preserve your legacy
               </p>
             </div>
-
             <div className="text-center">
               <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-white/40 hover:shadow-lg cursor-pointer">
                 <Clock className="w-12 h-12 text-white" />
@@ -492,14 +491,13 @@ const Index = () => {
                 Navigate Medicare decisions with confidence and clarity
               </p>
             </div>
-
             <div className="text-center">
               <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-white/40 hover:shadow-lg cursor-pointer">
                 <Shield className="w-12 h-12 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-blue-100 mb-3">RETIREES</h3>
+              <h3 className="text-xl font-bold text-blue-100 mb-3">VETERANS</h3>
               <p className="text-blue-50">
-                Protect your retirement income and preserve your legacy
+                Honoring those who served with specialized retirement strategies
               </p>
             </div>
 
