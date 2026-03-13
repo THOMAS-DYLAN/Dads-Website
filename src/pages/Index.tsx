@@ -73,7 +73,7 @@ const Index = () => {
       <nav className="w-full bg-red-500 shadow-lg">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-center justify-between h-20">
-            <div className="flex-shrink-0">
+
               <a href="/" className="text-2xl font-bold text-white">
                 <img
                   alt="Service to Security"
@@ -82,7 +82,7 @@ const Index = () => {
                   src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/806a.png"
                 />
               </a>
-            </div>
+
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-1">
