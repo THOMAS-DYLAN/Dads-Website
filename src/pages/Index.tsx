@@ -418,14 +418,14 @@ const Index = () => {
               Your Future. My Mission.
             </p>
           </div>
-        <a href="/" className="text-2xl font-bold text-white ">
+      <a>
         <img
-          alt="Service to Security"
-          className="h-12 w-auto"
-          crossOrigin="anonymous"
-          src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/806a.png"
-        />
-      </a>
+            src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/806a.png"
+            alt="Service to Security"
+            className="rounded-lg shadow-lg w-48 h-48 object-cover mx-auto border-4 border-blue-600"
+            crossOrigin="anonymous"
+          />
+        </a>
         </div>
       </section>
 
