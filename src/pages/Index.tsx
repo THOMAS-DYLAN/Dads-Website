@@ -77,7 +77,7 @@ const Index = () => {
             <div className="flex-shrink-0">
               <a href="/" className="text-2xl font-bold text-white">
                 <img
-                  alt="Key Retirement Solutions"
+                  alt="Service to Security"
                   className="h-12 w-auto"
                   crossOrigin="anonymous"
                   src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/806a.png"
@@ -445,15 +445,12 @@ const Index = () => {
                 You spent decades working, planning, and building a life. Retirement is the time to protect it.
               </span>{" "}
               <span className="text-blue-600">
-                It transforms. The same discipline, strategy, and commitment that defined
-                your military career now protect your financial future.
+                At Service to Security, we help retirees turn years of hard work into lasting financial security. Through thoughtful planning and protection strategies, we focus on protecting your retirement income, your family’s future, and the legacy you want to leave behind.
               </span>
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              At Key Retirement Solutions, we understand the veteran mindset. We don't just
-              sell insurance—we build{" "}
-              <span className="font-bold text-blue-600">lifetime</span> for your
-              retirement, your family's security, and your legacy.
+              Because after a {" "}
+              <span className="font-bold text-blue-600">lifetime</span> of work, your future deserves to be secure.
             </p>
             <div className="border-l-4 border-red-500 pl-6 py-2 bg-blue-50">
               <p className="text-xl font-bold text-blue-700">
@@ -736,7 +733,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div>
               <h3 className="text-xl font-bold mb-4">Service to Security</h3>
-              <p className="mb-2">Powered by Key Retirement Solutions</p>
+              <p className="mb-2">Powered by Service to Security</p>
               <p className="text-white font-semibold">#YourFuture MyMission!</p>
             </div>
 
@@ -777,7 +774,7 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-8 pt-8 border-t border-white/20">
-            <p className="text-sm">© 2026 Key Retirement Solutions. All rights reserved.</p>
+            <p className="text-sm">© 2026Service to Security. All rights reserved.</p>
           </div>
         </div>
       </footer>
