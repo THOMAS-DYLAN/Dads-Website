@@ -15,13 +15,19 @@ import SocialSecurity from "./pages/retirement/SocialSecurity";
 import LongTermCare from "./pages/retirement/LongTermCare";
 import Annuities from "./pages/retirement/Annuities";
 import AssetProtection from "./pages/retirement/AssetProtection";
+import LifeInsurance from "./pages/retirement/LifeInsurance";
 import Blog from "./pages/resources/Blog";
 import Checklist from "./pages/resources/Checklist";
 import Guides from "./pages/resources/Guides";
 import Videos from "./pages/resources/Videos";
+import Faq from "./pages/resources/Faq";
+import MedicareGuide from "./pages/resources/MedicareGuide";
+import Calculators from "./pages/resources/Calculators";
 import Schedule from "./pages/contact/Schedule";
 import Contact from "./pages/contact/Contact";
 import Locations from "./pages/contact/Locations";
+import ContactUs from "./pages/contact/ContactUs";
+import Consultation from "./pages/contact/Consultation";
 
 export const routers = [
     {
@@ -47,14 +53,20 @@ export const routers = [
     { path: "/retirement/long-term-care", name: 'long-term-care', element: <LongTermCare /> },
     { path: "/retirement/annuities", name: 'annuities', element: <Annuities /> },
     { path: "/retirement/asset-protection", name: 'asset-protection', element: <AssetProtection /> },
+    { path: "/retirement/life-insurance", name: 'life-insurance', element: <LifeInsurance /> },
     // Resources
     { path: "/resources/blog", name: 'blog', element: <Blog /> },
     { path: "/resources/checklist", name: 'checklist', element: <Checklist /> },
     { path: "/resources/guides", name: 'guides', element: <Guides /> },
     { path: "/resources/videos", name: 'videos', element: <Videos /> },
+    { path: "/resources/faq", name: 'faq', element: <Faq /> },
+    { path: "/resources/medicare-guide", name: 'medicare-guide', element: <MedicareGuide /> },
+    { path: "/resources/calculators", name: 'calculators', element: <Calculators /> },
     // Contact
     { path: "/contact/schedule", name: 'schedule', element: <Schedule /> },
     { path: "/contact", name: 'contact', element: <Contact /> },
+    { path: "/contact/us", name: 'contact-us', element: <ContactUs /> },
+    { path: "/contact/consultation", name: 'consultation', element: <Consultation /> },
     { path: "/contact/locations", name: 'locations', element: <Locations /> },
     /* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */
     {

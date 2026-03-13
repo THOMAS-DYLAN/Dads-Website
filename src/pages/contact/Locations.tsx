@@ -5,7 +5,7 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 const Locations = () => (
   <PageLayout>
     <HeroSection
-      title="OFFICE LOCATIONS"
+      title="OFFICE LOCATIONS & SERVICE AREA"
       subtitle="Serving veterans, retirees, and families across the greater Kansas City and Missouri area."
     />
 
@@ -42,7 +42,7 @@ const Locations = () => (
                 </div>
                 <div>
                   <h3 className="font-bold text-blue-600">Email</h3>
-                  <a href="mailto:mthomas@krs.insure" className="text-gray-700 hover:text-blue-600 transition">mthomas@krs.insure</a>
+                  <a href="mailto:dylant5323@gmail.com" className="text-gray-700 hover:text-blue-600 transition">dylant5323@gmail.com</a>
                 </div>
               </div>
 
@@ -83,7 +83,7 @@ const Locations = () => (
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-4">
-              {['Kansas City, MO', 'Independence, MO', 'Lee\'s Summit, MO', 'Blue Springs, MO'].map((city) => (
+              {['Kansas City, MO', 'Independence, MO', "Lee's Summit, MO", 'Blue Springs, MO'].map((city) => (
                 <div key={city} className="flex items-center gap-2 p-3 bg-blue-50 rounded-lg">
                   <MapPin className="w-4 h-4 text-blue-600 shrink-0" />
                   <p className="text-gray-700 text-sm">{city}</p>
@@ -91,6 +91,30 @@ const Locations = () => (
               ))}
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="py-16 bg-blue-500">
+      <div className="container mx-auto px-4 max-w-4xl text-center">
+        <h2 className="text-3xl font-bold text-white mb-6">READY TO VISIT?</h2>
+        <p className="text-blue-50 text-lg mb-8">
+          Schedule a complimentary consultation at our office or request a virtual meeting.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <a
+            href="/contact/consultation"
+            className="inline-flex items-center gap-2 bg-red-500 text-white font-bold px-8 py-4 rounded-lg transition hover:bg-red-600"
+          >
+            Schedule Appointment
+          </a>
+          <a
+            href="tel:816-752-4944"
+            className="inline-flex items-center gap-2 bg-white text-blue-600 font-bold px-8 py-4 rounded-lg transition hover:bg-blue-50"
+          >
+            <Phone className="w-5 h-5" />
+            Call Us
+          </a>
         </div>
       </div>
     </section>
