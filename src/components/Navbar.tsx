@@ -62,8 +62,8 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <a href="/" className="text-2xl font-bold text-white">
               <img
-                src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/806a.png"
-                alt="Key Retirement Solutions"
+                src=""
+                alt=""
                 className="h-12 w-auto"
                 crossOrigin="anonymous"
               />
