@@ -11,7 +11,7 @@ import {
   Phone,
   Menu,
   X,
-  Home
+  House,
   ChevronDown,
 } from "lucide-react";
 import { useState } from "react";
@@ -75,7 +75,7 @@ const Index = () => {
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-center justify-between h-20">
             <a href="/" className="text-2xl font-bold text-white ">
-              <Home/>
+              <House/>
             </a>
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-1">
