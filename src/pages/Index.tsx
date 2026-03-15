@@ -772,7 +772,7 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-8 pt-8 border-t border-white/20">
-            <p className="text-sm">© 2026Service to Security. All rights reserved.</p>
+            <p className="text-sm">© 2026 Service to Security. All rights reserved.</p>
           </div>
         </div>
       </footer>
