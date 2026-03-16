@@ -53,7 +53,7 @@ ${formData.notes || 'None provided'}
 This consultation request was submitted through Key Retirement Solutions website.
     `.trim();
 
-    const mailtoLink = `mailto:dylant5323@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:mthomas@krs.insure?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;
   };
 
