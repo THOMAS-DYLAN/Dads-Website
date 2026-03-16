@@ -1,8 +1,63 @@
 import PageLayout from '@/components/PageLayout';
 import HeroSection from '@/components/HeroSection';
 import { Calendar, Video, MapPin, Phone, Check } from 'lucide-react';
+import { useState, FormEvent } from 'react';
 
-const Consultation = () => (
+const Consultation = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    meetingType: '',
+    preferredDate: '',
+    preferredTime: '',
+    topics: [] as string[],
+    notes: '',
+    isVeteran: false
+  });
+
+  const handleCheckboxChange = (topic: string, checked: boolean) => {
+    setFormData(prev => ({
+      ...prev,
+      topics: checked 
+        ? [...prev.topics, topic]
+        : prev.topics.filter(t => t !== topic)
+    }));
+  };
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    
+    const subject = `Consultation Request - ${formData.firstName} ${formData.lastName}`;
+    const body = `
+CONSULTATION REQUEST
+
+Name: ${formData.firstName} ${formData.lastName}
+Email: ${formData.email}
+Phone: ${formData.phone}
+
+Meeting Preference: ${formData.meetingType}
+Preferred Date: ${formData.preferredDate}
+Preferred Time: ${formData.preferredTime}
+
+Topics of Interest:
+${formData.topics.map(topic => `- ${topic}`).join('\n')}
+
+Veteran Status: ${formData.isVeteran ? 'Yes' : 'No'}
+
+Additional Notes:
+${formData.notes || 'None provided'}
+
+---
+This consultation request was submitted through Key Retirement Solutions website.
+    `.trim();
+
+    const mailtoLink = `mailto:dylant5323@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  };
+
+  return (
   <PageLayout>
     <HeroSection
       title="REQUEST A CONSULTATION"
@@ -76,7 +131,7 @@ const Consultation = () => (
           <div>
             <h2 className="text-3xl font-bold text-blue-600 mb-6">SCHEDULE YOUR CONSULTATION</h2>
             
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-semibold text-gray-700 mb-2">
@@ -86,6 +141,8 @@ const Consultation = () => (
                     type="text"
                     id="firstName"
                     required
+                    value={formData.firstName}
+                    onChange={(e) => setFormData({...formData, firstName: e.target.value})}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition"
                   />
                 </div>
@@ -98,6 +155,8 @@ const Consultation = () => (
                     type="text"
                     id="lastName"
                     required
+                    value={formData.lastName}
+                    onChange={(e) => setFormData({...formData, lastName: e.target.value})}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition"
                   />
                 </div>
@@ -111,6 +170,8 @@ const Consultation = () => (
                   type="email"
                   id="email"
                   required
+                  value={formData.email}
+                  onChange={(e) => setFormData({...formData, email: e.target.value})}
                   className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition"
                 />
               </div>
@@ -123,6 +184,8 @@ const Consultation = () => (
                   type="tel"
                   id="phone"
                   required
+                  value={formData.phone}
+                  onChange={(e) => setFormData({...formData, phone: e.target.value})}
                   className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition"
                 />
               </div>
@@ -134,12 +197,14 @@ const Consultation = () => (
                 <select
                   id="meetingType"
                   required
+                  value={formData.meetingType}
+                  onChange={(e) => setFormData({...formData, meetingType: e.target.value})}
                   className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition"
                 >
                   <option value="">Select meeting type...</option>
-                  <option value="in-person">In-Person Meeting</option>
-                  <option value="virtual">Virtual Video Call</option>
-                  <option value="phone">Phone Consultation</option>
+                  <option value="In-Person Meeting">In-Person Meeting</option>
+                  <option value="Virtual Video Call">Virtual Video Call</option>
+                  <option value="Phone Consultation">Phone Consultation</option>
                 </select>
               </div>
 
@@ -152,6 +217,8 @@ const Consultation = () => (
                     type="date"
                     id="preferredDate"
                     required
+                    value={formData.preferredDate}
+                    onChange={(e) => setFormData({...formData, preferredDate: e.target.value})}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition"
                   />
                 </div>
@@ -163,12 +230,14 @@ const Consultation = () => (
                   <select
                     id="preferredTime"
                     required
+                    value={formData.preferredTime}
+                    onChange={(e) => setFormData({...formData, preferredTime: e.target.value})}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition"
                   >
                     <option value="">Select time...</option>
-                    <option value="morning">Morning (9am - 12pm)</option>
-                    <option value="afternoon">Afternoon (12pm - 3pm)</option>
-                    <option value="late">Late Afternoon (3pm - 5pm)</option>
+                    <option value="Morning (9am - 12pm)">Morning (9am - 12pm)</option>
+                    <option value="Afternoon (12pm - 3pm)">Afternoon (12pm - 3pm)</option>
+                    <option value="Late Afternoon (3pm - 5pm)">Late Afternoon (3pm - 5pm)</option>
                   </select>
                 </div>
               </div>
@@ -179,23 +248,43 @@ const Consultation = () => (
                 </label>
                 <div className="space-y-2 p-4 border-2 border-gray-300 rounded-lg">
                   <label className="flex items-center gap-2">
-                    <input type="checkbox" className="w-4 h-4 text-blue-600 rounded" />
+                    <input 
+                      type="checkbox" 
+                      className="w-4 h-4 text-blue-600 rounded"
+                      onChange={(e) => handleCheckboxChange('Medicare Planning', e.target.checked)}
+                    />
                     <span className="text-gray-700">Medicare Planning</span>
                   </label>
                   <label className="flex items-center gap-2">
-                    <input type="checkbox" className="w-4 h-4 text-blue-600 rounded" />
+                    <input 
+                      type="checkbox" 
+                      className="w-4 h-4 text-blue-600 rounded"
+                      onChange={(e) => handleCheckboxChange('Retirement Income Planning', e.target.checked)}
+                    />
                     <span className="text-gray-700">Retirement Income Planning</span>
                   </label>
                   <label className="flex items-center gap-2">
-                    <input type="checkbox" className="w-4 h-4 text-blue-600 rounded" />
+                    <input 
+                      type="checkbox" 
+                      className="w-4 h-4 text-blue-600 rounded"
+                      onChange={(e) => handleCheckboxChange('Life Insurance', e.target.checked)}
+                    />
                     <span className="text-gray-700">Life Insurance</span>
                   </label>
                   <label className="flex items-center gap-2">
-                    <input type="checkbox" className="w-4 h-4 text-blue-600 rounded" />
+                    <input 
+                      type="checkbox" 
+                      className="w-4 h-4 text-blue-600 rounded"
+                      onChange={(e) => handleCheckboxChange('Long-Term Care Planning', e.target.checked)}
+                    />
                     <span className="text-gray-700">Long-Term Care Planning</span>
                   </label>
                   <label className="flex items-center gap-2">
-                    <input type="checkbox" className="w-4 h-4 text-blue-600 rounded" />
+                    <input 
+                      type="checkbox" 
+                      className="w-4 h-4 text-blue-600 rounded"
+                      onChange={(e) => handleCheckboxChange('Social Security Optimization', e.target.checked)}
+                    />
                     <span className="text-gray-700">Social Security Optimization</span>
                   </label>
                 </div>
@@ -208,6 +297,8 @@ const Consultation = () => (
                 <textarea
                   id="notes"
                   rows={3}
+                  value={formData.notes}
+                  onChange={(e) => setFormData({...formData, notes: e.target.value})}
                   className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition resize-none"
                   placeholder="Any specific questions or concerns you'd like to discuss?"
                 ></textarea>
@@ -217,6 +308,8 @@ const Consultation = () => (
                 <input
                   type="checkbox"
                   id="veteran"
+                  checked={formData.isVeteran}
+                  onChange={(e) => setFormData({...formData, isVeteran: e.target.checked})}
                   className="mt-1 w-4 h-4 text-blue-600 border-gray-300 rounded"
                 />
                 <label htmlFor="veteran" className="text-sm text-gray-700">
@@ -302,6 +395,7 @@ const Consultation = () => (
       </div>
     </section>
   </PageLayout>
-);
+  );
+};
 
 export default Consultation;
