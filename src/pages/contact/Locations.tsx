@@ -71,7 +71,7 @@ const Locations = () => (
             <h2 className="text-2xl font-bold text-blue-600 mb-6">FIND US</h2>
             <div className="aspect-[4/3] rounded-lg overflow-hidden border-2 border-gray-300 shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198952.39276265993!2d-94.81484405!3d39.099727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0f75eafe99997%3A0x558525e66aaa51a2!2sKansas%20City%2C%20MO!5e0!3m2!1sen!2sus!4v1234567890123"
+                src="https://maps.app.goo.gl/zxMNTRmRpkKj32KQ8"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
