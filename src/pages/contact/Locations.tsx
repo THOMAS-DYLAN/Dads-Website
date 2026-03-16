@@ -6,7 +6,7 @@ const Locations = () => (
   <PageLayout>
     <HeroSection
       title="OFFICE LOCATIONS & SERVICE AREA"
-      subtitle="Serving veterans, retirees, and families across the greater Kansas City and Missouri area."
+      subtitle="Serving veterans, retirees, and families across the greater Trenton and Missouri area."
     />
 
     <section className="py-16 bg-white">
@@ -22,7 +22,7 @@ const Locations = () => (
                 <div>
                   <h3 className="font-bold text-blue-600">Address</h3>
                   <p className="text-gray-700">Service to Security</p>
-                  <p className="text-gray-700">Kansas City, MO</p>
+                  <p className="text-gray-700">Trenton, MO</p>
                 </div>
               </div>
 
@@ -62,7 +62,7 @@ const Locations = () => (
             <div className="mt-8 p-6 bg-blue-50 rounded-lg">
               <h3 className="font-bold text-blue-600 mb-2">SERVICE AREA</h3>
               <p className="text-gray-700 text-sm">
-                While our office is based in Kansas City, we proudly serve clients throughout Missouri and surrounding areas. Virtual consultations are available for clients who prefer to meet remotely.
+                While our office is based in Trenton, we proudly serve clients throughout Missouri and surrounding areas. Virtual consultations are available for clients who prefer to meet remotely.
               </p>
             </div>
           </div>
@@ -78,12 +78,12 @@ const Locations = () => (
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Kansas City Office Location"
+                title="Trenton Office Location"
               ></iframe>
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-4">
-              {['Kansas City, MO', 'Independence, MO', "Lee's Summit, MO", 'Blue Springs, MO'].map((city) => (
+              {['Trenton, MO', 'Independence, MO', "Lee's Summit, MO", 'Blue Springs, MO'].map((city) => (
                 <div key={city} className="flex items-center gap-2 p-3 bg-blue-50 rounded-lg">
                   <MapPin className="w-4 h-4 text-blue-600 shrink-0" />
                   <p className="text-gray-700 text-sm">{city}</p>
