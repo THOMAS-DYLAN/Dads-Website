@@ -78,7 +78,7 @@ const Index = () => {
               <House className="text-pink-500 object-fit: container hover:text-blue-500"/>
             </a>
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-1">
+            <div className="hidden md:flex items-center space-x-1">
               <div
                 className="relative"
                 onMouseEnter={() => handleMouseEnter("about")}
@@ -231,7 +231,7 @@ const Index = () => {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="rounded-lg p-2 text-white transition hover:bg-blue-800/50 lg:hidden"
+              className="rounded-lg p-2 text-white transition hover:bg-blue-800/50 md:hidden"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -240,7 +240,7 @@ const Index = () => {
 
           {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="lg:hidden pb-4">
+            <div className="md:hidden pb-4">
               <div className="mt-2 rounded-xl bg-red-500/60 p-3 shadow-inner">
                 <div className="border-b border-blue-400/50 pb-2">
                   <button

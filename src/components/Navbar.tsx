@@ -71,7 +71,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-1">
+          <div className="hidden md:flex items-center space-x-1">
             {/* About */}
             <div
               className="relative"
@@ -230,7 +230,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="rounded-lg p-2 text-white transition hover:bg-blue-800/50 lg:hidden"
+            className="rounded-lg p-2 text-white transition hover:bg-blue-800/50 md:hidden"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -239,7 +239,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden pb-4">
+          <div className="md:hidden pb-4">
             <div className="mt-2 rounded-xl bg-red-500/60 p-3 shadow-inner">
               {/* About */}
               <div className="border-b border-blue-400/50 pb-2">
