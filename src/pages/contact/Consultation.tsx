@@ -72,7 +72,7 @@ This consultation request was submitted through Key Retirement Solutions website
               <MapPin className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-bold text-blue-600 mb-2">In-Person</h3>
-            <p className="text-gray-700">Meet at our Kansas City office or a location convenient for you</p>
+            <p className="text-gray-700">Meet at our Trenton office or a location convenient for you</p>
           </div>
 
           <div className="text-center p-6 bg-blue-50 rounded-lg">

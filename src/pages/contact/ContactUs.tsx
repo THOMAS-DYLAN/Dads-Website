@@ -63,7 +63,7 @@ const ContactUs = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-blue-600 text-lg mb-1">Location</h3>
-                    <p className="text-gray-700">Kansas City, MO</p>
+                    <p className="text-gray-700">Trenton, Missouri</p>
                     <a href="/contact/locations" className="text-blue-600 hover:underline text-sm">
                       View service area →
                     </a>
