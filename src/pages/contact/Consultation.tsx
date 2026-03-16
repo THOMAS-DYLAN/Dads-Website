@@ -227,18 +227,14 @@ This consultation request was submitted through Key Retirement Solutions website
                   <label htmlFor="preferredTime" className="block text-sm font-semibold text-gray-700 mb-2">
                     Preferred Time *
                   </label>
-                  <select
+                  <input
+                    type="time"
                     id="preferredTime"
                     required
                     value={formData.preferredTime}
                     onChange={(e) => setFormData({...formData, preferredTime: e.target.value})}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition"
-                  >
-                    <option value="">Select time...</option>
-                    <option value="Morning (9am - 12pm)">Morning (9am - 12pm)</option>
-                    <option value="Afternoon (12pm - 3pm)">Afternoon (12pm - 3pm)</option>
-                    <option value="Late Afternoon (3pm - 5pm)">Late Afternoon (3pm - 5pm)</option>
-                  </select>
+                  />
                 </div>
               </div>
 
