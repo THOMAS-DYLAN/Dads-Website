@@ -71,17 +71,15 @@ const Locations = () => (
             <h2 className="text-2xl font-bold text-blue-600 mb-6">FIND US</h2>
             <div className="aspect-[4/3] rounded-lg overflow-hidden border-2 border-gray-300 shadow-lg">
               <iframe
-                src="https://maps.app.goo.gl/zxMNTRmRpkKj32KQ8"
+                src="https://www.google.com/maps?q=Trenton,+Missouri&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
-                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Trenton Office Location"
               ></iframe>
             </div>
-
             <div className="mt-6 grid grid-cols-2 gap-4">
               {['Trenton, MO', 'Independence, MO', "Lee's Summit, MO", 'Blue Springs, MO'].map((city) => (
                 <div key={city} className="flex items-center gap-2 p-3 bg-blue-50 rounded-lg">
