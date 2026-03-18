@@ -58,7 +58,7 @@ const Blog = () => {
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-gray-400 flex items-center gap-1"><Clock className="w-3 h-3" /> {post.date}</span>
                     <Link to="/contact" className="text-blue-600 text-sm font-semibold flex items-center gap-1 hover:text-red-500 transition">
-                      Read More <ArrowRight className="w-4 h-4" />
+                       Contact Us To Learn More <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
                 </div>
