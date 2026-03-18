@@ -21,13 +21,14 @@ const MedicareSupplement = () => (
         <h3 className="text-2xl font-bold text-blue-600 mb-4">POPULAR MEDIGAP PLANS</h3>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {[
-            { plan: 'Plan F', desc: 'The most comprehensive coverage. Covers all Medicare gaps including Part B excess charges. Only available to those eligible before January 1, 2020.', highlight: true },
-            { plan: 'Plan G', desc: 'Nearly identical to Plan F, covering everything except the Part B deductible. The most popular choice for new enrollees.', highlight: false },
-            { plan: 'Plan N', desc: 'A cost-effective option with lower premiums. Requires small copays for some office visits and ER visits.', highlight: false },
+            { plan: 'Plan F', desc: 'The most comprehensive coverage. Covers all Medicare gaps including Part B excess charges.', note: '** Only available to those eligible before January 1, 2020.', highlight: true },
+            { plan: 'Plan G', desc: 'Nearly identical to Plan F, covering everything except the Part B deductible. The most popular choice for new enrollees.', note: '', highlight: false },
+            { plan: 'Plan N', desc: 'A cost-effective option with lower premiums. Requires small copays for some office visits and ER visits.', note: '', highlight: false },
           ].map((item) => (
             <div key={item.plan} className={`p-6 rounded-lg border-2 ${item.highlight ? 'border-red-500 bg-red-50' : 'border-blue-200 bg-blue-50'}`}>
               <h4 className="text-xl font-bold text-blue-600 mb-3">{item.plan}</h4>
               <p className="text-gray-700 text-sm">{item.desc}</p>
+              {item.note && <p className="text-gray-600 text-sm italic font-semibold mt-2">{item.note}</p>}
             </div>
           ))}
         </div>

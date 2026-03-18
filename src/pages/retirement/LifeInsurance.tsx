@@ -92,6 +92,35 @@ const LifeInsurance = () => (
               <li>Access to policy loans and withdrawals</li>
             </ul>
           </div>
+
+          <div className="bg-white rounded-lg p-6 shadow-lg">
+            <h3 className="text-2xl font-bold text-blue-600 mb-3">Final Expense Insurance</h3>
+            <p className="text-gray-700 mb-3">
+              Simplified whole life coverage designed specifically to cover end-of-life costs:
+            </p>
+            <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
+              <li>Smaller face amounts typically ranging from $5,000 to $50,000</li>
+              <li>Simplified underwriting -- no medical exams required</li>
+              <li>Covers funeral costs, burial expenses, and outstanding medical bills</li>
+              <li>Guaranteed level premiums that never increase</li>
+              <li>Ideal for seniors who want to ease the financial burden on loved ones</li>
+            </ul>
+          </div>
+
+          <div className="bg-white rounded-lg p-6 shadow-lg">
+            <h3 className="text-2xl font-bold text-blue-600 mb-3">Infinite Banking Concept (IBC)</h3>
+            <p className="text-gray-700 mb-3">
+              A strategy that uses dividend-paying whole life insurance as your own personal banking system:
+            </p>
+            <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
+              <li>Build a "personal bank" using whole life policy cash value</li>
+              <li>Borrow against your policy for major purchases -- cars, real estate, business needs</li>
+              <li>Your money continues to grow even while borrowed against</li>
+              <li>Recapture interest you'd normally pay to banks and lenders</li>
+              <li>Create generational wealth with tax-advantaged growth and death benefit</li>
+              <li>Maintain full control of your financial resources</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

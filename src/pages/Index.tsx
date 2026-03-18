@@ -45,22 +45,22 @@ const Index = () => {
       { name: "Why Choose Us", path: "/about/why-choose-us" },
     ],
     medicare: [
-      { name: "Medicare Advantage", path: "/medicare/advantage" },
-      { name: "Medicare Supplement", path: "/medicare/supplement" },
-      { name: "Part D Prescription", path: "/medicare/part-d" },
       { name: "Medicare Basics", path: "/medicare/basics" },
+      { name: "Medicare Supplement", path: "/medicare/supplement" },
+      { name: "Medicare Advantage", path: "/medicare/advantage" },
+      { name: "Part D Prescription", path: "/medicare/part-d" },
     ],
     retirement: [
       { name: "Retirement Income", path: "/retirement/income" },
-      { name: "Annuities", path: "/retirement/annuities" },
+      { name: "Estate Planning", path: "/retirement/estate-planning" },
       { name: "Life Insurance", path: "/retirement/life-insurance" },
+      { name: "Annuities", path: "/retirement/annuities" },
       { name: "Long-Term Care", path: "/retirement/long-term-care" },
     ],
     resources: [
       { name: "Blog", path: "/resources/blog" },
       { name: "FAQ", path: "/resources/faq" },
       { name: "Medicare Guide", path: "/resources/medicare-guide" },
-      { name: "Calculators", path: "/resources/calculators" },
     ],
     contact: [
       { name: "Contact Us", path: "/contact/us" },
@@ -422,14 +422,6 @@ const Index = () => {
               YourFutureMyMission!
             </p>
           </div>
-          <a>
-            <img
-            src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/806a.png"
-            alt="Service to Security"
-            className="rounded-lg shadow-lg w-48 h-48 object-cover mx-auto"
-            crossOrigin="anonymous"
-          />
-        </a>
         </div>
       </section>
 

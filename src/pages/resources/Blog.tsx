@@ -11,8 +11,14 @@ const blogPosts = [
   { title: 'When Should You Claim Social Security? A Strategic Guide', category: 'Retirement', date: 'February 2026', excerpt: 'The right timing can mean hundreds of thousands of dollars in additional lifetime benefits.' },
   { title: 'Medicare Advantage vs. Medigap: Which Is Right for You?', category: 'Medicare', date: 'January 2026', excerpt: 'Understanding the key differences to make the best choice for your healthcare needs.' },
   { title: 'How to Create a Retirement Paycheck That Lasts', category: 'Retirement', date: 'January 2026', excerpt: 'Strategies for turning your savings into reliable monthly income throughout retirement.' },
-  { title: 'Understanding the Medicare Part D Donut Hole', category: 'Medicare', date: 'December 2025', excerpt: 'What the coverage gap means for your prescription costs and how to minimize its impact.' },
+  { title: 'Understanding the Medicare Part D Out-of-Pocket Cap', category: 'Medicare', date: 'December 2025', excerpt: 'How the new $2,100 annual cap changes the game for prescription drug coverage in 2026.' },
   { title: 'Protecting Your Assets from Long-Term Care Costs', category: 'Retirement', date: 'December 2025', excerpt: 'Planning strategies to shield your savings from the devastating costs of extended care.' },
+  { title: 'Medicare Open Enrollment: What You Need to Know', category: 'Medicare', date: 'November 2025', excerpt: 'Key dates, deadlines, and strategies for reviewing and updating your Medicare coverage.' },
+  { title: 'The Infinite Banking Concept: Be Your Own Bank', category: 'Retirement', date: 'November 2025', excerpt: 'How whole life insurance can be used as a powerful personal banking strategy.' },
+  { title: 'Plan F vs. Plan G: Which Medigap Plan Wins?', category: 'Medicare', date: 'October 2025', excerpt: 'A head-to-head comparison of the two most popular Medicare Supplement plans.' },
+  { title: 'Estate Planning Basics Every Retiree Should Know', category: 'Retirement', date: 'October 2025', excerpt: 'Why trusts, wills, and beneficiary designations matter more than you think.' },
+  { title: 'Turning 65? Your Medicare Enrollment Timeline', category: 'Medicare', date: 'September 2025', excerpt: 'A month-by-month guide to preparing for Medicare enrollment before your 65th birthday.' },
+  { title: 'How Annuities Fit Into Your Retirement Income Plan', category: 'Retirement', date: 'September 2025', excerpt: 'Understanding when annuities make sense and how they can provide guaranteed lifetime income.' },
 ];
 
 const Blog = () => {

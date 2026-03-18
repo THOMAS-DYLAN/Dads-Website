@@ -18,7 +18,7 @@ const Income = () => (
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {[
-            { icon: DollarSign, title: 'Income Sources', desc: 'We coordinate Social Security, pensions, 401(k)s, IRAs, and annuities to create a reliable income stream tailored to your needs.' },
+            { icon: DollarSign, title: 'Income Sources', desc: 'We coordinate Social Security, pensions, 401(k)s, IRAs, and additional retirement income vehicles to create a plan that fits your goals and provides lasting stability.' },
             { icon: TrendingUp, title: 'Growth & Preservation', desc: 'Balance growth potential with capital preservation to ensure your money lasts as long as you need it.' },
             { icon: Shield, title: 'Tax Efficiency', desc: 'Strategic withdrawal sequencing minimizes your tax burden and maximizes the longevity of your portfolio.' },
             { icon: Target, title: 'Inflation Protection', desc: 'Build in growth mechanisms to ensure your purchasing power keeps pace with rising costs.' },

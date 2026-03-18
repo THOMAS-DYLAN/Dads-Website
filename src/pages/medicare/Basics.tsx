@@ -39,10 +39,10 @@ const MedicareBasics = () => (
       <div className="container mx-auto px-4 max-w-4xl text-center">
         <h2 className="text-3xl font-bold text-white mb-6">WHY IT MATTERS</h2>
         <p className="text-blue-50 text-lg mb-4">
-          The decisions you make during your initial enrollment period affect your coverage and costs for years to come. Choosing the wrong plan -- or missing your enrollment window -- can result in penalties, coverage gaps, and thousands in unexpected expenses.
+          The choices you make during your initial enrollment period shape your coverage and your costs for years ahead. A plan that doesn't fit your needs -- or missing your enrollment window -- can lead to avoidable penalties, gaps in coverage, and expenses you didn't plan for.
         </p>
         <p className="text-white font-semibold text-lg">
-          Getting it right the first time is critical. That's where expert guidance makes all the difference.
+          That's why getting it right the first time matters. With the right guidance, you can make confident decisions and avoid costly mistakes.
         </p>
       </div>
     </section>

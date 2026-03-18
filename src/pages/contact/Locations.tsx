@@ -22,7 +22,8 @@ const Locations = () => (
                 <div>
                   <h3 className="font-bold text-blue-600">Address</h3>
                   <p className="text-gray-700">Service to Security</p>
-                  <p className="text-gray-700">Trenton, MO</p>
+                  <p className="text-gray-700">1039 Oklahoma Ave</p>
+                  <p className="text-gray-700">Trenton, MO 64683</p>
                 </div>
               </div>
 
@@ -42,7 +43,7 @@ const Locations = () => (
                 </div>
                 <div>
                   <h3 className="font-bold text-blue-600">Email</h3>
-                  <a href="mailto:dylant5323@gmail.com" className="text-gray-700 hover:text-blue-600 transition">dylant5323@gmail.com</a>
+                  <a href="mailto:mthomas@krs.insure" className="text-gray-700 hover:text-blue-600 transition">mthomas@krs.insure</a>
                 </div>
               </div>
 

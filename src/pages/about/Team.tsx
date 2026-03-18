@@ -32,7 +32,7 @@ const Team = () => (
               His mission-driven approach ensures every client receives personalized strategies built on education, transparency, and trust. Michael is passionate about serving veterans and their families, bringing the same dedication to financial planning that defined his commitment to service.
             </p>
             <div className="flex flex-wrap gap-3">
-              {['Retirement Income Certified Professional', 'Certified Long-Term Care', 'Medicare Made Clear'].map((cert) => (
+              {['Retirement Income Certified Professional', 'Certified Long-Term Care', 'Medicare Masters Certified'].map((cert) => (
                 <span key={cert} className="bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">{cert}</span>
               ))}
             </div>

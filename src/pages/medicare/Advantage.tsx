@@ -28,7 +28,7 @@ const MedicareAdvantage = () => (
             <ul className="space-y-3">
               {[
                 'Often lower out-of-pocket costs than Original Medicare',
-                'Bundled coverage (hospital, medical, prescription drugs)',
+                'Bundled coverage (Part A, Part B, & Part D)',
                 'Additional benefits like dental, vision, and hearing',
                 'Maximum out-of-pocket spending limit for protection',
                 'Many plans available with $0 monthly premiums',

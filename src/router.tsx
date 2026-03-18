@@ -16,13 +16,13 @@ import LongTermCare from "./pages/retirement/LongTermCare";
 import Annuities from "./pages/retirement/Annuities";
 import AssetProtection from "./pages/retirement/AssetProtection";
 import LifeInsurance from "./pages/retirement/LifeInsurance";
+import EstatePlanning from "./pages/retirement/EstatePlanning";
 import Blog from "./pages/resources/Blog";
 import Checklist from "./pages/resources/Checklist";
 import Guides from "./pages/resources/Guides";
 import Videos from "./pages/resources/Videos";
 import Faq from "./pages/resources/Faq";
 import MedicareGuide from "./pages/resources/MedicareGuide";
-import Calculators from "./pages/resources/Calculators";
 import Schedule from "./pages/contact/Schedule";
 import Contact from "./pages/contact/Contact";
 import Locations from "./pages/contact/Locations";
@@ -54,6 +54,7 @@ export const routers = [
     { path: "/retirement/annuities", name: 'annuities', element: <Annuities /> },
     { path: "/retirement/asset-protection", name: 'asset-protection', element: <AssetProtection /> },
     { path: "/retirement/life-insurance", name: 'life-insurance', element: <LifeInsurance /> },
+    { path: "/retirement/estate-planning", name: 'estate-planning', element: <EstatePlanning /> },
     // Resources
     { path: "/resources/blog", name: 'blog', element: <Blog /> },
     { path: "/resources/checklist", name: 'checklist', element: <Checklist /> },
@@ -61,7 +62,6 @@ export const routers = [
     { path: "/resources/videos", name: 'videos', element: <Videos /> },
     { path: "/resources/faq", name: 'faq', element: <Faq /> },
     { path: "/resources/medicare-guide", name: 'medicare-guide', element: <MedicareGuide /> },
-    { path: "/resources/calculators", name: 'calculators', element: <Calculators /> },
     // Contact
     { path: "/contact/schedule", name: 'schedule', element: <Schedule /> },
     { path: "/contact", name: 'contact', element: <Contact /> },

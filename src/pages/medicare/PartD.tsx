@@ -22,7 +22,7 @@ const PartD = () => (
             { title: 'Monthly Premium', desc: 'You pay a monthly premium to your Part D plan. Premiums vary by plan and location.' },
             { title: 'Annual Deductible', desc: 'You may need to pay a deductible before your plan begins covering costs. Not all plans have one.' },
             { title: 'Copays & Coinsurance', desc: 'After your deductible, you pay a portion of each prescription (copay or percentage).' },
-            { title: 'Coverage Gap', desc: 'The "donut hole" -- a temporary limit on what the plan covers. You pay a higher percentage until reaching catastrophic coverage.' },
+            { title: 'Annual Out-of-Pocket Cap', desc: 'In 2026, once your total out-of-pocket spending hits $2,100, you pay $0 for the rest of the year. This replaces the old catastrophic phase.' },
           ].map((item) => (
             <div key={item.title} className="p-5 rounded-lg border border-gray-200">
               <h4 className="font-bold text-blue-600 mb-2">{item.title}</h4>
