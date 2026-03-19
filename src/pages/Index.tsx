@@ -80,7 +80,7 @@ const Index = () => {
                 <img
                   src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/b4ac.png"
                   alt="Service To Security"
-                  className="h-30 w-30"
+                  className="h-25 w-25"
                   crossOrigin="anonymous"
                 />
               </a>
