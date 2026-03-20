@@ -126,7 +126,7 @@ This consultation request was submitted through Key Retirement Solutions website
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12" id="consult">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Schedule Form */}
           <div>
             <h2 className="text-3xl font-bold text-blue-600 mb-6" id="consult">SCHEDULE YOUR CONSULTATION</h2>
