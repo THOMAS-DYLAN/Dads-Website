@@ -78,7 +78,7 @@ const Navbar = () => {
               onMouseEnter={() => handleMouseEnter("about")}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold">
+              <button className="flex items-center gap-1 px-3 py-2 text-white font-semibold text-xs">
                 About
                 <ChevronDown
                   className={`h-4 w-4 transition-transform ${
@@ -107,7 +107,7 @@ const Navbar = () => {
               onMouseEnter={() => handleMouseEnter("medicare")}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold">
+              <button className="flex items-center gap-1 px-3 py-2 text-white font-semibold text-xs">
                 Medicare
                 <ChevronDown
                   className={`h-4 w-4 transition-transform ${
@@ -136,7 +136,7 @@ const Navbar = () => {
               onMouseEnter={() => handleMouseEnter("retirement")}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold">
+              <button className="flex items-center gap-1 px-3 py-2 text-white font-semibold text-xs">
                 Retirement Planning
                 <ChevronDown
                   className={`h-4 w-4 transition-transform ${
@@ -165,7 +165,7 @@ const Navbar = () => {
               onMouseEnter={() => handleMouseEnter("resources")}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold transition">
+              <button className="flex items-center gap-1 px-3 py-2 text-white font-semibold text-xs transition">
                 Resources
                 <ChevronDown
                   className={`h-4 w-4 transition-transform ${
@@ -194,7 +194,7 @@ const Navbar = () => {
               onMouseEnter={() => handleMouseEnter("contact")}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="flex items-center gap-1 px-4 py-2 text-white font-semibold">
+              <button className="flex items-center gap-1 px-3 py-2 text-white font-semibold text-xs">
                 Contact
                 <ChevronDown
                   className={`h-4 w-4 transition-transform ${
@@ -220,7 +220,7 @@ const Navbar = () => {
             {/* Desktop Phone Button */}
             <a
               href="tel:816-752-4944"
-              className="flex items-center gap-2 rounded-lg bg-blue-500 px-6 py-3 font-bold text-white transition-all hover:bg-red-400"
+              className="flex items-center gap-2 rounded-lg bg-blue-500 px-4 py-2 font-bold text-xs text-white transition-all hover:bg-red-400"
             >
               <Phone className="h-4 w-4" />
               816-752-4944
