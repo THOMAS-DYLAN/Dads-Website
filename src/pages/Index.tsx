@@ -402,7 +402,7 @@ const Index = () => {
 
                 <a
                   href="tel: 816-248-1100"
-                  className="mt-4 flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-6 py-3 font-bold text-white transition hover:bg-blue-400"
+                  className=" flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-6 py-3 font-bold text-white transition hover:bg-blue-400"
                   onClick={closeMobileMenu}
                 >
                   <Phone className="h-4 w-4" />
