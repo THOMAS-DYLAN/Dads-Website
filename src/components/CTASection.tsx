@@ -9,7 +9,7 @@ const CTASection = () => (
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <Link
-          to="/contact/consultation#consultation"
+          to="/contact/consultation"
           className="bg-white hover:bg-blue-50 text-blue-600 font-bold text-lg px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105"
         >
           Schedule Your Complimentary Consultation
