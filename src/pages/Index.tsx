@@ -414,7 +414,7 @@ const Index = () => {
         </div>
       </nav>
 
-      <nav className="w-full bg-red-500 shadow-lg h-0px hover: h-fill">
+      <nav className="w-full bg-red-500 shadow-lg hidden hover:visible">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
