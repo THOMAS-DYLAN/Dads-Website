@@ -502,7 +502,7 @@ const Index = () => {
             </div>
 
             <div className="text-center">
-              <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-white/20 border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-white/40 hover:shadow-lg cursor-pointer">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 border-4 border-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-white/40 hover:shadow-lg cursor-pointer">
                 <Users className="w-12 h-12 text-white" />
               </div>
               <h3 className="text-xl font-bold text-blue-100 mb-3">FAMILIES PLANNING</h3>
