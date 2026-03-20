@@ -92,7 +92,7 @@ const Index = () => {
                 onMouseEnter={() => handleMouseEnter("about")}
                 onMouseLeave={handleMouseLeave}
               >
-                <button className="flex items-center gap-1 px-3 py-2 text-white font-semibold text-xs">
+                <button className="flex items-center gap-1 px-3 py-2 text-white font-semibold text-sm">
                   About
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${
@@ -120,7 +120,7 @@ const Index = () => {
                 onMouseEnter={() => handleMouseEnter("medicare")}
                 onMouseLeave={handleMouseLeave}
               >
-                <button className="flex items-center gap-1 px-3 py-2 text-white font-semibold text-xs">
+                <button className="flex items-center gap-1 px-3 py-2 text-white font-semibold text-sm">
                   Medicare
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${
@@ -148,7 +148,7 @@ const Index = () => {
                 onMouseEnter={() => handleMouseEnter("retirement")}
                 onMouseLeave={handleMouseLeave}
               >
-                <button className="flex items-center gap-1 px-3 py-2 text-white font-semibold text-xs">
+                <button className="flex items-center gap-1 px-3 py-2 text-white font-semibold text-sm">
                   Retirement Planning
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${
@@ -176,7 +176,7 @@ const Index = () => {
                 onMouseEnter={() => handleMouseEnter("resources")}
                 onMouseLeave={handleMouseLeave}
               >
-                <button className="flex items-center gap-1 px-3 py-2 text-white font-semibold text-xs transition">
+                <button className="flex items-center gap-1 px-3 py-2 text-white font-semibold text-sm transition">
                   Resources
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${
@@ -204,7 +204,7 @@ const Index = () => {
                 onMouseEnter={() => handleMouseEnter("contact")}
                 onMouseLeave={handleMouseLeave}
               >
-                <button className="flex items-center gap-1 px-3 py-2 text-white font-semibold text-xs">
+                <button className="flex items-center gap-1 px-3 py-2 text-white font-semibold text-sm">
                   Contact
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${
@@ -229,7 +229,7 @@ const Index = () => {
 
               <a
                 href="tel:816-248-1100"
-                className="flex items-center gap-2 rounded-lg bg-blue-500 px-4 py-2 font-bold text-xs text-white transition-all hover:bg-red-400"
+                className="flex items-center gap-2 rounded-lg bg-blue-500 px-4 py-2 font-bold text-sm text-white transition-all hover:bg-red-400"
               >
                 <Phone className="h-4 w-4" />
                 816-248-1100
