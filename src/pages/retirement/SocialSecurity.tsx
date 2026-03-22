@@ -10,7 +10,7 @@ const SocialSecurity = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 mb-4">MAKING THE MOST OF YOUR BENEFITS</h2>
         <p className="text-gray-700 mb-4">
           Social Security is one of the most valuable assets in your retirement plan, but the decision of when and how to claim can dramatically impact your lifetime benefits. The difference between the best and worst claiming strategy can be worth hundreds of thousands of dollars.
@@ -35,7 +35,7 @@ const SocialSecurity = () => (
     </section>
 
     <section className="py-16 bg-blue-500">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-white mb-6">WHY IT MATTERS</h2>
         <p className="text-blue-50 text-lg mb-4">
           Nearly 70% of Americans claim Social Security before their full retirement age, potentially leaving thousands of dollars on the table. Spousal benefits, survivor benefits, and tax implications add layers of complexity that most retirees don't fully understand.
@@ -47,7 +47,7 @@ const SocialSecurity = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 text-center mb-8">WHAT WE ANALYZE</h2>
         <div className="space-y-3">
           {[

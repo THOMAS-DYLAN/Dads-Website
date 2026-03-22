@@ -12,7 +12,7 @@ const OurMission = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-blue-600 mb-4">SERVICE TO SECURITY</h2>
           <p className="text-gray-700 text-lg max-w-2xl mx-auto">
@@ -40,7 +40,7 @@ const OurMission = () => (
     </section>
 
     <section className="py-16 bg-red-500">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-white mb-6">WHY IT MATTERS</h2>
         <p className="text-blue-50 text-lg mb-4">
           Without proper guidance, retirees risk outliving their savings, facing unexpected healthcare costs, and leaving their families unprotected. The decisions you make today about Medicare, income planning, and asset protection will shape your entire retirement.
@@ -52,7 +52,7 @@ const OurMission = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 text-center mb-8">OUR COMMITMENT</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[

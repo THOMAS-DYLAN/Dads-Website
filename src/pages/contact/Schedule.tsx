@@ -24,7 +24,7 @@ const Schedule = () => {
       />
 
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
+        <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
             <div className="lg:col-span-2">
               <div className="sticky top-28">

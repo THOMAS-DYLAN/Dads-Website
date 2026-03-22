@@ -122,7 +122,7 @@ const Faq = () => {
       />
 
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
+        <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
           {faqs.map((category, catIndex) => (
             <div key={catIndex} className="mb-12">
               <h2 className="text-2xl font-bold text-blue-600 mb-6 pb-2 border-b-2 border-blue-600">{category.category}</h2>

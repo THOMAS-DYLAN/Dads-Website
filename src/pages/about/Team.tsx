@@ -10,7 +10,7 @@ const Team = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="container mx-auto px-4 max-w-5xl lg:max-w-6xl xl:max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
             <div className="w-64 h-64 rounded-full border-4 border-blue-600 overflow-hidden shadow-xl">
@@ -42,7 +42,7 @@ const Team = () => (
     </section>
 
     <section className="py-16 bg-blue-500">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-white text-center mb-10">OUR VALUES</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
           {[
@@ -63,7 +63,7 @@ const Team = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-blue-600 mb-4">GROWING OUR TEAM</h2>
         <p className="text-gray-700 text-lg max-w-2xl mx-auto mb-6">
           As Service to Security continues to grow, we're building a team of professionals who share our commitment to service, integrity, and client-first planning. Stay tuned for new team members joining the mission.

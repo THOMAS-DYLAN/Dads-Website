@@ -10,7 +10,7 @@ const OurStory = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-3xl font-bold text-blue-600 mb-4">A Mission Born From Service</h2>
@@ -38,7 +38,7 @@ const OurStory = () => (
     </section>
 
     <section className="py-16 bg-blue-500">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-white text-center mb-10">WHY IT MATTERS</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
           {[
@@ -59,7 +59,7 @@ const OurStory = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 text-center mb-8">OUR APPROACH</h2>
         <div className="space-y-4">
           {[

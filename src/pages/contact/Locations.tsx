@@ -10,7 +10,7 @@ const Locations = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="container mx-auto px-4 max-w-5xl lg:max-w-6xl xl:max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-2xl font-bold text-blue-600 mb-6">OUR OFFICE</h2>

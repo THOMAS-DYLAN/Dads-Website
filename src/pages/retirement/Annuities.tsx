@@ -10,7 +10,7 @@ const Annuities = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 mb-4">UNDERSTANDING ANNUITIES</h2>
         <p className="text-gray-700 mb-8">
           Annuities are insurance contracts designed to provide guaranteed income in retirement. They can offer protection from market volatility, guaranteed lifetime income, and tax-deferred growth -- making them a valuable tool in a comprehensive retirement plan.
@@ -37,7 +37,7 @@ const Annuities = () => (
     </section>
 
     <section className="py-16 bg-blue-500">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-white mb-6">WHY IT MATTERS</h2>
         <p className="text-blue-50 text-lg mb-4">
           Market downturns in early retirement can permanently damage your portfolio. Annuities provide a guaranteed floor of income that can't be outlived, giving you the confidence to weather market volatility without sacrificing your lifestyle.
@@ -49,7 +49,7 @@ const Annuities = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-blue-600 mb-6">OUR APPROACH</h2>
         <p className="text-gray-700 text-lg mb-4">
           We take a need-based approach to annuities. We'll evaluate whether an annuity is right for your situation, compare options from top-rated carriers, and ensure any recommendation fits your overall retirement income strategy. We never recommend products that aren't in your best interest.

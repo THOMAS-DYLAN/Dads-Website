@@ -10,7 +10,7 @@ const Enrollment = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 mb-6">MEDICARE ENROLLMENT WINDOWS</h2>
         <div className="space-y-6">
           {[
@@ -35,7 +35,7 @@ const Enrollment = () => (
     </section>
 
     <section className="py-16 bg-red-500">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-white mb-6">WHY TIMING MATTERS</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
@@ -54,7 +54,7 @@ const Enrollment = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-blue-600 mb-6">OUR APPROACH</h2>
         <p className="text-gray-700 text-lg mb-4">
           We help you identify which enrollment periods apply to your situation, ensure you meet every deadline, and guide you through the selection process so you can enroll with confidence and avoid costly mistakes.

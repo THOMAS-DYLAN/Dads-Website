@@ -65,7 +65,7 @@ This consultation request was submitted through Key Retirement Solutions website
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="container mx-auto px-4 max-w-5xl lg:max-w-6xl xl:max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
           <div className="text-center p-6 bg-blue-50 rounded-lg">
             <div className="w-16 h-16 mx-auto mb-4 bg-blue-600 rounded-full flex items-center justify-center">

@@ -10,7 +10,7 @@ const MedicareBasics = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 mb-6">WHAT IS MEDICARE?</h2>
         <p className="text-gray-700 mb-4">
           Medicare is the federal health insurance program for people aged 65 and older, as well as certain younger individuals with disabilities or specific conditions. It's designed to help cover the cost of healthcare in retirement, but it doesn't cover everything -- and understanding your options is critical to avoiding costly gaps.
@@ -36,7 +36,7 @@ const MedicareBasics = () => (
     </section>
 
     <section className="py-16 bg-blue-500">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-white mb-6">WHY IT MATTERS</h2>
         <p className="text-blue-50 text-lg mb-4">
           The choices you make during your initial enrollment period shape your coverage and your costs for years ahead. A plan that doesn't fit your needs -- or missing your enrollment window -- can lead to avoidable penalties, gaps in coverage, and expenses you didn't plan for.
@@ -48,7 +48,7 @@ const MedicareBasics = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 text-center mb-8">WHO IS ELIGIBLE?</h2>
         <div className="space-y-3">
           {[

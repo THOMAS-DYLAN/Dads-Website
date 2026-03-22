@@ -34,7 +34,7 @@ const Blog = () => {
       />
 
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-5xl lg:max-w-6xl xl:max-w-7xl">
           <div className="flex gap-3 mb-10 justify-center">
             {categories.map((cat) => (
               <button

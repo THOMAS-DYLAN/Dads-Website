@@ -19,7 +19,7 @@ const Videos = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="container mx-auto px-4 max-w-5xl lg:max-w-6xl xl:max-w-7xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {videos.map((video) => (
             <div key={video.title} className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition">

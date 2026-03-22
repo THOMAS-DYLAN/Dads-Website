@@ -10,7 +10,7 @@ const Income = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 mb-4">CREATING SUSTAINABLE RETIREMENT INCOME</h2>
         <p className="text-gray-700 mb-8">
           The transition from earning a paycheck to living on retirement savings is one of the most significant financial shifts you'll ever make. Without a strategic income plan, you risk running out of money, paying more taxes than necessary, or failing to keep pace with inflation.
@@ -36,7 +36,7 @@ const Income = () => (
     </section>
 
     <section className="py-16 bg-red-500">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-white mb-6">WHY IT MATTERS</h2>
         <p className="text-blue-50 text-lg mb-4">
           Without a structured income plan, many retirees withdraw too aggressively in early retirement, pay unnecessary taxes, or leave money on the table with Social Security. The decisions you make in your first few years of retirement can impact your financial security for decades.
@@ -48,7 +48,7 @@ const Income = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-blue-600 mb-6">OUR APPROACH</h2>
         <p className="text-gray-700 text-lg mb-4">
           We analyze your complete financial picture -- income sources, expenses, tax situation, and goals -- to create a customized income strategy that gives you predictable cash flow, tax efficiency, and long-term sustainability.

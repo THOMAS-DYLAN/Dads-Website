@@ -10,7 +10,7 @@ const LongTermCare = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 mb-4">THE REALITY OF LONG-TERM CARE</h2>
         <p className="text-gray-700 mb-4">
           Over 70% of Americans turning 65 will need some form of long-term care during their lifetime. Whether it's home health aides, assisted living, or nursing home care, the costs can quickly deplete retirement savings and burden family members.
@@ -39,7 +39,7 @@ const LongTermCare = () => (
     </section>
 
     <section className="py-16 bg-red-500">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-white mb-6">WHY IT MATTERS</h2>
         <p className="text-blue-50 text-lg mb-4">
           The biggest risk to your retirement isn't market volatility -- it's an unplanned long-term care event. A single extended care need can wipe out decades of savings and leave a surviving spouse financially vulnerable.
@@ -51,7 +51,7 @@ const LongTermCare = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-blue-600 mb-6">OUR APPROACH</h2>
         <p className="text-gray-700 text-lg mb-4">
           As a Certified Long-Term Care (CLTC) professional, Michael Thomas evaluates your risk, family history, and financial situation to recommend the most appropriate protection strategy. We explore all options including traditional policies, hybrid solutions, and self-funding strategies.

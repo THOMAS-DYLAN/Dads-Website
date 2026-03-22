@@ -9,7 +9,7 @@ const MedicareSupplement = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 mb-4">WHAT IS MEDIGAP?</h2>
         <p className="text-gray-700 mb-4">
           Medicare Supplement Insurance (Medigap) policies are sold by private companies to fill the "gaps" in Original Medicare coverage. These gaps include copayments, coinsurance, and deductibles that you'd otherwise pay out of pocket.
@@ -36,7 +36,7 @@ const MedicareSupplement = () => (
     </section>
 
     <section className="py-16 bg-blue-500">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-white text-center mb-8">KEY CONSIDERATIONS</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
@@ -57,7 +57,7 @@ const MedicareSupplement = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-blue-600 mb-6">OUR APPROACH</h2>
         <p className="text-gray-700 text-lg mb-4">
           We compare Medigap policies from multiple A-rated carriers to ensure you get the best coverage at the most competitive price. Our goal is to help you lock in comprehensive coverage during your best enrollment window, so you're protected for life.

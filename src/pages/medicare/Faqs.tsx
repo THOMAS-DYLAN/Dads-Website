@@ -25,7 +25,7 @@ const MedicareFaqs = () => {
       />
 
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
+        <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
           <div className="space-y-3">
             {faqItems.map((faq, index) => (
               <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
@@ -48,7 +48,7 @@ const MedicareFaqs = () => {
       </section>
 
       <section className="py-16 bg-blue-500">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
+        <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
           <h2 className="text-3xl font-bold text-white mb-4">STILL HAVE QUESTIONS?</h2>
           <p className="text-blue-50 text-lg mb-6">
             Medicare can be complex, and every situation is unique. We're here to answer your specific questions and help you navigate your options with clarity and confidence.

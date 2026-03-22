@@ -10,7 +10,7 @@ const AssetProtection = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 mb-4">DEFENDING YOUR WEALTH</h2>
         <p className="text-gray-700 mb-8">
           You've spent a lifetime building your wealth. Asset protection planning ensures that what you've earned stays protected -- from market downturns, excessive taxation, legal liabilities, and healthcare costs that can erode your legacy.
@@ -36,7 +36,7 @@ const AssetProtection = () => (
     </section>
 
     <section className="py-16 bg-red-500">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-white mb-6">WHY IT MATTERS</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
@@ -55,7 +55,7 @@ const AssetProtection = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-blue-600 mb-6">OUR APPROACH</h2>
         <p className="text-gray-700 text-lg mb-4">
           We take a holistic approach to asset protection, examining your complete financial picture to identify vulnerabilities and implement defensive strategies. Our goal is to ensure your wealth serves you throughout retirement and creates a lasting legacy.

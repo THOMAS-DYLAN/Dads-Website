@@ -203,7 +203,7 @@ const ContactUs = () => {
       </section>
 
       <section className="py-16 bg-blue-500">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
+        <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
           <h2 className="text-3xl font-bold text-white mb-6">READY TO TAKE THE NEXT STEP?</h2>
           <p className="text-blue-50 text-lg mb-8">
             Don't leave your retirement to chance. Let's build a comprehensive defense plan for your financial future.

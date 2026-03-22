@@ -10,7 +10,7 @@ const MedicareAdvantage = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 mb-4">WHAT IS MEDICARE ADVANTAGE?</h2>
         <p className="text-gray-700 mb-4">
           Medicare Advantage plans, also known as Part C, are offered by private insurance companies approved by Medicare. These plans provide all of your Part A and Part B coverage, and most include Part D prescription drug coverage as well.
@@ -66,7 +66,7 @@ const MedicareAdvantage = () => (
     </section>
 
     <section className="py-16 bg-red-500">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-white mb-6">WHY IT MATTERS</h2>
         <p className="text-blue-50 text-lg">
           Choosing between Medicare Advantage and Original Medicare is one of the most important healthcare decisions you'll make. The right choice depends on your health needs, preferred doctors, medications, and budget. Working with a certified Medicare specialist ensures you make a confident, informed decision.
@@ -75,7 +75,7 @@ const MedicareAdvantage = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 text-center mb-8">OUR APPROACH</h2>
         <p className="text-gray-700 text-center mb-6">
           We compare plans from multiple carriers to find the Medicare Advantage option that best fits your needs. We'll walk you through every detail -- from networks and formularies to costs and benefits -- so you can enroll with confidence.

@@ -10,7 +10,7 @@ const MedicareGuide = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl text-center mb-12">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center mb-12">
         <div className="inline-block p-8 bg-blue-50 rounded-lg border-2 border-blue-600">
           <FileText className="w-16 h-16 text-blue-600 mx-auto mb-4" />
           <h2 className="text-2xl font-bold text-blue-600 mb-3">DOWNLOAD YOUR FREE MEDICARE GUIDE</h2>
@@ -37,7 +37,7 @@ const MedicareGuide = () => (
     </section>
 
     <section className="py-16 bg-blue-500">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="container mx-auto px-4 max-w-5xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-white mb-10 text-center">WHAT'S INCLUDED IN THE GUIDE</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -65,7 +65,7 @@ const MedicareGuide = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 mb-8 text-center">QUICK MEDICARE REFERENCE</h2>
         
         <div className="space-y-6">

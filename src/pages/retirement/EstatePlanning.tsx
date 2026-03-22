@@ -10,7 +10,7 @@ const EstatePlanning = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="container mx-auto px-4 max-w-5xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 mb-6 text-center">WHY ESTATE PLANNING MATTERS</h2>
         <p className="text-gray-700 text-lg text-center max-w-3xl mx-auto mb-12">
           Estate planning isn't just for the wealthy -- it's for anyone who wants to make sure their assets, their family, and their wishes are protected. Without a proper plan, your estate could face probate delays, unnecessary taxes, and family disputes.
@@ -53,7 +53,7 @@ const EstatePlanning = () => (
     </section>
 
     <section className="py-16 bg-blue-500">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="container mx-auto px-4 max-w-5xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">ESTATE PLANNING TOOLS</h2>
 
         <div className="space-y-6">
@@ -101,7 +101,7 @@ const EstatePlanning = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="container mx-auto px-4 max-w-5xl lg:max-w-6xl xl:max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold text-blue-600 mb-4">INTEGRATED TRUST SERVICES PARTNERSHIP</h2>
@@ -158,7 +158,7 @@ const EstatePlanning = () => (
     </section>
 
     <section className="py-16 bg-red-500">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-white mb-6">OUR APPROACH</h2>
         <p className="text-blue-50 text-lg mb-4">
           We take a holistic approach to estate planning, working alongside our Integrated Trust Services partnership to ensure every aspect of your financial life is coordinated. From trust creation to beneficiary designations, we help you build a legacy plan that protects your family and honors your wishes.

@@ -10,7 +10,7 @@ const LifeInsurance = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="container mx-auto px-4 max-w-5xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 mb-6 text-center">WHY LIFE INSURANCE MATTERS</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -50,7 +50,7 @@ const LifeInsurance = () => (
     </section>
 
     <section className="py-16 bg-blue-500">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">TYPES OF LIFE INSURANCE</h2>
         
         <div className="space-y-6">
@@ -126,7 +126,7 @@ const LifeInsurance = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 mb-6 text-center">OUR APPROACH</h2>
         
         <div className="space-y-6">

@@ -10,7 +10,7 @@ const PartD = () => (
     />
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-blue-600 mb-4">WHAT IS MEDICARE PART D?</h2>
         <p className="text-gray-700 mb-4">
           Medicare Part D is prescription drug coverage offered through private insurance companies approved by Medicare. These plans help cover the cost of prescription medications and may help lower your drug costs while protecting against higher costs in the future.
@@ -34,7 +34,7 @@ const PartD = () => (
     </section>
 
     <section className="py-16 bg-red-500">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-3xl font-bold text-white text-center mb-8">WHY IT MATTERS</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
           {[
@@ -55,7 +55,7 @@ const PartD = () => (
     </section>
 
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
+      <div className="container mx-auto px-4 max-w-4xl lg:max-w-6xl xl:max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-blue-600 mb-6">OUR APPROACH</h2>
         <p className="text-gray-700 text-lg mb-4">
           We review your current medications, preferred pharmacies, and budget to find the Part D plan that minimizes your costs while maximizing coverage. We also review your plan annually during the Annual Enrollment Period to ensure it still meets your needs.
