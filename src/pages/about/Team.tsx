@@ -26,7 +26,7 @@ const Team = () => (
             <h2 className="text-3xl font-bold text-blue-600 mb-2">Michael Thomas</h2>
             <p className="text-red-500 font-semibold mb-4">RICP® | CLTC | MMC</p>
             <p className="text-gray-700 mb-4">
-              Michael Thomas is the founder of Service to Security and brings a unique combination of military discipline and financial expertise to every client relationship. With specialized certifications in retirement income planning (RICP®), long-term care (CLTC), and Medicare (MMC), Michael provides comprehensive guidance for retirees and pre-retirees.
+              Michael Thomas is the founder of Service to Security and brings a unique combination of military discipline and financial expertise to every client relationship. With specialized certifications in Retirement Income Certified Professional (RICP®), Certified Long-Term Care (CLTC), and Medicare Masters Certified (MMC), Michael provides comprehensive guidance for retirees and pre-retirees.
             </p>
             <p className="text-gray-700 mb-4">
               His mission-driven approach ensures every client receives personalized strategies built on education, transparency, and trust. Michael is passionate about serving veterans and their families, bringing the same dedication to financial planning that defined his commitment to service.

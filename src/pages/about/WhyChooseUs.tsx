@@ -13,7 +13,7 @@ const WhyChooseUs = () => (
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
-            { icon: ShieldCheck, title: 'Certified Expertise', desc: 'RICP®, CLTC, and MMC certifications ensure you receive guidance from a true specialist in retirement, long-term care, and Medicare planning.' },
+            { icon: ShieldCheck, title: 'Certified Expertise', desc: 'Retirement Income Certified Professional (RICP®), Certified Long-Term Care (CLTC), and Medicare Masters Certified (MMC) certifications ensure you receive guidance from a true specialist in retirement, long-term care, and Medicare planning.' },
             { icon: Users, title: 'Veteran-Focused', desc: 'We understand the unique challenges veterans face transitioning from service to retirement and tailor our strategies accordingly.' },
             { icon: Award, title: 'No-Pressure Approach', desc: 'We never push products. We educate, recommend, and let you make confident decisions at your own pace.' },
             { icon: TrendingUp, title: 'Comprehensive Planning', desc: 'From Medicare enrollment to income strategies and asset protection, we cover every aspect of your retirement defense.' },

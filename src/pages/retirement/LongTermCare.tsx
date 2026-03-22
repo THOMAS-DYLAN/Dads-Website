@@ -54,7 +54,7 @@ const LongTermCare = () => (
       <div className="container mx-auto px-4 max-w-4xl text-center">
         <h2 className="text-3xl font-bold text-blue-600 mb-6">OUR APPROACH</h2>
         <p className="text-gray-700 text-lg mb-4">
-          As a Certified in Long-Term Care (CLTC) professional, Michael Thomas evaluates your risk, family history, and financial situation to recommend the most appropriate protection strategy. We explore all options including traditional policies, hybrid solutions, and self-funding strategies.
+          As a Certified Long-Term Care (CLTC) professional, Michael Thomas evaluates your risk, family history, and financial situation to recommend the most appropriate protection strategy. We explore all options including traditional policies, hybrid solutions, and self-funding strategies.
         </p>
         <div className="p-6 bg-blue-50 rounded-lg border-l-4 border-blue-600">
           <p className="text-blue-700 font-semibold italic">"The best time to plan for long-term care is before you need it."</p>
