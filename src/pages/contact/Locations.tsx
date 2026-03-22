@@ -72,7 +72,7 @@ const Locations = () => (
             <h2 className="text-2xl font-bold text-blue-600 mb-6">FIND US</h2>
             <div className="aspect-[4/3] rounded-lg overflow-hidden border-2 border-gray-300 shadow-lg">
               <iframe
-                src="https://maps.google.com/maps?q=PLACE_NAME&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src=""https://www.google.com/maps?q=Trenton,+Missouri" target="_blank">"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
