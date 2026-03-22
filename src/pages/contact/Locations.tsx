@@ -94,29 +94,7 @@ const Locations = () => (
       </div>
     </section>
 
-    <section className="py-16 bg-blue-500">
-      <div className="container mx-auto px-4 max-w-4xl text-center">
-        <h2 className="text-3xl font-bold text-white mb-6">READY TO VISIT?</h2>
-        <p className="text-blue-50 text-lg mb-8">
-          Schedule a complimentary consultation at our office or request a virtual meeting.
-        </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <a
-            href="/contact/consultation"
-            className="inline-flex items-center gap-2 bg-red-500 text-white font-bold px-8 py-4 rounded-lg transition hover:bg-red-600"
-          >
-            Schedule Appointment
-          </a>
-          <a
-            href="tel:816-248-1100"
-            className="inline-flex items-center gap-2 bg-white text-blue-600 font-bold px-8 py-4 rounded-lg transition hover:bg-blue-50"
-          >
-            <Phone className="w-5 h-5" />
-            Call Us
-          </a>
-        </div>
-      </div>
-    </section>
+    
   </PageLayout>
 );
 
