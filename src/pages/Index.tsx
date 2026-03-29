@@ -14,8 +14,13 @@ import {
   House,
   ChevronDown,
 } from "lucide-react";
+
 import { useState } from "react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { useNavigate, useLocation } from 'react-router-dom';
+const navigate = useNavigate();
+const location = useLocation();
+
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -76,7 +81,7 @@ const Index = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="" className="text-2xl font-bold text-white">
+              <a{location("/") ? "" : navigate("/")} className="text-2xl font-bold text-white">
                 <img
                   src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/3339.jpg"
                   alt="Service To Security"
