@@ -1,6 +1,5 @@
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
-import { useState, useEffect } from "react";
-import { useLocation } from "react-router"
+import { useState, useEffect, React } from "react";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -61,7 +60,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-              <a {window.location.pathname="/" ? href="" : href="/"} className="text-2xl font-bold text-white">
+              <a {location.pathname === "/" ? "" : "/"} className="text-2xl font-bold text-white">
                 <img
                   src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100009141/3339.jpg"
                   alt="Service To Security"
