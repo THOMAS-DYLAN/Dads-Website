@@ -1,4 +1,9 @@
 import { Link } from 'react-router-dom';
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
 const CTASection = () => (
   <section className="py-16 bg-red-500">
@@ -9,7 +14,7 @@ const CTASection = () => (
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <Link
-          to="/contact/consultation"
+          to="/consultation"Go to Consultation
           className="bg-white hover:bg-blue-50 text-blue-600 font-bold text-lg px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105"
         >
           Schedule Your Complimentary Consultation
