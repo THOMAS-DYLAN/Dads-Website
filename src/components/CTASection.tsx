@@ -16,7 +16,7 @@ const CTASection = () => (
           Schedule Your Complimentary Consultation
         </Link>
         <Link
-          to="/contact/contactus"
+          to="/contact/us"
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105"
         >
           Contact Us Today
