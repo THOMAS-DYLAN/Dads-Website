@@ -1,9 +1,5 @@
-import { Link, useLocation } from 'react-router-dom';
-const { pathname } = useLocation();
+import { Link } from 'react-router-dom';
 
-useEffect(() => {
-  window.scrollTo(0, 0);
-}, [pathname]);
 
 const CTASection = () => (
   <section className="py-16 bg-red-500">
